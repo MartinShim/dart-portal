@@ -1,0 +1,126 @@
+{
+  "fetchedAt": "2026-06-14T13:03:49.712Z",
+  "source": "FnGuide 어닝 (컨센서스 상회/하회)",
+  "stock": "042700",
+  "periods": {
+    "A_202312": {
+      "gsGb": "D",
+      "gsYm": "202312",
+      "dataGb": "확정",
+      "metrics": {
+        "매출액": {
+          "actual": 159010000000,
+          "consensus": 149590000000,
+          "beatPct": 6.3,
+          "beat": true
+        },
+        "영업이익": {
+          "actual": 34570000000,
+          "consensus": 26030000000,
+          "beatPct": 32.8,
+          "beat": true
+        },
+        "순이익": {
+          "actual": 267169999999.99997,
+          "consensus": 190820000000,
+          "beatPct": 40.01,
+          "beat": true
+        }
+      }
+    },
+    "A_202412": {
+      "gsGb": "D",
+      "gsYm": "202412",
+      "dataGb": "확정",
+      "metrics": {
+        "매출액": {
+          "actual": 558920000000,
+          "consensus": 578250000000,
+          "beatPct": -3.34,
+          "beat": false
+        },
+        "영업이익": {
+          "actual": 255390000000,
+          "consensus": 260600000000,
+          "beatPct": -2,
+          "beat": false
+        },
+        "순이익": {
+          "actual": 152610000000,
+          "consensus": 212950000000,
+          "beatPct": -28.33,
+          "beat": false
+        }
+      }
+    },
+    "A_202512": {
+      "gsGb": "D",
+      "gsYm": "202512",
+      "dataGb": "확정",
+      "metrics": {
+        "매출액": {
+          "actual": 576690000000,
+          "consensus": 647000000000,
+          "beatPct": -10.87,
+          "beat": false
+        },
+        "영업이익": {
+          "actual": 251390000000,
+          "consensus": 297300000000,
+          "beatPct": -15.44,
+          "beat": false
+        },
+        "순이익": {
+          "actual": 214010000000,
+          "consensus": 283550000000,
+          "beatPct": -24.53,
+          "beat": false
+        }
+      }
+    },
+    "Q_202509": {
+      "gsGb": "3Q",
+      "gsYm": "202509",
+      "dataGb": "확정",
+      "metrics": {
+        "매출액": {
+          "actual": 166230000000,
+          "consensus": 180000000000,
+          "beatPct": -7.65,
+          "beat": false
+        },
+        "영업이익": {
+          "actual": 67820000000.00001,
+          "consensus": 86830000000,
+          "beatPct": -21.89,
+          "beat": false
+        },
+        "순이익": {
+          "actual": 65710000000,
+          "consensus": 53200000000,
+          "beatPct": 23.52,
+          "beat": true
+        }
+      }
+    },
+    "Q_202512": {
+      "gsGb": "4Q",
+      "gsYm": "202512",
+      "dataGb": "확정",
+      "metrics": {
+        "매출액": {
+          "actual": 83010000000,
+          "consensus": 156000000000,
+          "beatPct": -46.79,
+          "beat": false
+        },
+        "영업이익": {
+          "actual": 27630000000,
+          "consensus": 73000000000,
+          "beatPct": -62.15,
+          "beat": false
+        }
+      }
+    }
+  }
+}

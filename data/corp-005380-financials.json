@@ -1,0 +1,830 @@
+{
+  "20260515002418": {
+    "period": {
+      "year": "2026",
+      "reprt_code": "11013",
+      "label": "1분기보고서",
+      "periodMonth": "03"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 383834207000000,
+        "thstrm_nm": "제 59 기1분기말",
+        "frmtrm": 368844849000000,
+        "frmtrm_nm": "제 58 기말"
+      },
+      "부채총계": {
+        "thstrm": 251607472000000,
+        "thstrm_nm": "제 59 기1분기말",
+        "frmtrm": 241196612000000,
+        "frmtrm_nm": "제 58 기말"
+      },
+      "자본총계": {
+        "thstrm": 132226735000000,
+        "thstrm_nm": "제 59 기1분기말",
+        "frmtrm": 127648237000000,
+        "frmtrm_nm": "제 58 기말"
+      },
+      "매출액": {
+        "thstrm": 45938886000000,
+        "thstrm_nm": "제 59 기1분기",
+        "frmtrm": 44407761000000,
+        "frmtrm_nm": "제 58 기1분기"
+      },
+      "영업이익": {
+        "thstrm": 2514686000000,
+        "thstrm_nm": "제 59 기1분기",
+        "frmtrm": 3633609000000,
+        "frmtrm_nm": "제 58 기1분기"
+      },
+      "당기순이익": {
+        "thstrm": 2584926000000,
+        "thstrm_nm": "제 59 기1분기",
+        "frmtrm": 3382174000000,
+        "frmtrm_nm": "제 58 기1분기"
+      }
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": true,
+      "crossChecked": true
+    }
+  },
+  "20260318001394": {
+    "period": {
+      "year": "2025",
+      "reprt_code": "11011",
+      "label": "사업보고서",
+      "periodMonth": "12"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 368844849000000,
+        "thstrm_nm": "제 58 기",
+        "frmtrm": 339798429000000,
+        "frmtrm_nm": "제 57 기"
+      },
+      "부채총계": {
+        "thstrm": 241196612000000,
+        "thstrm_nm": "제 58 기",
+        "frmtrm": 219522496000000,
+        "frmtrm_nm": "제 57 기"
+      },
+      "자본총계": {
+        "thstrm": 127648237000000,
+        "thstrm_nm": "제 58 기",
+        "frmtrm": 120275933000000,
+        "frmtrm_nm": "제 57 기"
+      },
+      "매출액": {
+        "thstrm": 186254472000000,
+        "thstrm_nm": "제 58 기",
+        "frmtrm": 175231153000000,
+        "frmtrm_nm": "제 57 기"
+      },
+      "영업이익": {
+        "thstrm": 11467851000000,
+        "thstrm_nm": "제 58 기",
+        "frmtrm": 14239592000000,
+        "frmtrm_nm": "제 57 기"
+      },
+      "당기순이익": {
+        "thstrm": 10364775000000,
+        "thstrm_nm": "제 58 기",
+        "frmtrm": 13229908000000,
+        "frmtrm_nm": "제 57 기"
+      }
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": true,
+      "crossChecked": true
+    }
+  },
+  "20251114002658": {
+    "period": {
+      "year": "2025",
+      "reprt_code": "11014",
+      "label": "3분기보고서",
+      "periodMonth": "09"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 354432157000000,
+        "thstrm_nm": "제 58 기3분기말",
+        "frmtrm": 339798429000000,
+        "frmtrm_nm": "제 57 기말"
+      },
+      "부채총계": {
+        "thstrm": 229085333000000,
+        "thstrm_nm": "제 58 기3분기말",
+        "frmtrm": 219522496000000,
+        "frmtrm_nm": "제 57 기말"
+      },
+      "자본총계": {
+        "thstrm": 125346824000000,
+        "thstrm_nm": "제 58 기3분기말",
+        "frmtrm": 120275933000000,
+        "frmtrm_nm": "제 57 기말"
+      },
+      "매출액": {
+        "thstrm": 46721448000000,
+        "thstrm_nm": "제 58 기3분기",
+        "frmtrm": 42928332000000,
+        "frmtrm_nm": "제 57 기3분기"
+      },
+      "영업이익": {
+        "thstrm": 2537266000000,
+        "thstrm_nm": "제 58 기3분기",
+        "frmtrm": 3580900000000,
+        "frmtrm_nm": "제 57 기3분기"
+      },
+      "당기순이익": {
+        "thstrm": 2548183000000,
+        "thstrm_nm": "제 58 기3분기",
+        "frmtrm": 3205850000000,
+        "frmtrm_nm": "제 57 기3분기"
+      }
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": true,
+      "crossChecked": true
+    }
+  },
+  "20250814003906": {
+    "period": {
+      "year": "2025",
+      "reprt_code": "11012",
+      "label": "반기보고서",
+      "periodMonth": "06"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 339702469000000,
+        "thstrm_nm": "제 58 기반기말",
+        "frmtrm": 339798429000000,
+        "frmtrm_nm": "제 57 기말"
+      },
+      "부채총계": {
+        "thstrm": 218165355000000,
+        "thstrm_nm": "제 58 기반기말",
+        "frmtrm": 219522496000000,
+        "frmtrm_nm": "제 57 기말"
+      },
+      "자본총계": {
+        "thstrm": 121537114000000,
+        "thstrm_nm": "제 58 기반기말",
+        "frmtrm": 120275933000000,
+        "frmtrm_nm": "제 57 기말"
+      },
+      "매출액": {
+        "thstrm": 48286677000000,
+        "thstrm_nm": "제 58 기반기",
+        "frmtrm": 45020581000000,
+        "frmtrm_nm": "제 57 기반기"
+      },
+      "영업이익": {
+        "thstrm": 3601597000000,
+        "thstrm_nm": "제 58 기반기",
+        "frmtrm": 4279136000000,
+        "frmtrm_nm": "제 57 기반기"
+      },
+      "당기순이익": {
+        "thstrm": 3250390000000,
+        "thstrm_nm": "제 58 기반기",
+        "frmtrm": 4173900000000,
+        "frmtrm_nm": "제 57 기반기"
+      }
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": true,
+      "crossChecked": true
+    }
+  },
+  "20250515001159": {
+    "period": {
+      "year": "2025",
+      "reprt_code": "11013",
+      "label": "1분기보고서",
+      "periodMonth": "03"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 343630337000000,
+        "thstrm_nm": "제 58 기1분기말",
+        "frmtrm": 339798429000000,
+        "frmtrm_nm": "제 57 기말"
+      },
+      "부채총계": {
+        "thstrm": 222065143000000,
+        "thstrm_nm": "제 58 기1분기말",
+        "frmtrm": 219522496000000,
+        "frmtrm_nm": "제 57 기말"
+      },
+      "자본총계": {
+        "thstrm": 121565194000000,
+        "thstrm_nm": "제 58 기1분기말",
+        "frmtrm": 120275933000000,
+        "frmtrm_nm": "제 57 기말"
+      },
+      "매출액": {
+        "thstrm": 44407761000000,
+        "thstrm_nm": "제 58 기1분기",
+        "frmtrm": 40658539000000,
+        "frmtrm_nm": "제 57 기1분기"
+      },
+      "영업이익": {
+        "thstrm": 3633609000000,
+        "thstrm_nm": "제 58 기1분기",
+        "frmtrm": 3557362000000,
+        "frmtrm_nm": "제 57 기1분기"
+      },
+      "당기순이익": {
+        "thstrm": 3382174000000,
+        "thstrm_nm": "제 58 기1분기",
+        "frmtrm": 3376001000000,
+        "frmtrm_nm": "제 57 기1분기"
+      }
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": true,
+      "crossChecked": true
+    }
+  },
+  "20250312001148": {
+    "period": {
+      "year": "2024",
+      "reprt_code": "11011",
+      "label": "사업보고서",
+      "periodMonth": "12"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 339798429000000,
+        "thstrm_nm": "제 57 기",
+        "frmtrm": 282463355000000,
+        "frmtrm_nm": "제 56 기"
+      },
+      "부채총계": {
+        "thstrm": 219522496000000,
+        "thstrm_nm": "제 57 기",
+        "frmtrm": 180653915000000,
+        "frmtrm_nm": "제 56 기"
+      },
+      "자본총계": {
+        "thstrm": 120275933000000,
+        "thstrm_nm": "제 57 기",
+        "frmtrm": 101809440000000,
+        "frmtrm_nm": "제 56 기"
+      },
+      "매출액": {
+        "thstrm": 175231153000000,
+        "thstrm_nm": "제 57 기",
+        "frmtrm": 162663579000000,
+        "frmtrm_nm": "제 56 기"
+      },
+      "영업이익": {
+        "thstrm": 14239592000000,
+        "thstrm_nm": "제 57 기",
+        "frmtrm": 15126901000000,
+        "frmtrm_nm": "제 56 기"
+      },
+      "당기순이익": {
+        "thstrm": 13229908000000,
+        "thstrm_nm": "제 57 기",
+        "frmtrm": 12272301000000,
+        "frmtrm_nm": "제 56 기"
+      }
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": true,
+      "crossChecked": true
+    }
+  },
+  "20241114002593": {
+    "period": {
+      "year": "2024",
+      "reprt_code": "11014",
+      "label": "3분기보고서",
+      "periodMonth": "09"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 306086603000000,
+        "thstrm_nm": "제 57 기3분기말",
+        "frmtrm": 282463355000000,
+        "frmtrm_nm": "제 56 기말"
+      },
+      "부채총계": {
+        "thstrm": 194572577000000,
+        "thstrm_nm": "제 57 기3분기말",
+        "frmtrm": 180653915000000,
+        "frmtrm_nm": "제 56 기말"
+      },
+      "자본총계": {
+        "thstrm": 111514026000000,
+        "thstrm_nm": "제 57 기3분기말",
+        "frmtrm": 101809440000000,
+        "frmtrm_nm": "제 56 기말"
+      },
+      "매출액": {
+        "thstrm": 42928332000000,
+        "thstrm_nm": "제 57 기3분기",
+        "frmtrm": 40991126000000,
+        "frmtrm_nm": "제 56 기3분기"
+      },
+      "영업이익": {
+        "thstrm": 3580900000000,
+        "thstrm_nm": "제 57 기3분기",
+        "frmtrm": 3828468000000,
+        "frmtrm_nm": "제 56 기3분기"
+      },
+      "당기순이익": {
+        "thstrm": 3205850000000,
+        "thstrm_nm": "제 57 기3분기",
+        "frmtrm": 3303451000000,
+        "frmtrm_nm": "제 56 기3분기"
+      }
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": null,
+      "crossChecked": false
+    }
+  },
+  "20240814004199": {
+    "period": {
+      "year": "2024",
+      "reprt_code": "11012",
+      "label": "반기보고서",
+      "periodMonth": "06"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 306927591000000,
+        "thstrm_nm": "제 57 기반기말",
+        "frmtrm": 282463355000000,
+        "frmtrm_nm": "제 56 기말"
+      },
+      "부채총계": {
+        "thstrm": 197118538000000,
+        "thstrm_nm": "제 57 기반기말",
+        "frmtrm": 180653915000000,
+        "frmtrm_nm": "제 56 기말"
+      },
+      "자본총계": {
+        "thstrm": 109809053000000,
+        "thstrm_nm": "제 57 기반기말",
+        "frmtrm": 101809440000000,
+        "frmtrm_nm": "제 56 기말"
+      },
+      "매출액": {
+        "thstrm": 45020581000000,
+        "thstrm_nm": "제 57 기반기",
+        "frmtrm": 42233215000000,
+        "frmtrm_nm": "제 56 기반기"
+      },
+      "영업이익": {
+        "thstrm": 4279136000000,
+        "thstrm_nm": "제 57 기반기",
+        "frmtrm": 4248314000000,
+        "frmtrm_nm": "제 56 기반기"
+      },
+      "당기순이익": {
+        "thstrm": 4173900000000,
+        "thstrm_nm": "제 57 기반기",
+        "frmtrm": 3346813000000,
+        "frmtrm_nm": "제 56 기반기"
+      }
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": null,
+      "crossChecked": false
+    }
+  },
+  "20240516001860": {
+    "period": {
+      "year": "2024",
+      "reprt_code": "11013",
+      "label": "1분기보고서",
+      "periodMonth": "03"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 295933800000000,
+        "thstrm_nm": "제 57 기1분기말",
+        "frmtrm": 282463355000000,
+        "frmtrm_nm": "제 56 기말"
+      },
+      "부채총계": {
+        "thstrm": 191027462000000,
+        "thstrm_nm": "제 57 기1분기말",
+        "frmtrm": 180653915000000,
+        "frmtrm_nm": "제 56 기말"
+      },
+      "자본총계": {
+        "thstrm": 104906338000000,
+        "thstrm_nm": "제 57 기1분기말",
+        "frmtrm": 101809440000000,
+        "frmtrm_nm": "제 56 기말"
+      },
+      "매출액": {
+        "thstrm": 40658539000000,
+        "thstrm_nm": "제 57 기1분기",
+        "frmtrm": 37770005000000,
+        "frmtrm_nm": "제 56 기1분기"
+      },
+      "영업이익": {
+        "thstrm": 3557362000000,
+        "thstrm_nm": "제 57 기1분기",
+        "frmtrm": 3642327000000,
+        "frmtrm_nm": "제 56 기1분기"
+      },
+      "당기순이익": {
+        "thstrm": 3376001000000,
+        "thstrm_nm": "제 57 기1분기",
+        "frmtrm": 3419403000000,
+        "frmtrm_nm": "제 56 기1분기"
+      }
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": null,
+      "crossChecked": false
+    }
+  },
+  "20240314001531": {
+    "period": {
+      "year": "2022",
+      "reprt_code": "11011",
+      "label": "사업보고서",
+      "periodMonth": "12"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 255742462000000,
+        "thstrm_nm": "제 55 기",
+        "frmtrm": 233946415000000,
+        "frmtrm_nm": "제 54 기"
+      },
+      "부채총계": {
+        "thstrm": 164845917000000,
+        "thstrm_nm": "제 55 기",
+        "frmtrm": 151330626000000,
+        "frmtrm_nm": "제 54 기"
+      },
+      "자본총계": {
+        "thstrm": 90896545000000,
+        "thstrm_nm": "제 55 기",
+        "frmtrm": 82615789000000,
+        "frmtrm_nm": "제 54 기"
+      },
+      "매출액": {
+        "thstrm": 142527535000000,
+        "thstrm_nm": "제 55 기",
+        "frmtrm": 117610626000000,
+        "frmtrm_nm": "제 54 기"
+      },
+      "영업이익": {
+        "thstrm": 9819769000000,
+        "thstrm_nm": "제 55 기",
+        "frmtrm": 6678949000000,
+        "frmtrm_nm": "제 54 기"
+      }
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": null,
+      "crossChecked": false
+    }
+  },
+  "20240314001466": {
+    "period": {
+      "year": "2021",
+      "reprt_code": "11011",
+      "label": "사업보고서",
+      "periodMonth": "12"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 233946415000000,
+        "thstrm_nm": "제 54 기",
+        "frmtrm": 209344212000000,
+        "frmtrm_nm": "제 53 기"
+      },
+      "부채총계": {
+        "thstrm": 151330626000000,
+        "thstrm_nm": "제 54 기",
+        "frmtrm": 133003242000000,
+        "frmtrm_nm": "제 53 기"
+      },
+      "자본총계": {
+        "thstrm": 82615789000000,
+        "thstrm_nm": "제 54 기",
+        "frmtrm": 76340970000000,
+        "frmtrm_nm": "제 53 기"
+      },
+      "매출액": {
+        "thstrm": 117610626000000,
+        "thstrm_nm": "제 54 기",
+        "frmtrm": 103997601000000,
+        "frmtrm_nm": "제 53 기"
+      },
+      "영업이익": {
+        "thstrm": 6678949000000,
+        "thstrm_nm": "제 54 기",
+        "frmtrm": 2394671000000,
+        "frmtrm_nm": "제 53 기"
+      }
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": null,
+      "crossChecked": false
+    }
+  },
+  "20240313001451": {
+    "period": {
+      "year": "2023",
+      "reprt_code": "11011",
+      "label": "사업보고서",
+      "periodMonth": "12"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 282463355000000,
+        "thstrm_nm": "제 56 기",
+        "frmtrm": 255742462000000,
+        "frmtrm_nm": "제 55 기"
+      },
+      "부채총계": {
+        "thstrm": 180653915000000,
+        "thstrm_nm": "제 56 기",
+        "frmtrm": 164845917000000,
+        "frmtrm_nm": "제 55 기"
+      },
+      "자본총계": {
+        "thstrm": 101809440000000,
+        "thstrm_nm": "제 56 기",
+        "frmtrm": 90896545000000,
+        "frmtrm_nm": "제 55 기"
+      },
+      "매출액": {
+        "thstrm": 162663579000000,
+        "thstrm_nm": "제 56 기",
+        "frmtrm": 142151469000000,
+        "frmtrm_nm": "제 55 기"
+      },
+      "영업이익": {
+        "thstrm": 15126901000000,
+        "thstrm_nm": "제 56 기",
+        "frmtrm": 9824928000000,
+        "frmtrm_nm": "제 55 기"
+      },
+      "당기순이익": {
+        "thstrm": 12272301000000,
+        "thstrm_nm": "제 56 기",
+        "frmtrm": 7983614000000,
+        "frmtrm_nm": "제 55 기"
+      }
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": true,
+      "crossChecked": true
+    }
+  },
+  "20231114002201": {
+    "period": {
+      "year": "2023",
+      "reprt_code": "11014",
+      "label": "3분기보고서",
+      "periodMonth": "09"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 279413837000000,
+        "thstrm_nm": "제 56 기3분기말",
+        "frmtrm": 255742462000000,
+        "frmtrm_nm": "제 55 기말"
+      },
+      "부채총계": {
+        "thstrm": 178098970000000,
+        "thstrm_nm": "제 56 기3분기말",
+        "frmtrm": 164845917000000,
+        "frmtrm_nm": "제 55 기말"
+      },
+      "자본총계": {
+        "thstrm": 101314867000000,
+        "thstrm_nm": "제 56 기3분기말",
+        "frmtrm": 90896545000000,
+        "frmtrm_nm": "제 55 기말"
+      },
+      "매출액": {
+        "thstrm": 41002663000000,
+        "thstrm_nm": "제 56 기3분기",
+        "frmtrm": 37705442000000,
+        "frmtrm_nm": "제 55 기3분기"
+      },
+      "영업이익": {
+        "thstrm": 3821799000000,
+        "thstrm_nm": "제 56 기3분기",
+        "frmtrm": 1551819000000,
+        "frmtrm_nm": "제 55 기3분기"
+      }
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": null,
+      "crossChecked": false
+    }
+  },
+  "20230814002457": {
+    "period": {
+      "year": "2023",
+      "reprt_code": "11012",
+      "label": "반기보고서",
+      "periodMonth": "06"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 271325047000000,
+        "thstrm_nm": "제 56 기반기말",
+        "frmtrm": 255742462000000,
+        "frmtrm_nm": "제 55 기말"
+      },
+      "부채총계": {
+        "thstrm": 173893674000000,
+        "thstrm_nm": "제 56 기반기말",
+        "frmtrm": 164845917000000,
+        "frmtrm_nm": "제 55 기말"
+      },
+      "자본총계": {
+        "thstrm": 97431373000000,
+        "thstrm_nm": "제 56 기반기말",
+        "frmtrm": 90896545000000,
+        "frmtrm_nm": "제 55 기말"
+      },
+      "매출액": {
+        "thstrm": 42249695000000,
+        "thstrm_nm": "제 56 기반기",
+        "frmtrm": 35999896000000,
+        "frmtrm_nm": "제 55 기반기"
+      },
+      "영업이익": {
+        "thstrm": 4237931000000,
+        "thstrm_nm": "제 56 기반기",
+        "frmtrm": 2979794000000,
+        "frmtrm_nm": "제 55 기반기"
+      }
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": null,
+      "crossChecked": false
+    }
+  },
+  "20230515002403": {
+    "period": {
+      "year": "2023",
+      "reprt_code": "11013",
+      "label": "1분기보고서",
+      "periodMonth": "03"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 264363574000000,
+        "thstrm_nm": "제 56 기1분기말",
+        "frmtrm": 255742462000000,
+        "frmtrm_nm": "제 55 기말"
+      },
+      "부채총계": {
+        "thstrm": 170444042000000,
+        "thstrm_nm": "제 56 기1분기말",
+        "frmtrm": 164845917000000,
+        "frmtrm_nm": "제 55 기말"
+      },
+      "자본총계": {
+        "thstrm": 93919532000000,
+        "thstrm_nm": "제 56 기1분기말",
+        "frmtrm": 90896545000000,
+        "frmtrm_nm": "제 55 기말"
+      },
+      "매출액": {
+        "thstrm": 37778693000000,
+        "thstrm_nm": "제 56 기1분기",
+        "frmtrm": 30298568000000,
+        "frmtrm_nm": "제 55 기1분기"
+      },
+      "영업이익": {
+        "thstrm": 3592699000000,
+        "thstrm_nm": "제 56 기1분기",
+        "frmtrm": 1928930000000,
+        "frmtrm_nm": "제 55 기1분기"
+      }
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": false,
+      "arithmeticOk": true,
+      "naverAgree": null,
+      "crossChecked": false
+    }
+  },
+  "20230315001030": {
+    "period": {
+      "year": "2022",
+      "reprt_code": "11011",
+      "label": "사업보고서",
+      "periodMonth": "12"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 255742462000000,
+        "thstrm_nm": "제 55 기",
+        "frmtrm": 233946415000000,
+        "frmtrm_nm": "제 54 기"
+      },
+      "부채총계": {
+        "thstrm": 164845917000000,
+        "thstrm_nm": "제 55 기",
+        "frmtrm": 151330626000000,
+        "frmtrm_nm": "제 54 기"
+      },
+      "자본총계": {
+        "thstrm": 90896545000000,
+        "thstrm_nm": "제 55 기",
+        "frmtrm": 82615789000000,
+        "frmtrm_nm": "제 54 기"
+      },
+      "매출액": {
+        "thstrm": 142527535000000,
+        "thstrm_nm": "제 55 기",
+        "frmtrm": 117610626000000,
+        "frmtrm_nm": "제 54 기"
+      },
+      "영업이익": {
+        "thstrm": 9819769000000,
+        "thstrm_nm": "제 55 기",
+        "frmtrm": 6678949000000,
+        "frmtrm_nm": "제 54 기"
+      }
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": null,
+      "crossChecked": false
+    }
+  }
+}
