@@ -6,6 +6,7 @@ import type { DisclosureInsight, ImpactLevel } from "@/types/dart";
 import { ImpactChip } from "@/components/dashboard/impact-chip";
 import { TagBadge } from "@/components/dashboard/tag-badge";
 import { Navbar } from "@/components/dashboard/navbar";
+import { COMPANY_PROFILES } from "@/lib/company-profiles";
 
 interface TickerData {
   companyName: string;
@@ -63,6 +64,8 @@ export default function TickerPage({ params }: { params: Promise<{ code: string 
       </div>
     );
 
+  const profile = COMPANY_PROFILES[code];
+
   const fmtDate = (s: string) =>
     s.replace(/(\d{4})(\d{2})(\d{2})/, "$1-$2-$3");
 
@@ -104,6 +107,31 @@ export default function TickerPage({ params }: { params: Promise<{ code: string 
       </div>
 
       <div className="max-w-4xl mx-auto px-6 py-6 space-y-6">
+        {/* 회사 소개 */}
+        {profile && (
+          <div className="bg-white border border-gray-200 rounded-lg p-5">
+            <div className="flex items-center gap-2 mb-2">
+              <h2 className="text-sm font-bold text-gray-900">🏢 회사 소개</h2>
+              <span className="text-[11px] text-gray-400">{profile.source}</span>
+            </div>
+            <p className="text-sm font-semibold text-gray-800">{profile.tagline}</p>
+            <p className="text-sm text-gray-600 leading-relaxed mt-1.5">{profile.overview}</p>
+            <div className="mt-4">
+              <p className="text-xs font-bold text-gray-500 mb-2">영위 사업 부문</p>
+              <ul className="space-y-1.5">
+                {profile.segments.map((seg) => (
+                  <li key={seg.name} className="flex gap-2 text-sm">
+                    <span className="shrink-0 font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded px-1.5 py-0.5 text-xs h-fit">
+                      {seg.name}
+                    </span>
+                    <span className="text-gray-600">{seg.desc}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        )}
+
         {/* 조회 기간 */}
         <div className="bg-white border border-gray-200 rounded-lg px-4 py-3 flex flex-wrap items-center gap-3">
           <span className="text-xs font-semibold text-gray-500">📅 조회 기간</span>

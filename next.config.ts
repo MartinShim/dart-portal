@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
   // (동적 경로로 읽으면 Next 파일 트레이싱이 자동 감지하지 못함)
   outputFileTracingIncludes: {
     "/api/dart": ["./data/*-tagged.json"],
-    "/api/ticker/\\[code\\]": ["./data/*-tagged.json"],
+    "/api/ticker/\\[code\\]": ["./data/*-tagged.json", "./data/*-segments.json"],
   },
 };
 
