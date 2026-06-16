@@ -22,6 +22,14 @@ interface SegResult {
   rows: SegRow[];
 }
 
+// 금액 표기: 1조 이상은 '조'(소수1), 1조 미만은 '억'(정수, 천단위 구분)
+function fmtWon(v: number | null): string {
+  if (v == null) return "—";
+  return Math.abs(v) < 1e12
+    ? `${Math.round(v / 1e8).toLocaleString()}억`
+    : `${(v / 1e12).toFixed(1)}조`;
+}
+
 function CompareTable({
   heading,
   subtitle,
@@ -42,7 +50,7 @@ function CompareTable({
   note?: string;
 }) {
   const fmt = (v: number | null, unit: "조원" | "%") =>
-    v == null ? "—" : unit === "조원" ? `${(v / 1e12).toFixed(1)}조` : `${v.toFixed(1)}%`;
+    v == null ? "—" : unit === "조원" ? fmtWon(v) : `${v.toFixed(1)}%`;
 
   const diffCell = (prev: number | null, cur: number | null, isPP?: boolean) => {
     const diff =
@@ -91,7 +99,7 @@ function CompareTable({
 }
 
 function ConsensusBeatTable({ data }: { data: ConsensusBeat }) {
-  const jo = (v: number | null) => (v == null ? "—" : `${(v / 1e12).toFixed(1)}조`);
+  const jo = (v: number | null) => fmtWon(v);
   const order: ("매출액" | "영업이익" | "순이익")[] = ["매출액", "영업이익", "순이익"];
   const rows = order
     .map((k) => ({ label: k, m: data.metrics[k] }))
@@ -207,7 +215,7 @@ export default function DisclosureDetailPage({
   const consensusBeat = insight.consensusBeat;
   // 사업부문별 실적 (단독분기·QoQ) — ticker API가 기간 매칭해 부착
   const segmentResult = (insight as DisclosureInsight & { segmentResult?: SegResult }).segmentResult;
-  const joFmt = (v: number | null) => (v == null ? "—" : `${(v / 1e12).toFixed(1)}조`);
+  const joFmt = (v: number | null) => fmtWon(v);
   const qoqCell = (cur: number | null, prev: number | null) => {
     if (cur == null || prev == null || prev === 0) return <span className="text-gray-300">—</span>;
     const d = (cur / prev - 1) * 100;
@@ -267,13 +275,15 @@ export default function DisclosureDetailPage({
                     <thead>
                       <tr className="text-xs text-gray-400 border-b border-gray-200">
                         <th className="text-left font-medium py-1.5 pr-2" rowSpan={2}>부문</th>
-                        <th className="text-center font-medium py-1.5 px-2 border-l border-gray-100" colSpan={2}>매출</th>
-                        <th className="text-center font-medium py-1.5 px-2 border-l border-gray-100" colSpan={2}>영업이익</th>
+                        <th className="text-center font-medium py-1.5 px-2 border-l border-gray-100" colSpan={3}>매출</th>
+                        <th className="text-center font-medium py-1.5 px-2 border-l border-gray-100" colSpan={3}>영업이익</th>
                       </tr>
                       <tr className="text-[11px] text-gray-400 border-b border-gray-200">
-                        <th className="text-right font-medium py-1 px-2 border-l border-gray-100">당분기</th>
+                        <th className="text-right font-medium py-1 px-2 border-l border-gray-100">{segmentResult.prevLabel ?? "직전분기"}</th>
+                        <th className="text-right font-medium py-1 px-2">당분기</th>
                         <th className="text-right font-medium py-1 px-2">QoQ</th>
-                        <th className="text-right font-medium py-1 px-2 border-l border-gray-100">당분기</th>
+                        <th className="text-right font-medium py-1 px-2 border-l border-gray-100">{segmentResult.prevLabel ?? "직전분기"}</th>
+                        <th className="text-right font-medium py-1 px-2">당분기</th>
                         <th className="text-right font-medium py-1 px-2">QoQ</th>
                       </tr>
                     </thead>
@@ -281,11 +291,17 @@ export default function DisclosureDetailPage({
                       {segmentResult.rows.map((r) => (
                         <tr key={r.name} className="border-b border-gray-100 last:border-0">
                           <td className="py-2 pr-2 text-gray-700 font-medium">{r.name}</td>
-                          <td className="py-2 px-2 text-right tabular-nums font-semibold text-gray-900 whitespace-nowrap border-l border-gray-100">
+                          <td className="py-2 px-2 text-right tabular-nums text-gray-500 whitespace-nowrap border-l border-gray-100">
+                            {joFmt(r.prevRevenue)}
+                          </td>
+                          <td className="py-2 px-2 text-right tabular-nums font-semibold text-gray-900 whitespace-nowrap">
                             {joFmt(r.revenue)}
                           </td>
                           <td className="py-2 px-2 text-right text-xs whitespace-nowrap">{qoqCell(r.revenue, r.prevRevenue)}</td>
-                          <td className="py-2 px-2 text-right tabular-nums font-semibold text-gray-900 whitespace-nowrap border-l border-gray-100">
+                          <td className="py-2 px-2 text-right tabular-nums text-gray-500 whitespace-nowrap border-l border-gray-100">
+                            {joFmt(r.prevOp)}
+                          </td>
+                          <td className="py-2 px-2 text-right tabular-nums font-semibold text-gray-900 whitespace-nowrap">
                             {joFmt(r.op)}
                           </td>
                           <td className="py-2 px-2 text-right text-xs whitespace-nowrap">{qoqCell(r.op, r.prevOp)}</td>
