@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import type { DisclosureInsight } from "@/types/dart";
+import { MDNA_SUMMARIES } from "@/lib/mdna-summaries";
 
 // reportName "분기보고서 (2026.03)" → 기간 키 "2026Q1"
 function periodKey(reportName: string): string | null {
@@ -53,6 +54,17 @@ export async function GET(
     }
   } catch {
     // segments 파일 없음 → 부문 데이터 미부착
+  }
+
+  // 경영진단(MD&A) 요약 부착 — 기간 매칭
+  const mdnaByPeriod = MDNA_SUMMARIES[code] ?? {};
+  if (Object.keys(mdnaByPeriod).length) {
+    for (const ins of tagged.insights ?? []) {
+      const key = periodKey(ins.reportName);
+      if (key && mdnaByPeriod[key]) {
+        (ins as DisclosureInsight & { mdna?: unknown }).mdna = mdnaByPeriod[key];
+      }
+    }
   }
 
   return NextResponse.json(tagged);

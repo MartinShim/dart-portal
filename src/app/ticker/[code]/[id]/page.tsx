@@ -21,6 +21,12 @@ interface SegResult {
   prevLabel: string | null;
   rows: SegRow[];
 }
+interface Mdna {
+  summary: string;
+  positives: string[];
+  risks: string[];
+  outlook: string;
+}
 
 // 금액 표기: 1조 이상은 '조'(소수1), 1조 미만은 '억'(정수, 천단위 구분)
 function fmtWon(v: number | null): string {
@@ -215,6 +221,7 @@ export default function DisclosureDetailPage({
   const consensusBeat = insight.consensusBeat;
   // 사업부문별 실적 (단독분기·QoQ) — ticker API가 기간 매칭해 부착
   const segmentResult = (insight as DisclosureInsight & { segmentResult?: SegResult }).segmentResult;
+  const mdna = (insight as DisclosureInsight & { mdna?: Mdna }).mdna;
   const joFmt = (v: number | null) => fmtWon(v);
   const qoqCell = (cur: number | null, prev: number | null) => {
     if (cur == null || prev == null || prev === 0) return <span className="text-gray-300">—</span>;
@@ -313,6 +320,51 @@ export default function DisclosureDetailPage({
                 <p className="text-[11px] text-gray-400 mt-2">
                   ※ 단독분기 기준(누적−직전누적 환산). {segSource ?? "DART 정기공시 영업부문 정보"}.
                 </p>
+              </div>
+            )}
+
+            {/* 경영진단(MD&A) — 회사가 직접 쓴 서술 요약 */}
+            {mdna && (
+              <div className="mt-4 pt-3 border-t border-gray-100">
+                <p className="text-xs font-semibold text-gray-600 mb-1.5">
+                  📝 경영진단(MD&amp;A) 요약 <span className="text-gray-400 font-normal">— 회사가 직접 쓴 서술</span>
+                </p>
+                <p className="text-sm text-gray-700 leading-relaxed">{mdna.summary}</p>
+                <div className="grid sm:grid-cols-2 gap-3 mt-3">
+                  {mdna.positives.length > 0 && (
+                    <div className="bg-emerald-50/60 border border-emerald-100 rounded-md p-2.5">
+                      <p className="text-[11px] font-bold text-emerald-700 mb-1">🟢 회사가 말하는 긍정</p>
+                      <ul className="space-y-1">
+                        {mdna.positives.map((p, i) => (
+                          <li key={i} className="text-xs text-gray-700 flex gap-1.5">
+                            <span className="text-emerald-400 mt-0.5">▲</span>
+                            <span>{p}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  {mdna.risks.length > 0 && (
+                    <div className="bg-red-50/60 border border-red-100 rounded-md p-2.5">
+                      <p className="text-[11px] font-bold text-red-700 mb-1">🔴 회사가 말하는 리스크</p>
+                      <ul className="space-y-1">
+                        {mdna.risks.map((r, i) => (
+                          <li key={i} className="text-xs text-gray-700 flex gap-1.5">
+                            <span className="text-red-400 mt-0.5">▼</span>
+                            <span>{r}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+                {mdna.outlook && (
+                  <p className="text-xs text-gray-600 mt-3">
+                    <span className="font-semibold text-gray-500">🔭 전망 </span>
+                    {mdna.outlook}
+                  </p>
+                )}
+                <p className="text-[11px] text-gray-400 mt-2">※ DART 정기공시 'IV. 이사의 경영진단 및 분석의견' 요약.</p>
               </div>
             )}
           </div>
