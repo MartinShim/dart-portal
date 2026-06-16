@@ -268,61 +268,6 @@ export default function DisclosureDetailPage({
               ))}
             </ul>
 
-            {/* 사업부문별 실적 (단독분기 · 직전분기 QoQ 비교) */}
-            {segmentResult && segmentResult.rows.length > 0 && (
-              <div className="mt-4 pt-3 border-t border-gray-100">
-                <p className="text-xs font-semibold text-gray-600 mb-2">
-                  🏭 사업부문별 실적{" "}
-                  <span className="text-gray-400 font-normal">
-                    (단독분기{segmentResult.prevLabel ? ` · 직전 ${segmentResult.prevLabel} 대비 QoQ` : ""})
-                  </span>
-                </p>
-                <div className="overflow-x-auto">
-                  <table className="w-full text-sm">
-                    <thead>
-                      <tr className="text-xs text-gray-400 border-b border-gray-200">
-                        <th className="text-left font-medium py-1.5 pr-2" rowSpan={2}>부문</th>
-                        <th className="text-center font-medium py-1.5 px-2 border-l border-gray-100" colSpan={3}>매출</th>
-                        <th className="text-center font-medium py-1.5 px-2 border-l border-gray-100" colSpan={3}>영업이익</th>
-                      </tr>
-                      <tr className="text-[11px] text-gray-400 border-b border-gray-200">
-                        <th className="text-right font-medium py-1 px-2 border-l border-gray-100">{segmentResult.prevLabel ?? "직전분기"}</th>
-                        <th className="text-right font-medium py-1 px-2">당분기</th>
-                        <th className="text-right font-medium py-1 px-2">QoQ</th>
-                        <th className="text-right font-medium py-1 px-2 border-l border-gray-100">{segmentResult.prevLabel ?? "직전분기"}</th>
-                        <th className="text-right font-medium py-1 px-2">당분기</th>
-                        <th className="text-right font-medium py-1 px-2">QoQ</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {segmentResult.rows.map((r) => (
-                        <tr key={r.name} className="border-b border-gray-100 last:border-0">
-                          <td className="py-2 pr-2 text-gray-700 font-medium">{r.name}</td>
-                          <td className="py-2 px-2 text-right tabular-nums text-gray-500 whitespace-nowrap border-l border-gray-100">
-                            {joFmt(r.prevRevenue)}
-                          </td>
-                          <td className="py-2 px-2 text-right tabular-nums font-semibold text-gray-900 whitespace-nowrap">
-                            {joFmt(r.revenue)}
-                          </td>
-                          <td className="py-2 px-2 text-right text-xs whitespace-nowrap">{qoqCell(r.revenue, r.prevRevenue)}</td>
-                          <td className="py-2 px-2 text-right tabular-nums text-gray-500 whitespace-nowrap border-l border-gray-100">
-                            {joFmt(r.prevOp)}
-                          </td>
-                          <td className="py-2 px-2 text-right tabular-nums font-semibold text-gray-900 whitespace-nowrap">
-                            {joFmt(r.op)}
-                          </td>
-                          <td className="py-2 px-2 text-right text-xs whitespace-nowrap">{qoqCell(r.op, r.prevOp)}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-                <p className="text-[11px] text-gray-400 mt-2">
-                  ※ 단독분기 기준(누적−직전누적 환산). {segSource ?? "DART 정기공시 영업부문 정보"}.
-                </p>
-              </div>
-            )}
-
             {/* 경영진단(MD&A) — 회사가 직접 쓴 서술 요약 */}
             {mdna && (
               <div className="mt-4 pt-3 border-t border-gray-100">
@@ -458,6 +403,61 @@ export default function DisclosureDetailPage({
                 : ""
             } 출처 DART.`}
           />
+        )}
+
+        {/* 4-1-1. 사업부문별 실적 (단독분기 · 직전분기 QoQ) — QoQ 아래, 컨센서스 위 */}
+        {segmentResult && segmentResult.rows.length > 0 && (
+          <div className="bg-white rounded-lg border border-gray-200 p-4">
+            <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">
+              🏭 사업부문별 실적{" "}
+              <span className="text-gray-400 normal-case">
+                (단독분기{segmentResult.prevLabel ? ` · 직전 ${segmentResult.prevLabel} 대비 QoQ` : ""})
+              </span>
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="text-xs text-gray-400 border-b border-gray-200">
+                    <th className="text-left font-medium py-1.5 pr-2" rowSpan={2}>부문</th>
+                    <th className="text-center font-medium py-1.5 px-2 border-l border-gray-100" colSpan={3}>매출</th>
+                    <th className="text-center font-medium py-1.5 px-2 border-l border-gray-100" colSpan={3}>영업이익</th>
+                  </tr>
+                  <tr className="text-[11px] text-gray-400 border-b border-gray-200">
+                    <th className="text-right font-medium py-1 px-2 border-l border-gray-100">{segmentResult.prevLabel ?? "직전분기"}</th>
+                    <th className="text-right font-medium py-1 px-2">당분기</th>
+                    <th className="text-right font-medium py-1 px-2">QoQ</th>
+                    <th className="text-right font-medium py-1 px-2 border-l border-gray-100">{segmentResult.prevLabel ?? "직전분기"}</th>
+                    <th className="text-right font-medium py-1 px-2">당분기</th>
+                    <th className="text-right font-medium py-1 px-2">QoQ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {segmentResult.rows.map((r) => (
+                    <tr key={r.name} className="border-b border-gray-100 last:border-0">
+                      <td className="py-2 pr-2 text-gray-700 font-medium">{r.name}</td>
+                      <td className="py-2 px-2 text-right tabular-nums text-gray-500 whitespace-nowrap border-l border-gray-100">
+                        {joFmt(r.prevRevenue)}
+                      </td>
+                      <td className="py-2 px-2 text-right tabular-nums font-semibold text-gray-900 whitespace-nowrap">
+                        {joFmt(r.revenue)}
+                      </td>
+                      <td className="py-2 px-2 text-right text-xs whitespace-nowrap">{qoqCell(r.revenue, r.prevRevenue)}</td>
+                      <td className="py-2 px-2 text-right tabular-nums text-gray-500 whitespace-nowrap border-l border-gray-100">
+                        {joFmt(r.prevOp)}
+                      </td>
+                      <td className="py-2 px-2 text-right tabular-nums font-semibold text-gray-900 whitespace-nowrap">
+                        {joFmt(r.op)}
+                      </td>
+                      <td className="py-2 px-2 text-right text-xs whitespace-nowrap">{qoqCell(r.op, r.prevOp)}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-[11px] text-gray-400 mt-2">
+              ※ 단독분기 기준(누적−직전누적 환산). {segSource ?? "DART 정기공시 영업부문 정보"}.
+            </p>
+          </div>
         )}
 
         {/* 4-2. 컨센서스 상회/하회 (실적 공시) */}
