@@ -686,9 +686,14 @@ const insights = core.map((it) => {
     consensusBeat = { gsGb: beat.gsGb, gsYm: beat.gsYm, dataGb: beat.dataGb, beatCount, total, metrics };
   }
 
-  // 턴어라운드 태그 (영업이익·분기 기준) — 최신 분기·연간 공시에만
-  if (it.rcept_no === latestQuarterlyId || it.rcept_no === latestAnnualId) {
+  // 턴어라운드 태그 (영업이익 기준) — 분기 턴어라운드(Q)는 최신 분기·반기보고서에만,
+  // 연간 턴어라운드(A)는 최신 사업보고서에만 부착 (분기 모멘텀을 연간 공시에 붙이지 않음)
+  if (it.rcept_no === latestQuarterlyId) {
     const ttag = turnaroundTag(TURNAROUND.Q?.OPER?.category);
+    if (ttag && !tags.includes(ttag)) tags.push(ttag);
+  }
+  if (it.rcept_no === latestAnnualId) {
+    const ttag = turnaroundTag(TURNAROUND.A?.OPER?.category);
     if (ttag && !tags.includes(ttag)) tags.push(ttag);
   }
 
