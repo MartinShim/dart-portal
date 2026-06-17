@@ -17,6 +17,10 @@ const riskTags = new Set<InsightTag>([
   "내부자(임원) 매도",
   "부동산 PF 우발채무 위험",
   "영업이익 컨센서스 하회",
+  "차입 부담 (고부채)",
+  "이자 못 갚을 위험",
+  "현금 소진 (FCF 마이너스)",
+  "배당 축소",
 ]);
 
 const goodTags = new Set<InsightTag>([
@@ -40,6 +44,10 @@ const goodTags = new Set<InsightTag>([
   "적자폭 축소",
   "영업이익 10% 이상 성장",
   "영업이익 30% 이상 성장",
+  "고ROE 우량",
+  "재무 안정 우량",
+  "잉여현금 창출 (FCF+)",
+  "배당 확대",
 ]);
 
 function getTagStyle(tag: InsightTag): string {

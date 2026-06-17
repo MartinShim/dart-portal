@@ -31,6 +31,22 @@ const TAG_GROUPS = [
     label: "D. 수급 주체 & 간접투자",
     tags: ["내부자(임원) 대량매수", "내부자(임원) 매도", "5% 이상 큰손 등장", "글로벌 ETF 편입", "테마 ETF 리밸런싱"] as InsightTag[],
   },
+  {
+    label: "F. 수익성",
+    tags: ["고ROE 우량"] as InsightTag[],
+  },
+  {
+    label: "G. 안정성·재무건전성",
+    tags: ["재무 안정 우량", "차입 부담 (고부채)", "이자 못 갚을 위험"] as InsightTag[],
+  },
+  {
+    label: "H. 현금흐름",
+    tags: ["잉여현금 창출 (FCF+)", "현금 소진 (FCF 마이너스)"] as InsightTag[],
+  },
+  {
+    label: "I. 배당 (주주환원)",
+    tags: ["배당 확대", "배당 축소"] as InsightTag[],
+  },
 ];
 
 // tag-badge.tsx의 riskTags / goodTags와 동일하게 유지
@@ -49,6 +65,10 @@ const RISK_TAGS: InsightTag[] = [
   "내부자(임원) 매도",
   "부동산 PF 우발채무 위험",
   "영업이익 컨센서스 하회",
+  "차입 부담 (고부채)",
+  "이자 못 갚을 위험",
+  "현금 소진 (FCF 마이너스)",
+  "배당 축소",
 ];
 
 const GOOD_TAGS: InsightTag[] = [
@@ -72,6 +92,10 @@ const GOOD_TAGS: InsightTag[] = [
   "적자폭 축소",
   "영업이익 10% 이상 성장",
   "영업이익 30% 이상 성장",
+  "고ROE 우량",
+  "재무 안정 우량",
+  "잉여현금 창출 (FCF+)",
+  "배당 확대",
 ];
 
 interface Props {

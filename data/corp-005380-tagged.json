@@ -1,5 +1,5 @@
 {
-  "analyzedAt": "2026-06-14T13:04:00.755Z",
+  "analyzedAt": "2026-06-17T14:48:48.464Z",
   "engine": "claude-max-plan (dart-insight-tagger)",
   "stockCode": "005380",
   "companyName": "현대자동차",
@@ -1189,6 +1189,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -1221,6 +1222,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -1254,6 +1256,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -1289,6 +1292,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -1316,6 +1320,7 @@
       "tags": [
         "분기 실적 상승",
         "질적 성장 (마진 개선)",
+        "잉여현금 창출 (FCF+)",
         "영업이익 컨센서스 하회",
         "영업이익 30% 이상 성장"
       ],
@@ -1380,6 +1385,25 @@
             "isPP": true
           }
         ]
+      },
+      "metrics": {
+        "isAnnual": false,
+        "profitability": {
+          "roe": null,
+          "roa": null,
+          "opMargin": 5.4739812367239375,
+          "netMargin": 5.6268800249096165
+        },
+        "stability": {
+          "debtRatio": 190.2848709075362,
+          "currentRatio": 131.37497783713692,
+          "interestCoverage": 7.157353355552836
+        },
+        "cashflow": {
+          "operatingCF": 3312923000000,
+          "fcf": 792214000000
+        },
+        "dividend": null
       },
       "qoq": {
         "prevLabel": "2025 4분기",
@@ -1502,6 +1526,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -1535,6 +1560,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -1570,6 +1596,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -1602,6 +1629,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -1635,6 +1663,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -1670,6 +1699,7 @@
       "evidence": "자사주 취득 결정·결과 공시로 주주환원 의지 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -1704,6 +1734,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -1736,6 +1767,7 @@
       "evidence": "자사주 처분은 오버행 가능성이 있어 취득과 달리 중립으로 평가.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -1770,6 +1802,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -1805,6 +1838,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -1837,6 +1871,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -1869,6 +1904,7 @@
       "evidence": "자사주 처분은 오버행 가능성이 있어 취득과 달리 중립으로 평가.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -1902,6 +1938,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -1929,6 +1966,8 @@
       "tags": [
         "분기 실적 하락",
         "외형만 성장 (내실 악화)",
+        "현금 소진 (FCF 마이너스)",
+        "배당 축소",
         "영업이익 컨센서스 하회",
         "영업이익 30% 이상 성장"
       ],
@@ -1993,6 +2032,30 @@
             "isPP": true
           }
         ]
+      },
+      "metrics": {
+        "isAnnual": true,
+        "profitability": {
+          "roe": 8.119794870335733,
+          "roa": 2.810063642775719,
+          "opMargin": 6.157087600022834,
+          "netMargin": 5.564846249705081
+        },
+        "stability": {
+          "debtRatio": 188.95412711418805,
+          "currentRatio": 136.34943675886316,
+          "interestCoverage": 11.35446530942013
+        },
+        "cashflow": {
+          "operatingCF": -5991270000000,
+          "fcf": -14358034000000
+        },
+        "dividend": {
+          "payoutRatio": 27.7,
+          "dps": 10000,
+          "prevDps": 12000,
+          "dividendYield": 1.9
+        }
       },
       "qoq": {
         "prevLabel": "2025 3분기",
@@ -2115,6 +2178,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2148,6 +2212,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2183,6 +2248,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2215,6 +2281,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2247,6 +2314,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2280,6 +2348,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2315,6 +2384,7 @@
       "evidence": "자사주 취득 결정·결과 공시로 주주환원 의지 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2349,6 +2419,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2381,6 +2452,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2414,6 +2486,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2449,6 +2522,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2481,6 +2555,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2514,6 +2589,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2550,6 +2626,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2585,6 +2662,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2617,6 +2695,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2649,6 +2728,7 @@
       "evidence": "자사주 처분은 오버행 가능성이 있어 취득과 달리 중립으로 평가.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2683,6 +2763,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2718,6 +2799,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2744,6 +2826,7 @@
       "disclosureType": "",
       "tags": [
         "분기 실적 하락",
+        "현금 소진 (FCF 마이너스)",
         "영업이익 컨센서스 상회"
       ],
       "impactLevel": "악재",
@@ -2807,6 +2890,25 @@
             "isPP": true
           }
         ]
+      },
+      "metrics": {
+        "isAnnual": false,
+        "profitability": {
+          "roe": null,
+          "roa": null,
+          "opMargin": 5.430623639918009,
+          "netMargin": 5.453989782165998
+        },
+        "stability": {
+          "debtRatio": 182.7611786956804,
+          "currentRatio": 138.03273052030835,
+          "interestCoverage": 11.906233576094301
+        },
+        "cashflow": {
+          "operatingCF": -3900860000000,
+          "fcf": -9446785000000
+        },
+        "dividend": null
       },
       "qoq": {
         "prevLabel": "2025 2분기",
@@ -2930,6 +3032,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2965,6 +3068,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2997,6 +3101,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3029,6 +3134,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3061,6 +3167,7 @@
       "evidence": "자사주 처분은 오버행 가능성이 있어 취득과 달리 중립으로 평가.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3094,6 +3201,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3127,6 +3235,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3162,6 +3271,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3194,6 +3304,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3227,6 +3338,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3262,6 +3374,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3295,6 +3408,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3324,7 +3438,8 @@
       "disclosureType": "",
       "tags": [
         "분기 실적 하락",
-        "외형만 성장 (내실 악화)"
+        "외형만 성장 (내실 악화)",
+        "현금 소진 (FCF 마이너스)"
       ],
       "impactLevel": "악재",
       "summary": "영업이익 전년비 -15.8%·전분기비 -0.9% 동반 감소. 실적 모멘텀 약화.",
@@ -3387,6 +3502,25 @@
             "isPP": true
           }
         ]
+      },
+      "metrics": {
+        "isAnnual": false,
+        "profitability": {
+          "roe": null,
+          "roa": null,
+          "opMargin": 7.458779986040456,
+          "netMargin": 6.731442712448405
+        },
+        "stability": {
+          "debtRatio": 179.5051304246043,
+          "currentRatio": 139.8116286063948,
+          "interestCoverage": 9.764341795625345
+        },
+        "cashflow": {
+          "operatingCF": 959651000000,
+          "fcf": -2897022000000
+        },
+        "dividend": null
       },
       "qoq": {
         "prevLabel": "2025 1분기",
@@ -3481,6 +3615,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3513,6 +3648,7 @@
       "evidence": "자사주 처분은 오버행 가능성이 있어 취득과 달리 중립으로 평가.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3546,6 +3682,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3579,6 +3716,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3614,6 +3752,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3646,6 +3785,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3678,6 +3818,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3710,6 +3851,7 @@
       "evidence": "자사주 처분은 오버행 가능성이 있어 취득과 달리 중립으로 평가.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3744,6 +3886,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3779,6 +3922,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3811,6 +3955,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3843,6 +3988,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3876,6 +4022,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3911,6 +4058,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3944,6 +4092,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3979,6 +4128,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -4005,7 +4155,8 @@
       "disclosureType": "",
       "tags": [
         "분기 실적 상승",
-        "질적 성장 (마진 개선)"
+        "질적 성장 (마진 개선)",
+        "현금 소진 (FCF 마이너스)"
       ],
       "impactLevel": "호재",
       "summary": "영업이익 전년비 +2.1%·전분기비 +28.8% 동반 증가. 분기 실적 모멘텀 강세.",
@@ -4068,6 +4219,25 @@
             "isPP": true
           }
         ]
+      },
+      "metrics": {
+        "isAnnual": false,
+        "profitability": {
+          "roe": null,
+          "roa": null,
+          "opMargin": 8.182373797228822,
+          "netMargin": 7.6161777217275155
+        },
+        "stability": {
+          "debtRatio": 182.67164777444438,
+          "currentRatio": 142.23944264898455,
+          "interestCoverage": 12.596272710570013
+        },
+        "cashflow": {
+          "operatingCF": 2002906000000,
+          "fcf": -81957000000
+        },
+        "dividend": null
       },
       "qoq": {
         "prevLabel": "2024 4분기",
@@ -4160,6 +4330,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -4193,6 +4364,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -4228,6 +4400,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -4260,6 +4433,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -4292,6 +4466,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -4325,6 +4500,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -4360,6 +4536,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -4392,6 +4569,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -4424,6 +4602,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -4457,6 +4636,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -4492,6 +4672,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -4524,6 +4705,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -4551,6 +4733,8 @@
       "tags": [
         "분기 실적 하락",
         "외형만 성장 (내실 악화)",
+        "현금 소진 (FCF 마이너스)",
+        "배당 확대",
         "영업이익 컨센서스 하회"
       ],
       "impactLevel": "악재",
@@ -4614,6 +4798,30 @@
             "isPP": true
           }
         ]
+      },
+      "metrics": {
+        "isAnnual": true,
+        "profitability": {
+          "roe": 10.999630325045992,
+          "roa": 3.8934576710476785,
+          "opMargin": 8.126176057290452,
+          "netMargin": 7.54997486091985
+        },
+        "stability": {
+          "debtRatio": 182.51572906110817,
+          "currentRatio": 145.59779497437816,
+          "interestCoverage": 15.847283014542302
+        },
+        "cashflow": {
+          "operatingCF": -5661641000000,
+          "fcf": -13722974000000
+        },
+        "dividend": {
+          "payoutRatio": 25.1,
+          "dps": 12000,
+          "prevDps": 11400,
+          "dividendYield": 5.9
+        }
       },
       "qoq": {
         "prevLabel": "2024 3분기",
@@ -4737,6 +4945,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -4770,6 +4979,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -4805,6 +5015,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -4837,6 +5048,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -4869,6 +5081,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -4901,6 +5114,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -4933,6 +5147,7 @@
       "evidence": "자사주 취득 결정·결과 공시로 주주환원 의지 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -4967,6 +5182,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -5000,6 +5216,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -5035,6 +5252,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -5067,6 +5285,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -5100,6 +5319,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -5135,6 +5355,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -5167,6 +5388,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -5200,6 +5422,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -5235,6 +5458,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -5268,6 +5492,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -5303,6 +5528,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -5335,6 +5561,7 @@
       "evidence": "해외 DR 등 상장·폐지 절차 공시로 본주 영향 제한적.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -5365,6 +5592,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -5397,6 +5625,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -5429,6 +5658,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -5462,6 +5692,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -5497,6 +5728,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -5529,6 +5761,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -5561,6 +5794,7 @@
       "evidence": "자사주 취득 결정·결과 공시로 주주환원 의지 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -5595,6 +5829,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -5620,7 +5855,8 @@
       "reportName": "분기보고서 (2024.09)",
       "disclosureType": "",
       "tags": [
-        "분기 실적 하락"
+        "분기 실적 하락",
+        "현금 소진 (FCF 마이너스)"
       ],
       "impactLevel": "악재",
       "summary": "영업이익 전년비 -6.5%·전분기비 -16.3% 동반 감소. 실적 모멘텀 약화.",
@@ -5683,6 +5919,25 @@
             "isPP": true
           }
         ]
+      },
+      "metrics": {
+        "isAnnual": false,
+        "profitability": {
+          "roe": null,
+          "roa": null,
+          "opMargin": 8.341577306101714,
+          "netMargin": 7.467911867621598
+        },
+        "stability": {
+          "debtRatio": 174.48260454698317,
+          "currentRatio": 153.47922468362665,
+          "interestCoverage": 15.91638442186486
+        },
+        "cashflow": {
+          "operatingCF": -1730442000000,
+          "fcf": -7355035000000
+        },
+        "dividend": null
       },
       "qoq": {
         "prevLabel": "2024 2분기",
@@ -5777,6 +6032,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -5810,6 +6066,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -5845,6 +6102,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -5877,6 +6135,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -5909,6 +6168,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -5941,6 +6201,7 @@
       "evidence": "해외 DR 등 상장·폐지 절차 공시로 본주 영향 제한적.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -5971,6 +6232,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -6004,6 +6266,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -6039,6 +6302,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -6071,6 +6335,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -6104,6 +6369,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -6139,6 +6405,7 @@
       "evidence": "자사주 처분은 오버행 가능성이 있어 취득과 달리 중립으로 평가.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -6172,6 +6439,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -6204,6 +6472,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -6236,6 +6505,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -6268,6 +6538,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -6300,6 +6571,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -6333,6 +6605,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -6368,6 +6641,7 @@
       "evidence": "자사주 처분은 오버행 가능성이 있어 취득과 달리 중립으로 평가.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -6395,7 +6669,8 @@
       "disclosureType": "",
       "tags": [
         "분기 실적 상승",
-        "질적 성장 (마진 개선)"
+        "질적 성장 (마진 개선)",
+        "현금 소진 (FCF 마이너스)"
       ],
       "impactLevel": "호재",
       "summary": "영업이익 전년비 +0.7%·전분기비 +20.3% 동반 증가. 분기 실적 모멘텀 강세.",
@@ -6458,6 +6733,25 @@
             "isPP": true
           }
         ]
+      },
+      "metrics": {
+        "isAnnual": false,
+        "profitability": {
+          "roe": null,
+          "roa": null,
+          "opMargin": 9.504844017894838,
+          "netMargin": 9.271093147376309
+        },
+        "stability": {
+          "debtRatio": 179.5102795395203,
+          "currentRatio": 145.5311821351828,
+          "interestCoverage": 14.86383988273258
+        },
+        "cashflow": {
+          "operatingCF": 1228407000000,
+          "fcf": -2594193000000
+        },
+        "dividend": null
       },
       "qoq": {
         "prevLabel": "2024 1분기",
@@ -6550,6 +6844,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -6582,6 +6877,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -6615,6 +6911,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -6650,6 +6947,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -6682,6 +6980,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -6715,6 +7014,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -6750,6 +7050,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -6782,6 +7083,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -6814,6 +7116,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -6847,6 +7150,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -6882,6 +7186,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -6914,6 +7219,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -6946,6 +7252,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -6979,6 +7286,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -7014,6 +7322,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -7040,7 +7349,8 @@
       "disclosureType": "",
       "tags": [
         "분기 실적 상승",
-        "질적 성장 (마진 개선)"
+        "질적 성장 (마진 개선)",
+        "현금 소진 (FCF 마이너스)"
       ],
       "impactLevel": "호재",
       "summary": "영업이익 전년비 -2.3% 감소했으나 전분기 대비 +2.4% 반등 — 바닥 통과 신호 가능.",
@@ -7103,6 +7413,25 @@
             "isPP": true
           }
         ]
+      },
+      "metrics": {
+        "isAnnual": false,
+        "profitability": {
+          "roe": null,
+          "roa": null,
+          "opMargin": 8.749360128262355,
+          "netMargin": 8.303301306522599
+        },
+        "stability": {
+          "debtRatio": 182.09334692437744,
+          "currentRatio": 146.54265338605882,
+          "interestCoverage": 18.05437585009846
+        },
+        "cashflow": {
+          "operatingCF": -942600000000,
+          "fcf": -2799894000000
+        },
+        "dividend": null
       },
       "qoq": {
         "prevLabel": "2023 4분기",
@@ -7197,6 +7526,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -7229,6 +7559,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -7261,6 +7592,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -7293,6 +7625,7 @@
       "evidence": "자사주 처분은 오버행 가능성이 있어 취득과 달리 중립으로 평가.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -7327,6 +7660,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -7362,6 +7696,7 @@
       "evidence": "자사주 처분은 오버행 가능성이 있어 취득과 달리 중립으로 평가.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -7395,6 +7730,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -7428,6 +7764,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -7463,6 +7800,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -7495,6 +7833,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -7527,6 +7866,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -7560,6 +7900,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -7595,6 +7936,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -7627,6 +7969,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -7653,7 +7996,9 @@
       "disclosureType": "연",
       "tags": [
         "분기 실적 상승",
-        "질적 성장 (마진 개선)"
+        "질적 성장 (마진 개선)",
+        "잉여현금 창출 (FCF+)",
+        "배당 확대"
       ],
       "impactLevel": "호재",
       "summary": "사업보고서 기준 매출·영업이익 동반 개선. 수익성 향상.",
@@ -7711,6 +8056,30 @@
           }
         ]
       },
+      "metrics": {
+        "isAnnual": true,
+        "profitability": {
+          "roe": 0,
+          "roa": 0,
+          "opMargin": 6.889734674777053,
+          "netMargin": 0
+        },
+        "stability": {
+          "debtRatio": 181.35553667083826,
+          "currentRatio": 129.84085908608373,
+          "interestCoverage": 9.31465394582576
+        },
+        "cashflow": {
+          "operatingCF": 10627311000000,
+          "fcf": 6612342000000
+        },
+        "dividend": {
+          "payoutRatio": 24.9,
+          "dps": 7000,
+          "prevDps": 5000,
+          "dividendYield": 4.5
+        }
+      },
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -7740,7 +8109,8 @@
       "disclosureType": "연",
       "tags": [
         "분기 실적 상승",
-        "질적 성장 (마진 개선)"
+        "질적 성장 (마진 개선)",
+        "현금 소진 (FCF 마이너스)"
       ],
       "impactLevel": "호재",
       "summary": "사업보고서 기준 매출·영업이익 동반 개선. 수익성 향상.",
@@ -7798,6 +8168,25 @@
           }
         ]
       },
+      "metrics": {
+        "isAnnual": true,
+        "profitability": {
+          "roe": 0,
+          "roa": 0,
+          "opMargin": 5.678865275319596,
+          "netMargin": 0
+        },
+        "stability": {
+          "debtRatio": 183.17397658696933,
+          "currentRatio": 137.87328123992253,
+          "interestCoverage": 12.178751299210445
+        },
+        "cashflow": {
+          "operatingCF": -1176416000000,
+          "fcf": -5480750000000
+        },
+        "dividend": null
+      },
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -7828,6 +8217,8 @@
       "tags": [
         "분기 실적 하락",
         "외형만 성장 (내실 악화)",
+        "현금 소진 (FCF 마이너스)",
+        "배당 확대",
         "영업이익 컨센서스 하회"
       ],
       "impactLevel": "호재",
@@ -7891,6 +8282,30 @@
             "isPP": true
           }
         ]
+      },
+      "metrics": {
+        "isAnnual": true,
+        "profitability": {
+          "roe": 12.054187705973042,
+          "roa": 4.3447409310846705,
+          "opMargin": 9.299500904255893,
+          "netMargin": 7.544590544143874
+        },
+        "stability": {
+          "debtRatio": 177.4431869971979,
+          "currentRatio": 138.66112453183084,
+          "interestCoverage": 15.583497476048212
+        },
+        "cashflow": {
+          "operatingCF": -2518760000000,
+          "fcf": -9589518000000
+        },
+        "dividend": {
+          "payoutRatio": 25.1,
+          "dps": 11400,
+          "prevDps": 7000,
+          "dividendYield": 4.7
+        }
       },
       "qoq": {
         "prevLabel": "2023 3분기",
@@ -8007,6 +8422,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -8040,6 +8456,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -8075,6 +8492,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -8107,6 +8525,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -8139,6 +8558,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -8171,6 +8591,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -8204,6 +8625,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -8239,6 +8661,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -8271,6 +8694,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -8304,6 +8728,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -8339,6 +8764,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -8371,6 +8797,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -8403,6 +8830,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -8436,6 +8864,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -8472,6 +8901,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -8507,6 +8937,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -8539,6 +8970,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -8571,6 +9003,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -8603,6 +9036,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -8635,6 +9069,7 @@
       "evidence": "자사주 처분은 오버행 가능성이 있어 취득과 달리 중립으로 평가.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -8668,6 +9103,7 @@
       "evidence": "2023년 연간 영업이익 6.6조로 전년(2022년 43.4조) 대비 약 -85% 급감. 메모리 한파 직격.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -8703,6 +9139,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -8728,7 +9165,8 @@
       "reportName": "분기보고서 (2023.09)",
       "disclosureType": "",
       "tags": [
-        "분기 실적 하락"
+        "분기 실적 하락",
+        "현금 소진 (FCF 마이너스)"
       ],
       "impactLevel": "악재",
       "summary": "영업이익 전년비 +146.3% 개선됐으나 전분기 대비 -9.8% 감소 — 분기 모멘텀 둔화.",
@@ -8785,6 +9223,25 @@
             "isPP": true
           }
         ]
+      },
+      "metrics": {
+        "isAnnual": false,
+        "profitability": {
+          "roe": null,
+          "roa": null,
+          "opMargin": 9.320855574673285,
+          "netMargin": 0
+        },
+        "stability": {
+          "debtRatio": 175.78759689829135,
+          "currentRatio": 137.76305830010506,
+          "interestCoverage": 12.98628586962062
+        },
+        "cashflow": {
+          "operatingCF": -349771000000,
+          "fcf": -4777071000000
+        },
+        "dividend": null
       },
       "qoq": {
         "prevLabel": "2023 2분기",
@@ -8872,6 +9329,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -8904,6 +9362,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -8936,6 +9395,7 @@
       "evidence": "2023년 연간 영업이익 6.6조로 전년(2022년 43.4조) 대비 약 -85% 급감. 메모리 한파 직격.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -8971,6 +9431,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -9003,6 +9464,7 @@
       "evidence": "자사주 처분은 오버행 가능성이 있어 취득과 달리 중립으로 평가.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -9036,6 +9498,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -9068,6 +9531,7 @@
       "evidence": "2023년 연간 영업이익 6.6조로 전년(2022년 43.4조) 대비 약 -85% 급감. 메모리 한파 직격.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -9103,6 +9567,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -9135,6 +9600,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -9167,6 +9633,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -9199,6 +9666,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -9231,6 +9699,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -9263,6 +9732,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -9295,6 +9765,7 @@
       "evidence": "2023년 연간 영업이익 6.6조로 전년(2022년 43.4조) 대비 약 -85% 급감. 메모리 한파 직격.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -9330,6 +9801,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -9362,6 +9834,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -9394,6 +9867,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -9426,6 +9900,7 @@
       "evidence": "2023년 연간 영업이익 6.6조로 전년(2022년 43.4조) 대비 약 -85% 급감. 메모리 한파 직격.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -9461,6 +9936,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -9487,7 +9963,8 @@
       "disclosureType": "",
       "tags": [
         "분기 실적 상승",
-        "질적 성장 (마진 개선)"
+        "질적 성장 (마진 개선)",
+        "현금 소진 (FCF 마이너스)"
       ],
       "impactLevel": "호재",
       "summary": "영업이익 전년비 +42.2%·전분기비 +18.0% 동반 증가. 분기 실적 모멘텀 강세.",
@@ -9544,6 +10021,25 @@
             "isPP": true
           }
         ]
+      },
+      "metrics": {
+        "isAnnual": false,
+        "profitability": {
+          "roe": null,
+          "roa": null,
+          "opMargin": 10.030678327973728,
+          "netMargin": 0
+        },
+        "stability": {
+          "debtRatio": 178.47811094687128,
+          "currentRatio": 133.78847596029095,
+          "interestCoverage": 13.776513230609194
+        },
+        "cashflow": {
+          "operatingCF": -147052000000,
+          "fcf": -2996466000000
+        },
+        "dividend": null
       },
       "qoq": {
         "prevLabel": "2023 1분기",
@@ -9631,6 +10127,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -9663,6 +10160,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -9695,6 +10193,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -9727,6 +10226,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -9759,6 +10259,7 @@
       "evidence": "2023년 연간 영업이익 6.6조로 전년(2022년 43.4조) 대비 약 -85% 급감. 메모리 한파 직격.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -9794,6 +10295,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -9826,6 +10328,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -9858,6 +10361,7 @@
       "evidence": "2023년 연간 영업이익 6.6조로 전년(2022년 43.4조) 대비 약 -85% 급감. 메모리 한파 직격.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -9893,6 +10397,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -9925,6 +10430,7 @@
       "evidence": "2023년 연간 영업이익 6.6조로 전년(2022년 43.4조) 대비 약 -85% 급감. 메모리 한파 직격.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -9960,6 +10466,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -9992,6 +10499,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -10024,6 +10532,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -10056,6 +10565,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -10088,6 +10598,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -10120,6 +10631,7 @@
       "evidence": "2023년 연간 영업이익 6.6조로 전년(2022년 43.4조) 대비 약 -85% 급감. 메모리 한파 직격.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -10155,6 +10667,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -10187,6 +10700,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -10213,7 +10727,8 @@
       "disclosureType": "",
       "tags": [
         "분기 실적 상승",
-        "질적 성장 (마진 개선)"
+        "질적 성장 (마진 개선)",
+        "현금 소진 (FCF 마이너스)"
       ],
       "impactLevel": "호재",
       "summary": "1분기보고서 기준 매출·영업이익 동반 개선. 수익성 향상.",
@@ -10271,6 +10786,25 @@
           }
         ]
       },
+      "metrics": {
+        "isAnnual": false,
+        "profitability": {
+          "roe": null,
+          "roa": null,
+          "opMargin": 9.50985519800804,
+          "netMargin": 0
+        },
+        "stability": {
+          "debtRatio": 181.47880251362412,
+          "currentRatio": 132.56273604126787,
+          "interestCoverage": 11.657188931718776
+        },
+        "cashflow": {
+          "operatingCF": 57673000000,
+          "fcf": -1420739000000
+        },
+        "dividend": null
+      },
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -10306,6 +10840,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -10338,6 +10873,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -10370,6 +10906,7 @@
       "evidence": "자사주 처분은 오버행 가능성이 있어 취득과 달리 중립으로 평가.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -10403,6 +10940,7 @@
       "evidence": "2023년 연간 영업이익 6.6조로 전년(2022년 43.4조) 대비 약 -85% 급감. 메모리 한파 직격.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -10438,6 +10976,7 @@
       "evidence": "자사주 처분은 오버행 가능성이 있어 취득과 달리 중립으로 평가.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -10471,6 +11010,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -10503,6 +11043,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -10535,6 +11076,7 @@
       "evidence": "2023년 연간 영업이익 6.6조로 전년(2022년 43.4조) 대비 약 -85% 급감. 메모리 한파 직격.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -10570,6 +11112,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -10602,6 +11145,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -10634,6 +11178,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -10666,6 +11211,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -10698,6 +11244,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -10730,6 +11277,7 @@
       "evidence": "2023년 연간 영업이익 6.6조로 전년(2022년 43.4조) 대비 약 -85% 급감. 메모리 한파 직격.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -10765,6 +11313,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -10791,7 +11340,9 @@
       "disclosureType": "정연",
       "tags": [
         "분기 실적 상승",
-        "질적 성장 (마진 개선)"
+        "질적 성장 (마진 개선)",
+        "잉여현금 창출 (FCF+)",
+        "배당 확대"
       ],
       "impactLevel": "호재",
       "summary": "사업보고서 기준 매출·영업이익 동반 개선. 수익성 향상.",
@@ -10849,6 +11400,30 @@
           }
         ]
       },
+      "metrics": {
+        "isAnnual": true,
+        "profitability": {
+          "roe": 0,
+          "roa": 0,
+          "opMargin": 6.889734674777053,
+          "netMargin": 0
+        },
+        "stability": {
+          "debtRatio": 181.35553667083826,
+          "currentRatio": 129.84085908608373,
+          "interestCoverage": 9.31465394582576
+        },
+        "cashflow": {
+          "operatingCF": 10627311000000,
+          "fcf": 6612342000000
+        },
+        "dividend": {
+          "payoutRatio": 24.9,
+          "dps": 7000,
+          "prevDps": 5000,
+          "dividendYield": 4.5
+        }
+      },
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -10884,6 +11459,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -10916,6 +11492,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -10948,6 +11525,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -10980,6 +11558,7 @@
       "evidence": "자사주 처분은 오버행 가능성이 있어 취득과 달리 중립으로 평가.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -11013,6 +11592,7 @@
       "evidence": "2023년 연간 영업이익 6.6조로 전년(2022년 43.4조) 대비 약 -85% 급감. 메모리 한파 직격.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -11048,6 +11628,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -11080,6 +11661,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -11112,6 +11694,7 @@
       "evidence": "자사주 처분은 오버행 가능성이 있어 취득과 달리 중립으로 평가.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -11145,6 +11728,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -11177,6 +11761,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -11209,6 +11794,7 @@
       "evidence": "2023년 연간 영업이익 6.6조로 전년(2022년 43.4조) 대비 약 -85% 급감. 메모리 한파 직격.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -11244,6 +11830,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -11276,6 +11863,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -11308,6 +11896,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -11340,6 +11929,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -11372,6 +11962,7 @@
       "evidence": "2023년 연간 영업이익 6.6조로 전년(2022년 43.4조) 대비 약 -85% 급감. 메모리 한파 직격.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -11407,6 +11998,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -11439,6 +12031,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -11471,6 +12064,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -11503,6 +12097,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -11535,6 +12130,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -11567,6 +12163,7 @@
       "evidence": "공정위 대상 내부거래 공시 — 그룹 계열 상시 거래로 리스크 강도는 낮으나 모니터링 대상.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -11599,6 +12196,7 @@
       "evidence": "2023년 연간 영업이익 6.6조로 전년(2022년 43.4조) 대비 약 -85% 급감. 메모리 한파 직격.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -11634,6 +12232,7 @@
       "evidence": "2023년 연간 영업이익 6.6조로 전년(2022년 43.4조) 대비 약 -85% 급감. 메모리 한파 직격.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [

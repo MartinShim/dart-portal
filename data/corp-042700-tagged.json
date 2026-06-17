@@ -1,5 +1,5 @@
 {
-  "analyzedAt": "2026-06-14T13:04:00.798Z",
+  "analyzedAt": "2026-06-17T14:48:48.524Z",
   "engine": "claude-max-plan (dart-insight-tagger)",
   "stockCode": "042700",
   "companyName": "한미반도체",
@@ -297,7 +297,9 @@
       "reportName": "분기보고서 (2026.03)",
       "disclosureType": "",
       "tags": [
-        "분기 실적 하락"
+        "분기 실적 하락",
+        "재무 안정 우량",
+        "현금 소진 (FCF 마이너스)"
       ],
       "impactLevel": "악재",
       "summary": "영업이익 전년비 -87.9%·전분기비 -69.4% 동반 감소. 실적 모멘텀 약화.",
@@ -360,6 +362,25 @@
             "isPP": true
           }
         ]
+      },
+      "metrics": {
+        "isAnnual": false,
+        "profitability": {
+          "roe": null,
+          "roa": null,
+          "opMargin": 16.612793969949426,
+          "netMargin": 37.388948613575195
+        },
+        "stability": {
+          "debtRatio": 16.798997799255503,
+          "currentRatio": 413.685966176968,
+          "interestCoverage": 4.716103128783802
+        },
+        "cashflow": {
+          "operatingCF": -38406028705,
+          "fcf": -43831420765
+        },
+        "dividend": null
       },
       "qoq": {
         "prevLabel": "2025 4분기",
@@ -454,6 +475,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -489,6 +511,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -515,6 +538,10 @@
       "disclosureType": "연",
       "tags": [
         "분기 실적 하락",
+        "고ROE 우량",
+        "재무 안정 우량",
+        "잉여현금 창출 (FCF+)",
+        "배당 확대",
         "영업이익 컨센서스 하회"
       ],
       "impactLevel": "악재",
@@ -578,6 +605,30 @@
             "isPP": true
           }
         ]
+      },
+      "metrics": {
+        "isAnnual": true,
+        "profitability": {
+          "roe": 31.000871666616163,
+          "roa": 26.3124587238693,
+          "opMargin": 43.59230914606178,
+          "netMargin": 37.10998024995538
+        },
+        "stability": {
+          "debtRatio": 17.818224408248764,
+          "currentRatio": 410.65041876050657,
+          "interestCoverage": 24.385351794371605
+        },
+        "cashflow": {
+          "operatingCF": 228626759780,
+          "fcf": 154005593061
+        },
+        "dividend": {
+          "payoutRatio": 35.5,
+          "dps": 800,
+          "prevDps": 720,
+          "dividendYield": 0.4
+        }
       },
       "qoq": {
         "prevLabel": "2025 3분기",
@@ -700,6 +751,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -732,6 +784,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -765,6 +818,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -800,6 +854,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -826,6 +881,9 @@
       "disclosureType": "",
       "tags": [
         "분기 실적 하락",
+        "재무 안정 우량",
+        "이자 못 갚을 위험",
+        "잉여현금 창출 (FCF+)",
         "영업이익 컨센서스 하회"
       ],
       "impactLevel": "악재",
@@ -889,6 +947,25 @@
             "isPP": true
           }
         ]
+      },
+      "metrics": {
+        "isAnnual": false,
+        "profitability": {
+          "roe": null,
+          "roa": null,
+          "opMargin": 40.79977019485694,
+          "netMargin": 39.5311988231399
+        },
+        "stability": {
+          "debtRatio": 19.406019663162063,
+          "currentRatio": 399.3415496590916,
+          "interestCoverage": -11.368978164659346
+        },
+        "cashflow": {
+          "operatingCF": 140265846163,
+          "fcf": 107013914045
+        },
+        "dividend": null
       },
       "qoq": {
         "prevLabel": "2025 2분기",
@@ -1011,6 +1088,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -1040,7 +1118,9 @@
       "disclosureType": "",
       "tags": [
         "분기 실적 상승",
-        "질적 성장 (마진 개선)"
+        "질적 성장 (마진 개선)",
+        "재무 안정 우량",
+        "현금 소진 (FCF 마이너스)"
       ],
       "impactLevel": "호재",
       "summary": "영업이익 전년비 +55.7%·전분기비 +23.9% 동반 증가. 분기 실적 모멘텀 강세.",
@@ -1103,6 +1183,25 @@
             "isPP": true
           }
         ]
+      },
+      "metrics": {
+        "isAnnual": false,
+        "profitability": {
+          "roe": null,
+          "roa": null,
+          "opMargin": 47.93634360071949,
+          "netMargin": 35.92793378423931
+        },
+        "stability": {
+          "debtRatio": 26.7094712450595,
+          "currentRatio": 284.27747310748805,
+          "interestCoverage": 7.599090917154811
+        },
+        "cashflow": {
+          "operatingCF": -7166285537,
+          "fcf": -36755335437
+        },
+        "dividend": null
       },
       "qoq": {
         "prevLabel": "2025 1분기",
@@ -1197,6 +1296,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -1232,6 +1332,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -1257,7 +1358,9 @@
       "reportName": "분기보고서 (2025.03)",
       "disclosureType": "",
       "tags": [
-        "분기 실적 하락"
+        "분기 실적 하락",
+        "재무 안정 우량",
+        "잉여현금 창출 (FCF+)"
       ],
       "impactLevel": "악재",
       "summary": "영업이익 전년비 +142.6% 개선됐으나 전분기 대비 -3.2% 감소 — 분기 모멘텀 둔화.",
@@ -1320,6 +1423,25 @@
             "isPP": true
           }
         ]
+      },
+      "metrics": {
+        "isAnnual": false,
+        "profitability": {
+          "roe": null,
+          "roa": null,
+          "opMargin": 47.242943753878244,
+          "netMargin": 37.14512775806179
+        },
+        "stability": {
+          "debtRatio": 31.473968200150047,
+          "currentRatio": 233.2573105662564,
+          "interestCoverage": 8.872224470022184
+        },
+        "cashflow": {
+          "operatingCF": 29188000629,
+          "fcf": 3823248641
+        },
+        "dividend": null
       },
       "qoq": {
         "prevLabel": "2024 4분기",
@@ -1413,6 +1535,7 @@
       "evidence": "자사주 취득 결정·결과 공시로 주주환원 의지 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -1447,6 +1570,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -1480,6 +1604,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -1515,6 +1640,7 @@
       "evidence": "자사주 취득 결정·결과 공시로 주주환원 의지 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -1543,6 +1669,10 @@
       "disclosureType": "연",
       "tags": [
         "분기 실적 하락",
+        "고ROE 우량",
+        "재무 안정 우량",
+        "잉여현금 창출 (FCF+)",
+        "배당 확대",
         "영업이익 컨센서스 하회"
       ],
       "impactLevel": "호재",
@@ -1606,6 +1736,30 @@
             "isPP": true
           }
         ]
+      },
+      "metrics": {
+        "isAnnual": true,
+        "profitability": {
+          "roe": 28.21555230409034,
+          "roa": 21.468621535281727,
+          "opMargin": 45.69399702075971,
+          "netMargin": 27.305386255625034
+        },
+        "stability": {
+          "debtRatio": 31.426939814094002,
+          "currentRatio": 254.8048277734913,
+          "interestCoverage": 42.01738143132774
+        },
+        "cashflow": {
+          "operatingCF": 141363819580,
+          "fcf": 87826758488
+        },
+        "dividend": {
+          "payoutRatio": 44.75,
+          "dps": 720,
+          "prevDps": 420,
+          "dividendYield": 0.7
+        }
       },
       "qoq": {
         "prevLabel": "2024 3분기",
@@ -1727,6 +1881,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -1760,6 +1915,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -1795,6 +1951,7 @@
       "evidence": "자사주 취득 결정·결과 공시로 주주환원 의지 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -1823,7 +1980,9 @@
       "disclosureType": "",
       "tags": [
         "분기 실적 상승",
-        "질적 성장 (마진 개선)"
+        "질적 성장 (마진 개선)",
+        "재무 안정 우량",
+        "잉여현금 창출 (FCF+)"
       ],
       "impactLevel": "호재",
       "summary": "영업이익 전년비 +3320.9%·전분기비 +79.1% 동반 증가. 분기 실적 모멘텀 강세.",
@@ -1886,6 +2045,25 @@
             "isPP": true
           }
         ]
+      },
+      "metrics": {
+        "isAnnual": false,
+        "profitability": {
+          "roe": null,
+          "roa": null,
+          "opMargin": 47.62240832624814,
+          "netMargin": 18.410501527467986
+        },
+        "stability": {
+          "debtRatio": 31.570444362004064,
+          "currentRatio": 261.737231703126,
+          "interestCoverage": 10.351178225395408
+        },
+        "cashflow": {
+          "operatingCF": 56345384577,
+          "fcf": 17669741401
+        },
+        "dividend": null
       },
       "qoq": {
         "prevLabel": "2024 2분기",
@@ -1979,6 +2157,7 @@
       "evidence": "자사주 취득 결정·결과 공시로 주주환원 의지 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2013,6 +2192,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2045,6 +2225,7 @@
       "evidence": "자사주 취득 결정·결과 공시로 주주환원 의지 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2080,6 +2261,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2115,6 +2297,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2147,6 +2330,7 @@
       "evidence": "자사주 취득 결정·결과 공시로 주주환원 의지 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2175,7 +2359,9 @@
       "disclosureType": "",
       "tags": [
         "분기 실적 상승",
-        "질적 성장 (마진 개선)"
+        "질적 성장 (마진 개선)",
+        "재무 안정 우량",
+        "잉여현금 창출 (FCF+)"
       ],
       "impactLevel": "호재",
       "summary": "영업이익 전년비 +396.0%·전분기비 +93.1% 동반 증가. 분기 실적 모멘텀 강세.",
@@ -2238,6 +2424,25 @@
             "isPP": true
           }
         ]
+      },
+      "metrics": {
+        "isAnnual": false,
+        "profitability": {
+          "roe": null,
+          "roa": null,
+          "opMargin": 44.897489543873405,
+          "netMargin": -9.565605063567999
+        },
+        "stability": {
+          "debtRatio": 26.68662222543411,
+          "currentRatio": 301.0055174286189,
+          "interestCoverage": 48.46067377233049
+        },
+        "cashflow": {
+          "operatingCF": 32392544729,
+          "fcf": 9257764259
+        },
+        "dividend": null
       },
       "qoq": {
         "prevLabel": "2024 1분기",
@@ -2331,6 +2536,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2364,6 +2570,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2399,6 +2606,7 @@
       "evidence": "자사주 취득 결정·결과 공시로 주주환원 의지 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2433,6 +2641,7 @@
       "evidence": "자사주 취득 결정·결과 공시로 주주환원 의지 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2467,6 +2676,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2500,6 +2710,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2535,6 +2746,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2561,7 +2773,9 @@
       "disclosureType": "",
       "tags": [
         "분기 실적 상승",
-        "질적 성장 (마진 개선)"
+        "질적 성장 (마진 개선)",
+        "재무 안정 우량",
+        "잉여현금 창출 (FCF+)"
       ],
       "impactLevel": "호재",
       "summary": "영업이익 전년비 +1283.5%·전분기비 +55.9% 동반 증가. 분기 실적 모멘텀 강세.",
@@ -2624,6 +2838,25 @@
             "isPP": true
           }
         ]
+      },
+      "metrics": {
+        "isAnnual": false,
+        "profitability": {
+          "roe": null,
+          "roa": null,
+          "opMargin": 37.12692973833236,
+          "netMargin": 90.01986502317509
+        },
+        "stability": {
+          "debtRatio": 23.373497693517923,
+          "currentRatio": 360.653955203318,
+          "interestCoverage": 75.29100720505494
+        },
+        "cashflow": {
+          "operatingCF": 23156712625,
+          "fcf": 21146403745
+        },
+        "dividend": null
       },
       "qoq": {
         "prevLabel": "2023 4분기",
@@ -2717,6 +2950,7 @@
       "evidence": "자사주 취득 결정·결과 공시로 주주환원 의지 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2752,6 +2986,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2787,6 +3022,7 @@
       "evidence": "자사주 취득 결정·결과 공시로 주주환원 의지 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -2816,6 +3052,10 @@
       "tags": [
         "분기 실적 상승",
         "질적 성장 (마진 개선)",
+        "고ROE 우량",
+        "재무 안정 우량",
+        "잉여현금 창출 (FCF+)",
+        "배당 확대",
         "영업이익 컨센서스 상회"
       ],
       "impactLevel": "악재",
@@ -2879,6 +3119,30 @@
             "isPP": true
           }
         ]
+      },
+      "metrics": {
+        "isAnnual": true,
+        "profitability": {
+          "roe": 46.71588706803952,
+          "roa": 36.909793140105954,
+          "opMargin": 21.741859601659097,
+          "netMargin": 168.02087196420283
+        },
+        "stability": {
+          "debtRatio": 26.567729303468596,
+          "currentRatio": 304.1542627974644,
+          "interestCoverage": 3.4035672328344466
+        },
+        "cashflow": {
+          "operatingCF": 44990807438,
+          "fcf": 17459397084
+        },
+        "dividend": {
+          "payoutRatio": 15.2,
+          "dps": 420,
+          "prevDps": 200,
+          "dividendYield": 0.6
+        }
       },
       "qoq": {
         "prevLabel": "2023 3분기",
@@ -3000,6 +3264,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3032,6 +3297,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3065,6 +3331,7 @@
       "evidence": "연간 영업이익 2023년 6.6조 → 2024년 32.7조 → 2025년 43.6조로 급증. 매출 증가(+16%·+11%)보다 영업이익 증가(+398%·+33%)가 훨씬 커 마진이 개선됨.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3100,6 +3367,7 @@
       "evidence": "자사주 취득 결정·결과 공시로 주주환원 의지 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3134,6 +3402,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3159,7 +3428,9 @@
       "reportName": "분기보고서 (2023.09)",
       "disclosureType": "",
       "tags": [
-        "분기 실적 하락"
+        "분기 실적 하락",
+        "재무 안정 우량",
+        "잉여현금 창출 (FCF+)"
       ],
       "impactLevel": "악재",
       "summary": "영업이익 전년비 -91.0%·전분기비 -74.0% 동반 감소. 실적 모멘텀 약화.",
@@ -3222,6 +3493,25 @@
             "isPP": true
           }
         ]
+      },
+      "metrics": {
+        "isAnnual": false,
+        "profitability": {
+          "roe": null,
+          "roa": null,
+          "opMargin": 9.304400268505866,
+          "netMargin": 47.0144857813328
+        },
+        "stability": {
+          "debtRatio": 14.201995580952795,
+          "currentRatio": 580.355754604808,
+          "interestCoverage": 1.575735114722411
+        },
+        "cashflow": {
+          "operatingCF": 28360469631,
+          "fcf": 2111453784
+        },
+        "dividend": null
       },
       "qoq": {
         "prevLabel": "2023 2분기",
@@ -3315,6 +3605,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3347,6 +3638,7 @@
       "evidence": "2023년 연간 영업이익 6.6조로 전년(2022년 43.4조) 대비 약 -85% 급감. 메모리 한파 직격.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3382,6 +3674,7 @@
       "evidence": "자사주 취득 결정·결과 공시로 주주환원 의지 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3416,6 +3709,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3442,7 +3736,9 @@
       "disclosureType": "",
       "tags": [
         "분기 실적 상승",
-        "질적 성장 (마진 개선)"
+        "질적 성장 (마진 개선)",
+        "재무 안정 우량",
+        "잉여현금 창출 (FCF+)"
       ],
       "impactLevel": "호재",
       "summary": "영업이익 전년비 -74.5% 감소했으나 전분기 대비 +438.6% 반등 — 바닥 통과 신호 가능.",
@@ -3505,6 +3801,25 @@
             "isPP": true
           }
         ]
+      },
+      "metrics": {
+        "isAnnual": false,
+        "profitability": {
+          "roe": null,
+          "roa": null,
+          "opMargin": 22.776005784870534,
+          "netMargin": 69.25373000077985
+        },
+        "stability": {
+          "debtRatio": 14.655515425170002,
+          "currentRatio": 614.3894961901466,
+          "interestCoverage": 13.089834229223467
+        },
+        "cashflow": {
+          "operatingCF": 15561286124,
+          "fcf": 11583011364
+        },
+        "dividend": null
       },
       "qoq": {
         "prevLabel": "2023 1분기",
@@ -3598,6 +3913,7 @@
       "evidence": "2023년 연간 영업이익 6.6조로 전년(2022년 43.4조) 대비 약 -85% 급감. 메모리 한파 직격.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3633,6 +3949,7 @@
       "evidence": "자사주 처분은 오버행 가능성이 있어 취득과 달리 중립으로 평가.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3666,6 +3983,7 @@
       "evidence": "자사주 처분은 오버행 가능성이 있어 취득과 달리 중립으로 평가.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3692,7 +4010,10 @@
       "reportName": "분기보고서 (2023.03)",
       "disclosureType": "",
       "tags": [
-        "분기 실적 하락"
+        "분기 실적 하락",
+        "재무 안정 우량",
+        "이자 못 갚을 위험",
+        "잉여현금 창출 (FCF+)"
       ],
       "impactLevel": "악재",
       "summary": "1분기보고서 기준 수익성 둔화. 실적 모멘텀 약화.",
@@ -3756,6 +4077,25 @@
           }
         ]
       },
+      "metrics": {
+        "isAnnual": false,
+        "profitability": {
+          "roe": null,
+          "roa": null,
+          "opMargin": 7.8227130236987295,
+          "netMargin": 502.01990921792634
+        },
+        "stability": {
+          "debtRatio": 18.32820944509659,
+          "currentRatio": 279.00461612141885,
+          "interestCoverage": 0.5328688055846961
+        },
+        "cashflow": {
+          "operatingCF": 10112603793,
+          "fcf": 7678004006
+        },
+        "dividend": null
+      },
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3791,6 +4131,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3823,6 +4164,7 @@
       "evidence": "자사주 취득 결정·결과 공시로 주주환원 의지 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3857,6 +4199,7 @@
       "evidence": "2023년 연간 영업이익 6.6조로 전년(2022년 43.4조) 대비 약 -85% 급감. 메모리 한파 직격.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3892,6 +4235,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3924,6 +4268,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3956,6 +4301,7 @@
       "evidence": "지분 5% 룰 보고 — 매수·매도 방향은 원문 확인 필요해 중립.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -3981,7 +4327,11 @@
       "reportName": "사업보고서 (2022.12)",
       "disclosureType": "연",
       "tags": [
-        "분기 실적 하락"
+        "분기 실적 하락",
+        "고ROE 우량",
+        "재무 안정 우량",
+        "잉여현금 창출 (FCF+)",
+        "배당 축소"
       ],
       "impactLevel": "악재",
       "summary": "사업보고서 기준 수익성 둔화. 실적 모멘텀 약화.",
@@ -4045,6 +4395,30 @@
           }
         ]
       },
+      "metrics": {
+        "isAnnual": true,
+        "profitability": {
+          "roe": 23.6503523914492,
+          "roa": 20.257483384292087,
+          "opMargin": 34.14595046019031,
+          "netMargin": 28.162849176861688
+        },
+        "stability": {
+          "debtRatio": 16.748719190795388,
+          "currentRatio": 422.20344423575665,
+          "interestCoverage": 11.69123713072951
+        },
+        "cashflow": {
+          "operatingCF": 109501808221,
+          "fcf": 100410881301
+        },
+        "dividend": {
+          "payoutRatio": 21.1,
+          "dps": 200,
+          "prevDps": 600,
+          "dividendYield": 1.6
+        }
+      },
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -4081,6 +4455,7 @@
       "evidence": "배당 결정 공시로 주주 현금 환원 확인.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [
@@ -4113,6 +4488,7 @@
       "evidence": "2023년 연간 영업이익 6.6조로 전년(2022년 43.4조) 대비 약 -85% 급감. 메모리 한파 직격.",
       "narrative": "",
       "financials": null,
+      "metrics": null,
       "qoq": null,
       "consensusBeat": null,
       "keyPoints": [

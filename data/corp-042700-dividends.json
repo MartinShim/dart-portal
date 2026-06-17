@@ -1,0 +1,147 @@
+{
+  "fetchedAt": "2026-06-17T14:40:43.994Z",
+  "stock": "042700",
+  "source": "DART 정기공시 '배당에 관한 사항'",
+  "periods": {
+    "2026Q1": {
+      "key": "2026Q1",
+      "label": "2026 1분기",
+      "reportName": "분기보고서 (2026.03)",
+      "payoutRatio": 35.5,
+      "prevPayoutRatio": 44.8,
+      "dps": 800,
+      "prevDps": 720,
+      "dividendYield": 0.4
+    },
+    "2025Q4": {
+      "key": "2025Q4",
+      "label": "2025 4분기",
+      "reportName": "사업보고서 (2025.12)",
+      "payoutRatio": 35.5,
+      "prevPayoutRatio": 44.8,
+      "dps": 800,
+      "prevDps": 720,
+      "dividendYield": 0.4
+    },
+    "2025Q3": {
+      "key": "2025Q3",
+      "label": "2025 3분기",
+      "reportName": "분기보고서 (2025.09)",
+      "payoutRatio": 44.8,
+      "prevPayoutRatio": 15.2,
+      "dps": 720,
+      "prevDps": 420,
+      "dividendYield": 0.7
+    },
+    "2025Q2": {
+      "key": "2025Q2",
+      "label": "2025 2분기",
+      "reportName": "반기보고서 (2025.06)",
+      "payoutRatio": 44.8,
+      "prevPayoutRatio": 15.2,
+      "dps": 720,
+      "prevDps": 420,
+      "dividendYield": 0.7
+    },
+    "2025Q1": {
+      "key": "2025Q1",
+      "label": "2025 1분기",
+      "reportName": "분기보고서 (2025.03)",
+      "payoutRatio": 44.75,
+      "prevPayoutRatio": 15.2,
+      "dps": 720,
+      "prevDps": 420,
+      "dividendYield": 0.7
+    },
+    "2024Q4": {
+      "key": "2024Q4",
+      "label": "2024 4분기",
+      "reportName": "사업보고서 (2024.12)",
+      "payoutRatio": 44.75,
+      "prevPayoutRatio": 15.2,
+      "dps": 720,
+      "prevDps": 420,
+      "dividendYield": 0.7
+    },
+    "2024Q3": {
+      "key": "2024Q3",
+      "label": "2024 3분기",
+      "reportName": "분기보고서 (2024.09)",
+      "payoutRatio": 15.2,
+      "prevPayoutRatio": 21.1,
+      "dps": 420,
+      "prevDps": 200,
+      "dividendYield": 0.6
+    },
+    "2024Q2": {
+      "key": "2024Q2",
+      "label": "2024 2분기",
+      "reportName": "반기보고서 (2024.06)",
+      "payoutRatio": 15.2,
+      "prevPayoutRatio": 21.1,
+      "dps": 420,
+      "prevDps": 200,
+      "dividendYield": 0.6
+    },
+    "2024Q1": {
+      "key": "2024Q1",
+      "label": "2024 1분기",
+      "reportName": "분기보고서 (2024.03)",
+      "payoutRatio": 15.2,
+      "prevPayoutRatio": 21.1,
+      "dps": 420,
+      "prevDps": 200,
+      "dividendYield": 0.6
+    },
+    "2023Q4": {
+      "key": "2023Q4",
+      "label": "2023 4분기",
+      "reportName": "사업보고서 (2023.12)",
+      "payoutRatio": 15.2,
+      "prevPayoutRatio": 21.1,
+      "dps": 420,
+      "prevDps": 200,
+      "dividendYield": 0.6
+    },
+    "2023Q3": {
+      "key": "2023Q3",
+      "label": "2023 3분기",
+      "reportName": "분기보고서 (2023.09)",
+      "payoutRatio": 21.1,
+      "prevPayoutRatio": 28.4,
+      "dps": 200,
+      "prevDps": 600,
+      "dividendYield": 1.6
+    },
+    "2023Q2": {
+      "key": "2023Q2",
+      "label": "2023 2분기",
+      "reportName": "반기보고서 (2023.06)",
+      "payoutRatio": 21.1,
+      "prevPayoutRatio": 28.4,
+      "dps": 200,
+      "prevDps": 600,
+      "dividendYield": 1.6
+    },
+    "2023Q1": {
+      "key": "2023Q1",
+      "label": "2023 1분기",
+      "reportName": "분기보고서 (2023.03)",
+      "payoutRatio": 21.1,
+      "prevPayoutRatio": 28.4,
+      "dps": 200,
+      "prevDps": 600,
+      "dividendYield": 1.6
+    },
+    "2022Q4": {
+      "key": "2022Q4",
+      "label": "2022 4분기",
+      "reportName": "사업보고서 (2022.12)",
+      "payoutRatio": 21.1,
+      "prevPayoutRatio": 28.4,
+      "dps": 200,
+      "prevDps": 600,
+      "dividendYield": 1.6
+    }
+  }
+}

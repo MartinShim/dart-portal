@@ -45,9 +45,16 @@
         "frmtrm_nm": "제 46 기1분기"
       }
     },
+    "extra": {
+      "유동자산": 430429939936,
+      "유동부채": 104047508286,
+      "이자비용": 1793060261,
+      "영업활동현금흐름": -38406028705,
+      "유형자산취득": 5425392060
+    },
     "verify": {
       "verified": true,
-      "dartAgree": false,
+      "dartAgree": true,
       "arithmeticOk": true,
       "naverAgree": true,
       "crossChecked": true
@@ -99,9 +106,16 @@
         "frmtrm_nm": "제 45 기"
       }
     },
+    "extra": {
+      "유동자산": 493274637718,
+      "유동부채": 120120329892,
+      "이자비용": 10309063583,
+      "영업활동현금흐름": 228626759780,
+      "유형자산취득": 74621166719
+    },
     "verify": {
       "verified": true,
-      "dartAgree": false,
+      "dartAgree": true,
       "arithmeticOk": true,
       "naverAgree": true,
       "crossChecked": true
@@ -153,9 +167,16 @@
         "frmtrm_nm": "제 45 기3분기"
       }
     },
+    "extra": {
+      "유동자산": 487890910191,
+      "유동부채": 122173841066,
+      "이자비용": -5965532760,
+      "영업활동현금흐름": 140265846163,
+      "유형자산취득": 33251932118
+    },
     "verify": {
       "verified": true,
-      "dartAgree": false,
+      "dartAgree": true,
       "arithmeticOk": true,
       "naverAgree": true,
       "crossChecked": true
@@ -207,9 +228,16 @@
         "frmtrm_nm": "제 45 기반기"
       }
     },
+    "extra": {
+      "유동자산": 433974617542,
+      "유동부채": 152658813517,
+      "이자비용": 11357687206,
+      "영업활동현금흐름": -7166285537,
+      "유형자산취득": 29589049900
+    },
     "verify": {
       "verified": true,
-      "dartAgree": false,
+      "dartAgree": true,
       "arithmeticOk": true,
       "naverAgree": true,
       "crossChecked": true
@@ -261,9 +289,16 @@
         "frmtrm_nm": "제 45 기1분기"
       }
     },
+    "extra": {
+      "유동자산": 362277830686,
+      "유동부채": 155312530101,
+      "이자비용": 7848338263,
+      "영업활동현금흐름": 29188000629,
+      "유형자산취득": 25364751988
+    },
     "verify": {
       "verified": true,
-      "dartAgree": false,
+      "dartAgree": true,
       "arithmeticOk": true,
       "naverAgree": true,
       "crossChecked": true
@@ -315,9 +350,16 @@
         "frmtrm_nm": "제 44 기"
       }
     },
+    "extra": {
+      "유동자산": 407791209288,
+      "유동부채": 160040613379,
+      "이자비용": 6078237057,
+      "영업활동현금흐름": 141363819580,
+      "유형자산취득": 53537061092
+    },
     "verify": {
       "verified": true,
-      "dartAgree": false,
+      "dartAgree": true,
       "arithmeticOk": true,
       "naverAgree": true,
       "crossChecked": true
@@ -369,9 +411,16 @@
         "frmtrm_nm": "제 44 기3분기"
       }
     },
+    "extra": {
+      "유동자산": 402105217641,
+      "유동부채": 153629353770,
+      "이자비용": 9593579967,
+      "영업활동현금흐름": 56345384577,
+      "유형자산취득": 38675643176
+    },
     "verify": {
       "verified": true,
-      "dartAgree": false,
+      "dartAgree": true,
       "arithmeticOk": true,
       "naverAgree": null,
       "crossChecked": false
@@ -423,9 +472,16 @@
         "frmtrm_nm": "제 44 기반기"
       }
     },
+    "extra": {
+      "유동자산": 344503482223,
+      "유동부채": 114450886205,
+      "이자비용": 1143988355,
+      "영업활동현금흐름": 32392544729,
+      "유형자산취득": 23134780470
+    },
     "verify": {
       "verified": true,
-      "dartAgree": false,
+      "dartAgree": true,
       "arithmeticOk": true,
       "naverAgree": null,
       "crossChecked": false
@@ -477,9 +533,16 @@
         "frmtrm_nm": "제 44 기1분기"
       }
     },
+    "extra": {
+      "유동자산": 311649810791,
+      "유동부채": 86412420076,
+      "이자비용": 381263158,
+      "영업활동현금흐름": 23156712625,
+      "유형자산취득": 2010308880
+    },
     "verify": {
       "verified": true,
-      "dartAgree": false,
+      "dartAgree": true,
       "arithmeticOk": true,
       "naverAgree": null,
       "crossChecked": false
@@ -531,9 +594,16 @@
         "frmtrm_nm": "제 43 기"
       }
     },
+    "extra": {
+      "유동자산": 319391328603,
+      "유동부채": 105009650585,
+      "이자비용": 10157405048,
+      "영업활동현금흐름": 44990807438,
+      "유형자산취득": 27531410354
+    },
     "verify": {
       "verified": true,
-      "dartAgree": false,
+      "dartAgree": true,
       "arithmeticOk": true,
       "naverAgree": true,
       "crossChecked": true
@@ -585,9 +655,16 @@
         "frmtrm_nm": "제 43 기3분기"
       }
     },
+    "extra": {
+      "유동자산": 242268998536,
+      "유동부채": 41744911912,
+      "이자비용": 1842247589,
+      "영업활동현금흐름": 28360469631,
+      "유형자산취득": 26249015847
+    },
     "verify": {
       "verified": true,
-      "dartAgree": false,
+      "dartAgree": true,
       "arithmeticOk": true,
       "naverAgree": null,
       "crossChecked": false
@@ -639,9 +716,16 @@
         "frmtrm_nm": "제 43 기반기"
       }
     },
+    "extra": {
+      "유동자산": 258478875420,
+      "유동부채": 42070848708,
+      "이자비용": 853811166,
+      "영업활동현금흐름": 15561286124,
+      "유형자산취득": 3978274760
+    },
     "verify": {
       "verified": true,
-      "dartAgree": false,
+      "dartAgree": true,
       "arithmeticOk": true,
       "naverAgree": null,
       "crossChecked": false
@@ -693,9 +777,16 @@
         "frmtrm_nm": "제 43 기1분기"
       }
     },
+    "extra": {
+      "유동자산": 251741097741,
+      "유동부채": 90228291288,
+      "이자비용": 3893826950,
+      "영업활동현금흐름": 10112603793,
+      "유형자산취득": 2434599787
+    },
     "verify": {
       "verified": true,
-      "dartAgree": false,
+      "dartAgree": true,
       "arithmeticOk": true,
       "naverAgree": null,
       "crossChecked": false
@@ -747,9 +838,16 @@
         "frmtrm_nm": "제 42 기"
       }
     },
+    "extra": {
+      "유동자산": 266177446666,
+      "유동부채": 63044830709,
+      "이자비용": 9567800296,
+      "영업활동현금흐름": 109501808221,
+      "유형자산취득": 9090926920
+    },
     "verify": {
       "verified": true,
-      "dartAgree": false,
+      "dartAgree": true,
       "arithmeticOk": true,
       "naverAgree": null,
       "crossChecked": false

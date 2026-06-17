@@ -47,6 +47,15 @@ export type InsightTag =
   | "적자폭 축소"
   | "영업이익 10% 이상 성장"
   | "영업이익 30% 이상 성장"
+  // 수익성 / 안정성 / 현금흐름 / 배당 (재무지표 기반)
+  | "고ROE 우량"
+  | "재무 안정 우량"
+  | "차입 부담 (고부채)"
+  | "이자 못 갚을 위험"
+  | "잉여현금 창출 (FCF+)"
+  | "현금 소진 (FCF 마이너스)"
+  | "배당 확대"
+  | "배당 축소"
   | "정보 부족";
 
 export interface TagGroup {
@@ -107,6 +116,15 @@ export interface QuarterOverQuarter {
   rows: CompareRow[];
 }
 
+// 수익성·안정성·현금흐름·배당 지표 (정기공시 재무 기반). 값 없으면 null → 화면 미표시.
+export interface FinancialMetrics {
+  isAnnual: boolean;
+  profitability: { roe: number | null; roa: number | null; opMargin: number | null; netMargin: number | null };
+  stability: { debtRatio: number | null; currentRatio: number | null; interestCoverage: number | null };
+  cashflow: { operatingCF: number | null; fcf: number | null }; // 원
+  dividend: { payoutRatio: number | null; dps: number | null; prevDps: number | null; dividendYield: number | null } | null;
+}
+
 export interface DisclosureInsight {
   id: string;
   companyName: string;
@@ -121,6 +139,7 @@ export interface DisclosureInsight {
   evidence: string; // 태그 부여 근거
   narrative?: string; // 정기공시 등 내용이 많은 공시의 서술형 요약
   financials?: FinancialComparison; // 재무 증감 비교 표 (전년 동기 YoY)
+  metrics?: FinancialMetrics; // 수익성·안정성·현금흐름·배당 지표
   qoq?: QuarterOverQuarter; // 분기보고서 전분기 대비 (QoQ)
   consensusBeat?: ConsensusBeat; // 컨센서스 상회/하회 비교
   keyPoints?: string[]; // 공시 주요 내용 간추림

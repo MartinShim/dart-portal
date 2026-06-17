@@ -41,7 +41,7 @@ export function Navbar({ active }: { active?: (typeof NAV)[number]["key"] }) {
         </nav>
 
         {/* 검색 */}
-        <SearchBox className="ml-auto w-full max-w-xs" />
+        <SearchBox className="ml-auto w-full max-w-[30rem]" />
       </div>
     </header>
   );

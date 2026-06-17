@@ -219,6 +219,8 @@ export default function DisclosureDetailPage({
   const financials = insight.financials;
   const qoq = insight.qoq;
   const consensusBeat = insight.consensusBeat;
+  const metrics = insight.metrics;
+  const pct1 = (v: number | null) => (v == null ? "—" : `${v.toFixed(1)}%`);
   // 사업부문별 실적 (단독분기·QoQ) — ticker API가 기간 매칭해 부착
   const segmentResult = (insight as DisclosureInsight & { segmentResult?: SegResult }).segmentResult;
   const mdna = (insight as DisclosureInsight & { mdna?: Mdna }).mdna;
@@ -465,6 +467,65 @@ export default function DisclosureDetailPage({
           <ConsensusBeatTable data={consensusBeat} />
         )}
 
+
+        {/* 4-3. 재무 지표 (수익성·안정성·현금흐름·배당) — 상세 분석 위 */}
+        {metrics && (() => {
+          const p = metrics.profitability, s = metrics.stability, c = metrics.cashflow, d = metrics.dividend;
+          const prof = [
+            metrics.isAnnual && p.roe != null ? { label: "ROE", value: pct1(p.roe) } : null,
+            metrics.isAnnual && p.roa != null ? { label: "ROA", value: pct1(p.roa) } : null,
+            p.opMargin != null ? { label: "영업이익률", value: pct1(p.opMargin) } : null,
+            p.netMargin != null ? { label: "순이익률", value: pct1(p.netMargin) } : null,
+          ].filter(Boolean) as { label: string; value: string }[];
+          const stab = [
+            s.debtRatio != null ? { label: "부채비율", value: pct1(s.debtRatio) } : null,
+            s.currentRatio != null ? { label: "유동비율", value: pct1(s.currentRatio) } : null,
+            s.interestCoverage != null ? { label: "이자보상배율", value: `${s.interestCoverage.toFixed(1)}배` } : null,
+          ].filter(Boolean) as { label: string; value: string }[];
+          const cash = [
+            c.operatingCF != null ? { label: "영업활동현금흐름", value: fmtWon(c.operatingCF) } : null,
+            c.fcf != null ? { label: "잉여현금흐름(FCF)", value: fmtWon(c.fcf) } : null,
+          ].filter(Boolean) as { label: string; value: string }[];
+          const div = d
+            ? ([
+                d.dps != null ? { label: "주당배당금(DPS)", value: `${d.dps.toLocaleString()}원${d.prevDps != null ? ` (전년 ${d.prevDps.toLocaleString()})` : ""}` } : null,
+                d.payoutRatio != null ? { label: "배당성향", value: pct1(d.payoutRatio) } : null,
+                d.dividendYield != null ? { label: "배당수익률", value: pct1(d.dividendYield) } : null,
+              ].filter(Boolean) as { label: string; value: string }[])
+            : [];
+          const groups = [
+            { name: "수익성", rows: prof },
+            { name: "안정성·재무건전성", rows: stab },
+            { name: "현금흐름", rows: cash },
+            { name: "배당 (주주환원)", rows: div },
+          ].filter((g) => g.rows.length > 0);
+          if (groups.length === 0) return null;
+          return (
+            <div className="bg-white rounded-lg border border-gray-200 p-4">
+              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">
+                📐 재무 지표 <span className="text-gray-400 normal-case">(수익성·안정성·현금흐름·배당)</span>
+              </p>
+              <div className="grid sm:grid-cols-2 gap-x-6 gap-y-4">
+                {groups.map((g) => (
+                  <div key={g.name}>
+                    <p className="text-[11px] font-bold text-gray-500 mb-1.5">{g.name}</p>
+                    <dl className="space-y-1">
+                      {g.rows.map((r) => (
+                        <div key={r.label} className="flex items-center justify-between text-sm border-b border-gray-50 pb-1">
+                          <dt className="text-gray-500">{r.label}</dt>
+                          <dd className="tabular-nums font-semibold text-gray-900">{r.value}</dd>
+                        </div>
+                      ))}
+                    </dl>
+                  </div>
+                ))}
+              </div>
+              <p className="text-[11px] text-gray-400 mt-3">
+                ※ DART 재무제표 기반 산출. ROE/ROA·배당은 연간(사업보고서) 기준, 그 외는 해당 보고서 기준.
+              </p>
+            </div>
+          );
+        })()}
 
         {/* 5. 상세 분석 (서술형) */}
         {narrative && (

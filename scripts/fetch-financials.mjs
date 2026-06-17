@@ -79,7 +79,7 @@ async function fetchAccounts(year, reprt) {
   return { fs_div: div, accounts: out };
 }
 
-// 교차검증용: 전체재무제표(fnlttSinglAcntAll)에서 매출/영업이익/원가/총이익 추출
+// 교차검증용 + 추가지표용: 전체재무제표(fnlttSinglAcntAll)에서 항목 추출
 async function fetchAll(year, reprt) {
   const url = new URL("https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json");
   url.searchParams.set("crtfc_key", KEY);
@@ -90,11 +90,34 @@ async function fetchAll(year, reprt) {
   const res = await fetch(url);
   const d = await res.json();
   if (d.status !== "000") return null;
-  const pick = (nm) => {
-    const row = d.list.find((x) => x.sj_div === "IS" && x.account_nm === nm);
-    return row ? toNum(row.thstrm_amount) : null;
+  const norm = (s) => String(s ?? "").replace(/\s/g, "");
+  // sj_div(BS/IS/CIS/CF) 지정 + 계정명 후보(정규화 startsWith) 매칭
+  const pick = (sjs, names) => {
+    for (const x of d.list) {
+      if (!sjs.includes(x.sj_div)) continue;
+      const a = norm(x.account_nm);
+      if (names.some((n) => a === norm(n) || a.startsWith(norm(n)))) {
+        const v = toNum(x.thstrm_amount);
+        if (v) return v;
+      }
+    }
+    return null;
   };
-  return { 매출액: pick("매출액"), 영업이익: pick("영업이익"), 매출원가: pick("매출원가"), 매출총이익: pick("매출총이익") };
+  return {
+    // 교차검증용(손익)
+    매출액: pick(["IS", "CIS"], ["매출액", "수익(매출액)", "영업수익"]),
+    영업이익: pick(["IS", "CIS"], ["영업이익"]),
+    매출원가: pick(["IS", "CIS"], ["매출원가"]),
+    매출총이익: pick(["IS", "CIS"], ["매출총이익"]),
+    // 안정성(재무상태표, 시점값)
+    유동자산: pick(["BS"], ["유동자산"]),
+    유동부채: pick(["BS"], ["유동부채"]),
+    // 안정성(손익, 기간 누적) — 이자비용 우선, 없으면 금융비용/금융원가
+    이자비용: pick(["IS", "CIS"], ["이자비용", "금융비용", "금융원가"]),
+    // 현금흐름(기간 누적)
+    영업활동현금흐름: pick(["CF"], ["영업활동현금흐름", "영업활동으로인한현금흐름", "영업활동순현금흐름"]),
+    유형자산취득: pick(["CF"], ["유형자산의취득", "유형자산의증가", "유형자산취득"]),
+  };
 }
 
 // 3차 교차검증 소스: 네이버 증권(FnGuide 기반). 억원 단위 → 원으로 변환.
@@ -176,7 +199,17 @@ async function main() {
     const all = await fetchAll(p.year, p.reprt_code);
     await sleep(120);
     const v = verify(fin.accounts, all, naver, p);
-    result[it.rcept_no] = { period: p, ...fin, verify: v };
+    // 추가지표 원자료(유동자산·유동부채·이자비용·영업CF·유형자산취득)
+    const extra = all
+      ? {
+          유동자산: all.유동자산,
+          유동부채: all.유동부채,
+          이자비용: all.이자비용,
+          영업활동현금흐름: all.영업활동현금흐름,
+          유형자산취득: all.유형자산취득,
+        }
+      : null;
+    result[it.rcept_no] = { period: p, ...fin, extra, verify: v };
     const rev = (fin.accounts["매출액"].thstrm / 1e12).toFixed(1);
     const op = (fin.accounts["영업이익"].thstrm / 1e12).toFixed(1);
     const badge = v.verified ? "✓검증" : "⚠불일치";

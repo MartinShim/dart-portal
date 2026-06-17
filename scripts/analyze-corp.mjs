@@ -29,7 +29,7 @@ const pct = (a, b) => (b === 0 ? null : ((a / b - 1) * 100));
 const signed = (v) => (v >= 0 ? `+${v.toFixed(1)}` : v.toFixed(1));
 
 // 정기공시(사업·반기·분기보고서) — 실제 재무수치 기반 서술형 분석
-function buildPeriodicAnalysis(item, fin, qoq) {
+function buildPeriodicAnalysis(item, fin, qoq, div) {
   const a = fin.accounts;
   const label = fin.period.label;
   const term = a["매출액"].thstrm_nm || `${fin.period.year}년 ${label}`;
@@ -215,25 +215,66 @@ function buildPeriodicAnalysis(item, fin, qoq) {
     evidence += ` 추가로 4분기 단독 영업이익 ${jo(q4("영업이익"))}조(전분기비 ${qOnly("영업이익")}) 반영.`;
   }
 
+  // ── 추가 재무지표(수익성·안정성·현금흐름·배당) 계산 + 태그 ──────────────
+  const x = fin.extra || {};
+  const roe = isAnnual && equity ? (ni / equity) * 100 : null; // 연간만(분기 순이익은 누적 부분치)
+  const roa = isAnnual && asset ? (ni / asset) * 100 : null;
+  const netMargin = rev ? (ni / rev) * 100 : null;
+  const currentRatio = x.유동자산 && x.유동부채 ? (x.유동자산 / x.유동부채) * 100 : null;
+  const interestCoverage = x.이자비용 ? op / x.이자비용 : null;
+  const operatingCF = x.영업활동현금흐름 ?? null;
+  const fcf =
+    x.영업활동현금흐름 != null && x.유형자산취득 != null
+      ? x.영업활동현금흐름 - x.유형자산취득
+      : null;
+
+  // 수익성
+  if (roe != null && roe >= 15) tags.push("고ROE 우량");
+  // 안정성
+  if (debtRatio != null && currentRatio != null && debtRatio < 100 && currentRatio >= 150)
+    tags.push("재무 안정 우량");
+  if (debtRatio != null && debtRatio >= 200) tags.push("차입 부담 (고부채)");
+  if (interestCoverage != null && interestCoverage < 1) tags.push("이자 못 갚을 위험");
+  // 현금흐름
+  if (fcf != null && fcf > 0) tags.push("잉여현금 창출 (FCF+)");
+  if (fcf != null && fcf < 0) tags.push("현금 소진 (FCF 마이너스)");
+  // 배당 (연간 결산 기준 — 사업보고서에만)
+  if (isAnnual && div && div.dps != null && div.prevDps != null) {
+    if (div.dps > div.prevDps) tags.push("배당 확대");
+    else if (div.dps < div.prevDps) tags.push("배당 축소");
+  }
+
+  const metrics = {
+    isAnnual,
+    profitability: { roe, roa, opMargin, netMargin },
+    stability: { debtRatio, currentRatio, interestCoverage },
+    cashflow: { operatingCF, fcf },
+    dividend:
+      isAnnual && div
+        ? { payoutRatio: div.payoutRatio, dps: div.dps, prevDps: div.prevDps, dividendYield: div.dividendYield }
+        : null,
+  };
+
   return {
     tags, impactLevel: impact,
     summary,
     evidence,
     narrative,
     financials,
+    metrics,
     keyPoints,
     positives,
     negatives,
   };
 }
 
-function ruleTag(item, fin, qoq) {
+function ruleTag(item, fin, qoq, div) {
   const name = item.report_nm;
   const year = Number(item.rcept_dt.slice(0, 4));
 
   // 정기공시 — 재무 데이터 있으면 서술형 심층 분석
   if (/사업보고서|반기보고서|분기보고서/.test(name) && fin && fin.accounts?.["매출액"]) {
-    return buildPeriodicAnalysis(item, fin, qoq);
+    return buildPeriodicAnalysis(item, fin, qoq, div);
   }
 
   // 실적 공시 — 실제 수치 기반
@@ -418,6 +459,20 @@ try {
   FINANCIALS = JSON.parse(readFileSync(join(ROOT, "data", `corp-${stock}-financials.json`), "utf-8"));
 } catch {}
 
+// 배당 데이터 (있으면 정기공시에 매칭) — 기간키(YYYYQn)
+let DIVIDENDS = {};
+try {
+  DIVIDENDS = JSON.parse(readFileSync(join(ROOT, "data", `corp-${stock}-dividends.json`), "utf-8")).periods ?? {};
+} catch {}
+
+// 보고서명 → 기간키(YYYYQn)
+function divKey(reportNm) {
+  const m = reportNm.match(/\((\d{4})\.(\d{2})\)/);
+  if (!m) return null;
+  const q = { "03": 1, "06": 2, "09": 3, "12": 4 }[m[2]];
+  return q ? `${m[1]}Q${q}` : null;
+}
+
 // 컨센서스 상회/하회 데이터 (있으면 실적 공시에 매칭)
 let BEAT = {};
 try {
@@ -555,7 +610,8 @@ const latestAnnualId = [...core]
 
 const insights = core.map((it) => {
   const qoq = buildQoQ(it.report_nm); // 분기/반기=인라인 QoQ, 사업보고서=4분기 별도 서술
-  const ai = ruleTag(it, FINANCIALS[it.rcept_no], qoq);
+  const dk = divKey(it.report_nm);
+  const ai = ruleTag(it, FINANCIALS[it.rcept_no], qoq, dk ? DIVIDENDS[dk] : null);
   const tags = [...ai.tags];
   let consensusBeat = null;
 
@@ -605,6 +661,7 @@ const insights = core.map((it) => {
     evidence: ai.evidence,
     narrative: ai.narrative ?? "",
     financials: ai.financials ?? null,
+    metrics: ai.metrics ?? null,
     qoq,
     consensusBeat,
     keyPoints: ai.keyPoints ?? [],
