@@ -20,6 +20,22 @@ const TAG_GROUPS = [
     tags: ["영업이익 컨센서스 상회", "영업이익 컨센서스 하회", "흑자 전환", "흑자 전환 예상", "적자폭 축소", "영업이익 10% 이상 성장", "영업이익 30% 이상 성장"] as InsightTag[],
   },
   {
+    label: "A-3. 수익성",
+    tags: ["고ROE 우량"] as InsightTag[],
+  },
+  {
+    label: "A-4. 안정성·재무건전성",
+    tags: ["재무 안정 우량", "차입 부담 (고부채)", "이자 못 갚을 위험"] as InsightTag[],
+  },
+  {
+    label: "A-5. 현금흐름",
+    tags: ["잉여현금 창출 (FCF+)", "현금 소진 (FCF 마이너스)"] as InsightTag[],
+  },
+  {
+    label: "A-6. 배당 (주주환원)",
+    tags: ["배당 확대", "배당 축소"] as InsightTag[],
+  },
+  {
     label: "B. 실시간 모멘텀",
     tags: ["주주환원 호재", "주주가치 희석 위험 (유상증자)", "대규모 자금조달 (CB/BW)", "M&A 진행", "경영권 분쟁 가능성", "투자경고/위험 지정", "단기과열"] as InsightTag[],
   },
@@ -30,22 +46,6 @@ const TAG_GROUPS = [
   {
     label: "D. 수급 주체 & 간접투자",
     tags: ["내부자(임원) 대량매수", "내부자(임원) 매도", "5% 이상 큰손 등장", "글로벌 ETF 편입", "테마 ETF 리밸런싱"] as InsightTag[],
-  },
-  {
-    label: "F. 수익성",
-    tags: ["고ROE 우량"] as InsightTag[],
-  },
-  {
-    label: "G. 안정성·재무건전성",
-    tags: ["재무 안정 우량", "차입 부담 (고부채)", "이자 못 갚을 위험"] as InsightTag[],
-  },
-  {
-    label: "H. 현금흐름",
-    tags: ["잉여현금 창출 (FCF+)", "현금 소진 (FCF 마이너스)"] as InsightTag[],
-  },
-  {
-    label: "I. 배당 (주주환원)",
-    tags: ["배당 확대", "배당 축소"] as InsightTag[],
   },
 ];
 
