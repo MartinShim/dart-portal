@@ -36,6 +36,27 @@ function fmtWon(v: number | null): string {
     : `${(v / 1e12).toFixed(1)}조`;
 }
 
+// 증감 표기 — 직전값이 음수/0이면 (현재/직전−1) 비율이 무의미하므로
+// 흑자전환·적자전환·적자축소·적자확대로 대체한다.
+function growthText(cur: number | null, prev: number | null): { text: string; tone: "up" | "down" | "flat" } {
+  if (cur == null || prev == null) return { text: "—", tone: "flat" };
+  if (prev > 0) {
+    const d = (cur / prev - 1) * 100;
+    return { text: `${d > 0 ? "▲ +" : d < 0 ? "▼ " : "– "}${d.toFixed(1)}%`, tone: d > 0 ? "up" : d < 0 ? "down" : "flat" };
+  }
+  if (prev === 0) {
+    if (cur > 0) return { text: "흑자전환", tone: "up" };
+    if (cur < 0) return { text: "적자전환", tone: "down" };
+    return { text: "—", tone: "flat" };
+  }
+  // prev < 0
+  if (cur >= 0) return { text: "흑자전환", tone: "up" };
+  const reduced = Math.abs(cur) < Math.abs(prev);
+  return { text: reduced ? "적자축소" : "적자확대", tone: reduced ? "up" : "down" };
+}
+const toneColor = (t: "up" | "down" | "flat") =>
+  t === "up" ? "text-emerald-600" : t === "down" ? "text-red-600" : "text-gray-400";
+
 function CompareTable({
   heading,
   subtitle,
@@ -59,14 +80,16 @@ function CompareTable({
     v == null ? "—" : unit === "조원" ? fmtWon(v) : `${v.toFixed(1)}%`;
 
   const diffCell = (prev: number | null, cur: number | null, isPP?: boolean) => {
-    const diff =
-      prev == null || cur == null ? null : isPP ? cur - prev : prev === 0 ? null : (cur / prev - 1) * 100;
-    const up = diff !== null && diff > 0;
-    const down = diff !== null && diff < 0;
-    const color = up ? "text-emerald-600" : down ? "text-red-600" : "text-gray-400";
-    const arrow = up ? "▲" : down ? "▼" : "–";
-    const txt = diff === null ? "—" : `${arrow} ${diff >= 0 ? "+" : ""}${diff.toFixed(1)}${isPP ? "%p" : "%"}`;
-    return <span className={`tabular-nums font-semibold ${color}`}>{txt}</span>;
+    if (isPP) {
+      // 비율 항목(영업이익률·부채비율 등)은 %포인트 차이 — 음수여도 의미 있음
+      const diff = prev == null || cur == null ? null : cur - prev;
+      const up = diff !== null && diff > 0;
+      const down = diff !== null && diff < 0;
+      const txt = diff === null ? "—" : `${up ? "▲ +" : down ? "▼ " : "– "}${diff.toFixed(1)}%p`;
+      return <span className={`tabular-nums font-semibold ${toneColor(up ? "up" : down ? "down" : "flat")}`}>{txt}</span>;
+    }
+    const g = growthText(cur, prev);
+    return <span className={`tabular-nums font-semibold ${toneColor(g.tone)}`}>{g.text}</span>;
   };
 
   return (
@@ -226,14 +249,9 @@ export default function DisclosureDetailPage({
   const mdna = (insight as DisclosureInsight & { mdna?: Mdna }).mdna;
   const joFmt = (v: number | null) => fmtWon(v);
   const qoqCell = (cur: number | null, prev: number | null) => {
-    if (cur == null || prev == null || prev === 0) return <span className="text-gray-300">—</span>;
-    const d = (cur / prev - 1) * 100;
-    const up = d > 0;
-    return (
-      <span className={`tabular-nums ${up ? "text-emerald-600" : d < 0 ? "text-red-600" : "text-gray-400"}`}>
-        {up ? "▲" : d < 0 ? "▼" : "–"} {d >= 0 ? "+" : ""}{d.toFixed(1)}%
-      </span>
-    );
+    if (cur == null || prev == null) return <span className="text-gray-300">—</span>;
+    const g = growthText(cur, prev);
+    return <span className={`tabular-nums ${toneColor(g.tone)}`}>{g.text}</span>;
   };
 
   return (
