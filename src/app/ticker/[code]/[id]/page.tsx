@@ -41,6 +41,7 @@ function fmtWon(v: number | null): string {
 function growthText(cur: number | null, prev: number | null): { text: string; tone: "up" | "down" | "flat" } {
   if (cur == null || prev == null) return { text: "—", tone: "flat" };
   if (prev > 0) {
+    if (cur < 0) return { text: "적자전환", tone: "down" }; // 흑자 → 적자
     const d = (cur / prev - 1) * 100;
     return { text: `${d > 0 ? "▲ +" : d < 0 ? "▼ " : "– "}${d.toFixed(1)}%`, tone: d > 0 ? "up" : d < 0 ? "down" : "flat" };
   }

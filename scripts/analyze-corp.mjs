@@ -32,10 +32,13 @@ const signed = (v) => (v >= 0 ? `+${v.toFixed(1)}` : v.toFixed(1));
 // 흑자전환·적자전환·적자축소·적자확대 라벨로 대체한다.
 function growthInfo(cur, prev) {
   if (cur == null || prev == null) return { kind: "na" };
-  if (prev > 0) return { kind: "pct", pct: (cur / prev - 1) * 100 };
+  if (prev > 0) {
+    if (cur < 0) return { kind: "적자전환" }; // 흑자 → 적자
+    return { kind: "pct", pct: (cur / prev - 1) * 100 };
+  }
   if (prev === 0) return { kind: cur > 0 ? "흑자전환" : cur < 0 ? "적자전환" : "na" };
   // prev < 0
-  if (cur >= 0) return { kind: "흑자전환" };
+  if (cur >= 0) return { kind: "흑자전환" }; // 적자 → 흑자
   return { kind: Math.abs(cur) < Math.abs(prev) ? "적자축소" : "적자확대" };
 }
 const gstr = (cur, prev) => {
