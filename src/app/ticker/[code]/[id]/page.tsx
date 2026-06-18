@@ -418,6 +418,13 @@ export default function DisclosureDetailPage({
             curLabel={`${qoq.currentLabel}${qoq.currentDerived ? "*" : ""}`}
             diffLabel="QoQ"
             rows={qoq.rows}
+            badge={
+              qoq.verified ? (
+                <span className="text-xs font-semibold px-2 py-0.5 rounded-full border bg-emerald-50 text-emerald-700 border-emerald-200">
+                  ✓ {qoq.crossChecked ? "DART·네이버 교차검증" : "DART 단독분기 도출"}
+                </span>
+              ) : null
+            }
             note={`※ 직전 분기 대비. 손익은 단독분기(3개월), 재무상태는 분기말 잔액.${
               qoq.prevDerived || qoq.currentDerived
                 ? " * 표시 분기는 연간−(1~3분기)로 도출한 4분기(사업보고서=Q4)."

@@ -113,6 +113,8 @@ export interface QuarterOverQuarter {
   currentLabel: string; // 예: "2026 1분기"
   prevDerived: boolean; // 전분기가 연간−3개분기로 도출된 값인지(Q4)
   currentDerived: boolean; // 당분기가 연간−3개분기로 도출된 값인지(사업보고서 Q4)
+  verified?: boolean; // 단독분기 수치 교차검증 통과 여부
+  crossChecked?: boolean; // 네이버(FnGuide) 단독분기와 실제 대조했는지
   rows: CompareRow[];
 }
 

@@ -1,5 +1,5 @@
 {
-  "analyzedAt": "2026-06-17T15:49:23.930Z",
+  "analyzedAt": "2026-06-18T12:07:57.507Z",
   "engine": "claude-max-plan (dart-insight-tagger)",
   "stockCode": "005930",
   "companyName": "삼성전자",
@@ -3424,6 +3424,8 @@
         "currentLabel": "2026 1분기",
         "prevDerived": true,
         "currentDerived": false,
+        "verified": true,
+        "crossChecked": true,
         "rows": [
           {
             "label": "매출액",
@@ -4178,6 +4180,8 @@
         "currentLabel": "2025 4분기",
         "prevDerived": false,
         "currentDerived": true,
+        "verified": true,
+        "crossChecked": true,
         "rows": [
           {
             "label": "매출액",
@@ -5357,6 +5361,8 @@
         "currentLabel": "2025 3분기",
         "prevDerived": false,
         "currentDerived": false,
+        "verified": true,
+        "crossChecked": true,
         "rows": [
           {
             "label": "매출액",
@@ -6197,6 +6203,8 @@
         "currentLabel": "2025 2분기",
         "prevDerived": false,
         "currentDerived": false,
+        "verified": true,
+        "crossChecked": true,
         "rows": [
           {
             "label": "매출액",
@@ -7048,6 +7056,8 @@
         "currentLabel": "2025 1분기",
         "prevDerived": true,
         "currentDerived": false,
+        "verified": true,
+        "crossChecked": true,
         "rows": [
           {
             "label": "매출액",
@@ -7599,6 +7609,8 @@
         "currentLabel": "2024 4분기",
         "prevDerived": false,
         "currentDerived": true,
+        "verified": true,
+        "crossChecked": false,
         "rows": [
           {
             "label": "매출액",
@@ -8710,6 +8722,8 @@
         "currentLabel": "2024 3분기",
         "prevDerived": false,
         "currentDerived": false,
+        "verified": true,
+        "crossChecked": false,
         "rows": [
           {
             "label": "매출액",
@@ -9549,6 +9563,8 @@
         "currentLabel": "2024 2분기",
         "prevDerived": false,
         "currentDerived": false,
+        "verified": true,
+        "crossChecked": false,
         "rows": [
           {
             "label": "매출액",
@@ -10161,6 +10177,8 @@
         "currentLabel": "2024 1분기",
         "prevDerived": true,
         "currentDerived": false,
+        "verified": true,
+        "crossChecked": false,
         "rows": [
           {
             "label": "매출액",
@@ -10945,6 +10963,8 @@
         "currentLabel": "2023 4분기",
         "prevDerived": false,
         "currentDerived": true,
+        "verified": true,
+        "crossChecked": false,
         "rows": [
           {
             "label": "매출액",
@@ -11785,6 +11805,8 @@
         "currentLabel": "2023 3분기",
         "prevDerived": false,
         "currentDerived": false,
+        "verified": true,
+        "crossChecked": false,
         "rows": [
           {
             "label": "매출액",
@@ -12527,6 +12549,8 @@
         "currentLabel": "2023 2분기",
         "prevDerived": false,
         "currentDerived": false,
+        "verified": true,
+        "crossChecked": false,
         "rows": [
           {
             "label": "매출액",

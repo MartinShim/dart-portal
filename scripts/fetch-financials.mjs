@@ -217,9 +217,17 @@ async function main() {
     console.log(`  ${badge} ${it.report_nm.trim()} : 매출 ${rev}조/영업이익 ${op}조 | 내부정합=${v.arithmeticOk} 네이버=${nv}`);
   }
 
+  // 네이버 단독분기 수치를 분기키(YYYYQn)로 정리해 보존 → analyze-corp가 QoQ 교차검증에 사용
+  const naverByQuarter = {};
+  for (const [ym, val] of Object.entries(naver.quarter)) {
+    const q = { "03": 1, "06": 2, "09": 3, "12": 4 }[ym.slice(4)];
+    if (q) naverByQuarter[`${ym.slice(0, 4)}Q${q}`] = val; // {rev, op} (원)
+  }
+  result.__naverQuarter = naverByQuarter;
+
   const outPath = join(ROOT, "data", `corp-${stock}-financials.json`);
   writeFileSync(outPath, JSON.stringify(result, null, 2), "utf-8");
-  console.log(`✅ ${Object.keys(result).length}개 기간 재무 저장 → data/corp-${stock}-financials.json`);
+  console.log(`✅ ${Object.keys(result).filter((k) => !k.startsWith("__")).length}개 기간 재무 저장 → data/corp-${stock}-financials.json`);
 }
 
 main().catch((e) => { console.error(e); process.exit(1); });
