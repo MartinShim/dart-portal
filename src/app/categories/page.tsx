@@ -29,10 +29,11 @@ const CATEGORIES: { group: string; desc: string; basis: string; tags: TagDef[] }
       { tag: "체질 개선 (신사업 매출 가시화)", meaning: "신성장 동력으로 제시한 신규 사업 부문 매출 비중이 처음으로 의미 있는 수준(예: 10%↑)으로 상승." },
       { tag: "감사의견 적정", meaning: "외부감사 결과 적정의견 — 회계 신뢰성 확인." },
       { tag: "상장폐지 위기", meaning: "상장폐지 사유 발생·이의신청·정리매매 등 증시 퇴출 리스크 진행." },
+      { tag: "고ROE 우량", meaning: "연간 자기자본이익률(ROE)이 15% 이상 — 자본을 효율적으로 굴려 높은 이익을 냄. (분기는 누적 부분치라 연간만 판정)" },
     ],
   },
   {
-    group: "A-2. 컨센서스 대비 & 턴어라운드",
+    group: "A-2. 컨센서스 & 턴어라운드",
     desc: "발표 실적 vs 컨센서스(영업이익 기준) + FnGuide 턴어라운드 5단계 — 최신 정기공시 기준",
     basis: "FnGuide 컨센서스 · 턴어라운드",
     tags: [
@@ -46,15 +47,7 @@ const CATEGORIES: { group: string; desc: string; basis: string; tags: TagDef[] }
     ],
   },
   {
-    group: "A-3. 수익성",
-    desc: "정기공시 재무 기반 — 자본·자산 대비 이익 창출력",
-    basis: "DART 재무제표 (연간 기준)",
-    tags: [
-      { tag: "고ROE 우량", meaning: "연간 자기자본이익률(ROE)이 15% 이상 — 자본을 효율적으로 굴려 높은 이익을 냄. (분기는 누적 부분치라 연간만 판정)" },
-    ],
-  },
-  {
-    group: "A-4. 안정성·재무건전성",
+    group: "A-3. 안정성·재무건전성",
     desc: "정기공시 재무 기반 — 부채·유동성·이자 부담 (사업·반기·분기 모두 부착)",
     basis: "DART 재무제표 (재무상태표·손익계산서)",
     tags: [
@@ -64,7 +57,7 @@ const CATEGORIES: { group: string; desc: string; basis: string; tags: TagDef[] }
     ],
   },
   {
-    group: "A-5. 현금흐름",
+    group: "A-4. 현금흐름",
     desc: "정기공시 현금흐름표 기반 — 실제 현금 창출력 (사업·반기·분기 모두 부착)",
     basis: "DART 현금흐름표 (영업활동현금흐름 − 유형자산 취득)",
     tags: [
@@ -73,7 +66,7 @@ const CATEGORIES: { group: string; desc: string; basis: string; tags: TagDef[] }
     ],
   },
   {
-    group: "A-6. 배당 (주주환원)",
+    group: "A-5. 배당 (주주환원)",
     desc: "정기공시 '배당에 관한 사항' 기반 — 연간 결산배당 기준 (사업보고서)",
     basis: "DART 배당에 관한 사항 (주당현금배당금·배당성향)",
     tags: [
