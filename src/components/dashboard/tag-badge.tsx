@@ -21,6 +21,7 @@ const riskTags = new Set<InsightTag>([
   "이자 못 갚을 위험",
   "현금 소진 (FCF 마이너스)",
   "배당 축소",
+  "영업이익 적자전환",
 ]);
 
 const goodTags = new Set<InsightTag>([
@@ -48,6 +49,7 @@ const goodTags = new Set<InsightTag>([
   "재무 안정 우량",
   "잉여현금 창출 (FCF+)",
   "배당 확대",
+  "영업이익 흑자전환",
 ]);
 
 function getTagStyle(tag: InsightTag): string {

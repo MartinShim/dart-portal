@@ -219,6 +219,9 @@ function buildPeriodicAnalysis(item, fin, qoq, div) {
   } else if (opCmpG.kind === "pct" && revCmpG.kind === "pct" && revCmpG.pct > 0 && opCmpG.pct < 0) {
     tags.push("외형만 성장 (내실 악화)");
   }
+  // 회사 전체(연결) 영업이익 흑자전환/적자전환 — 전년 동기(YoY) 영업이익 기준
+  if (opGY.kind === "흑자전환") tags.push("영업이익 흑자전환");
+  else if (opGY.kind === "적자전환") tags.push("영업이익 적자전환");
   if (tags.length === 0) tags = ["정보 부족"];
 
   // 영향도 — 분기·반기는 분기 실적(QoQ) 방향, 사업보고서는 연간(YoY) 방향 (흑자전환=호재)
