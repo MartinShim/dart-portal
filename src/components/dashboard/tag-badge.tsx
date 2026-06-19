@@ -4,6 +4,7 @@ import type { InsightTag, ImpactLevel } from "@/types/dart";
 
 const riskTags = new Set<InsightTag>([
   "분기 실적 하락",
+  "연간 실적 하락",
   "외형만 성장 (내실 악화)",
   "무늬만 흑자 (영업현금 마이너스)",
   "재고 쌓이는 중",
@@ -22,11 +23,13 @@ const riskTags = new Set<InsightTag>([
   "이자 못 갚을 위험",
   "현금 소진 (FCF 마이너스)",
   "배당 축소",
-  "영업이익 적자전환",
+  "영업이익 적자전환(분기)",
+  "영업이익 적자전환(연간)",
 ]);
 
 const goodTags = new Set<InsightTag>([
   "분기 실적 상승",
+  "연간 실적 상승",
   "흑자 전환(연간)",
   "흑자 전환(분기)",
   "질적 성장 (마진 개선)",
@@ -56,7 +59,8 @@ const goodTags = new Set<InsightTag>([
   "재무 안정 우량",
   "잉여현금 창출 (FCF+)",
   "배당 확대",
-  "영업이익 흑자전환",
+  "영업이익 흑자전환(분기)",
+  "영업이익 흑자전환(연간)",
 ]);
 
 function getTagStyle(tag: InsightTag): string {
