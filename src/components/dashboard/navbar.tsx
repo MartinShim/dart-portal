@@ -25,8 +25,8 @@ export function Navbar({ active }: { active?: (typeof NAV)[number]["key"] }) {
           <SearchBox className="w-full" />
         </div>
 
-        {/* 네비게이션 (우측) */}
-        <nav className="flex items-center gap-1 ml-auto">
+        {/* 네비게이션 (검색창 왼쪽) */}
+        <nav className="flex items-center gap-1">
           {NAV.map((item) => {
             const isActive = active === item.key;
             return (
