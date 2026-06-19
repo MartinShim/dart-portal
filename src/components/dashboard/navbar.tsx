@@ -12,7 +12,7 @@ const NAV = [
 export function Navbar({ active }: { active?: (typeof NAV)[number]["key"] }) {
   return (
     <header className="bg-white border-b border-gray-200 sticky top-0 z-20">
-      <div className="max-w-screen-2xl mx-auto px-6 h-14 flex items-center gap-8">
+      <div className="max-w-screen-2xl mx-auto px-6 h-14 flex items-center gap-8 relative">
         {/* 브랜드 */}
         <Link href="/" className="shrink-0">
           <span className="text-lg font-bold text-gray-900 tracking-tight">
@@ -20,8 +20,13 @@ export function Navbar({ active }: { active?: (typeof NAV)[number]["key"] }) {
           </span>
         </Link>
 
-        {/* 네비게이션 */}
-        <nav className="flex items-center gap-1">
+        {/* 가운데 검색창 */}
+        <div className="absolute left-1/2 -translate-x-1/2 w-full max-w-md px-4">
+          <SearchBox className="w-full" />
+        </div>
+
+        {/* 네비게이션 (우측) */}
+        <nav className="flex items-center gap-1 ml-auto">
           {NAV.map((item) => {
             const isActive = active === item.key;
             return (
@@ -39,9 +44,6 @@ export function Navbar({ active }: { active?: (typeof NAV)[number]["key"] }) {
             );
           })}
         </nav>
-
-        {/* 검색 */}
-        <SearchBox className="ml-auto w-full max-w-[30rem]" />
       </div>
     </header>
   );
