@@ -24,7 +24,9 @@ const clean = (s) => (s ?? "").replace(/\s+/g, " ").trim();
 // 노이즈(집계만, 카드 제외)
 const NOISE_PATTERNS = ["임원ㆍ주요주주특정증권등소유상황보고서", "최대주주등소유주식변동신고서"];
 
-const jo = (x) => (x / 1e12).toFixed(1); // 원 → 조원
+const jo = (x) => (x / 1e12).toFixed(1); // 원 → 조원 (구버전, won으로 대체)
+// 금액 표기: 1조 이상은 '조'(소수1), 1조 미만은 '억'(정수). 단위 접미사 포함.
+const won = (x) => (x == null ? "—" : Math.abs(x) < 1e12 ? `${Math.round(x / 1e8).toLocaleString()}억` : `${(x / 1e12).toFixed(1)}조`);
 const pct = (a, b) => (b === 0 ? null : ((a / b - 1) * 100));
 const signed = (v) => (v >= 0 ? `+${v.toFixed(1)}` : v.toFixed(1));
 
@@ -132,13 +134,13 @@ function buildPeriodicAnalysis(item, fin, qoq, div) {
 
   // 서술형 요약 (검증을 통과한 신뢰 가능한 수치만 사용)
   let narrative =
-    `${term} 연결 기준 매출은 ${jo(rev)}조원으로 전년 동기(${jo(revP)}조원) 대비 ` +
+    `${term} 연결 기준 매출은 ${won(rev)}원으로 전년 동기(${won(revP)}원) 대비 ` +
     `${gstr(rev, revP)} ${gword(rev, revP)}했고, ` +
-    `영업이익은 ${jo(op)}조원으로 전년(${jo(opP)}조원) 대비 ${gword(op, opP)}` +
+    `영업이익은 ${won(op)}원으로 전년(${won(opP)}원) 대비 ${gword(op, opP)}` +
     `${growthInfo(op, opP).kind === "pct" ? `(${gstr(op, opP)})` : ""}했습니다. ` +
     `영업이익률은 ${opMargin.toFixed(1)}%로 전년(${opMarginP.toFixed(1)}%) 대비 ` +
-    `${opMargin >= opMarginP ? "개선" : "악화"}됐으며, 당기순이익은 ${jo(ni)}조원을 기록했습니다. ` +
-    `재무상태는 자산총계 ${jo(asset)}조·부채총계 ${jo(debt)}조·자본총계 ${jo(equity)}조로, ` +
+    `${opMargin >= opMarginP ? "개선" : "악화"}됐으며, 당기순이익은 ${won(ni)}원을 기록했습니다. ` +
+    `재무상태는 자산총계 ${won(asset)}·부채총계 ${won(debt)}·자본총계 ${won(equity)}로, ` +
     `부채비율은 약 ${debtRatio.toFixed(0)}%로 ${debtRatio < 60 ? "안정적인" : debtRatio < 120 ? "보통 수준의" : "다소 높은"} 재무구조입니다.`;
 
   // 전분기(QoQ) 서술 추가 — 분기/반기는 인라인 비교, 사업보고서는 4분기 단독 실적 별도 표기
@@ -149,8 +151,8 @@ function buildPeriodicAnalysis(item, fin, qoq, div) {
     const fp = (lbl) => qg(lbl) ?? "비교불가";
     if (isAnnual) {
       narrative +=
-        ` 한편 4분기 단독 실적은 직전 분기(${qoq.prevLabel}) 대비 매출 ${jo(q4("매출액"))}조(${fp("매출액")}), ` +
-        `영업이익 ${jo(q4("영업이익"))}조(${fp("영업이익")}), 당기순이익 ${jo(q4("당기순이익"))}조(${fp("당기순이익")})를 기록해 ` +
+        ` 한편 4분기 단독 실적은 직전 분기(${qoq.prevLabel}) 대비 매출 ${won(q4("매출액"))}(${fp("매출액")}), ` +
+        `영업이익 ${won(q4("영업이익"))}(${fp("영업이익")}), 당기순이익 ${won(q4("당기순이익"))}(${fp("당기순이익")})를 기록해 ` +
         `${qOpUp === true ? "분기 모멘텀이 이어졌습니다" : qOpUp === false ? "분기 모멘텀은 둔화됐습니다" : "분기 모멘텀을 점검할 필요가 있습니다"}.`;
     } else {
       narrative +=
@@ -162,15 +164,15 @@ function buildPeriodicAnalysis(item, fin, qoq, div) {
 
   const keyPoints = [
     `${term} ${label} 제출 (연결재무제표 기준)`,
-    `매출 ${jo(rev)}조원 (YoY ${gstr(rev, revP)}${isAnnual ? "" : qgInline("매출액")})`,
-    `영업이익 ${jo(op)}조원 (YoY ${gstr(op, opP)}${isAnnual ? "" : qgInline("영업이익")}), 영업이익률 ${opMargin.toFixed(1)}%`,
-    `당기순이익 ${jo(ni)}조원 (YoY ${gstr(ni, niP)}${isAnnual ? "" : qgInline("당기순이익")})`,
+    `매출 ${won(rev)}원 (YoY ${gstr(rev, revP)}${isAnnual ? "" : qgInline("매출액")})`,
+    `영업이익 ${won(op)}원 (YoY ${gstr(op, opP)}${isAnnual ? "" : qgInline("영업이익")}), 영업이익률 ${opMargin.toFixed(1)}%`,
+    `당기순이익 ${won(ni)}원 (YoY ${gstr(ni, niP)}${isAnnual ? "" : qgInline("당기순이익")})`,
     `부채비율 약 ${debtRatio.toFixed(0)}%`,
   ];
   // 사업보고서: 4분기 단독 실적(직전 분기 대비)을 별도 줄로 추가
   if (isAnnual && qoq) {
     keyPoints.push(
-      `4분기 단독 — 매출 ${jo(q4("매출액"))}조(QoQ ${qOnly("매출액")}), 영업이익 ${jo(q4("영업이익"))}조(QoQ ${qOnly("영업이익")}), 순이익 ${jo(q4("당기순이익"))}조(QoQ ${qOnly("당기순이익")})`
+      `4분기 단독 — 매출 ${won(q4("매출액"))}(QoQ ${qOnly("매출액")}), 영업이익 ${won(q4("영업이익"))}(QoQ ${qOnly("영업이익")}), 순이익 ${won(q4("당기순이익"))}(QoQ ${qOnly("당기순이익")})`
     );
   }
 
@@ -179,9 +181,9 @@ function buildPeriodicAnalysis(item, fin, qoq, div) {
   const opGY = growthInfo(op, opP); // 영업이익 YoY 증감 구분
   const revGY = growthInfo(rev, revP);
   if (opGY.kind === "흑자전환")
-    positives.push(`영업이익이 전년 ${jo(opP)}조원 적자에서 ${jo(op)}조원 흑자로 전환`);
+    positives.push(`영업이익이 전년 ${won(opP)}원 적자에서 ${won(op)}원 흑자로 전환`);
   else if (opGY.kind === "적자축소")
-    positives.push(`영업적자가 ${jo(opP)}조원 → ${jo(op)}조원으로 축소`);
+    positives.push(`영업적자가 ${won(opP)}원 → ${won(op)}원으로 축소`);
   if (opGY.kind === "pct" && opGY.pct > 0 && revGY.kind === "pct" && opGY.pct > revGY.pct)
     positives.push(`영업이익 증가율(${signed(opGY.pct)}%)이 매출 증가율(${signed(revGY.pct)}%)을 상회 → 마진 개선('질적 성장')`);
   else if (opMargin >= opMarginP && opMargin > 0)
@@ -190,8 +192,8 @@ function buildPeriodicAnalysis(item, fin, qoq, div) {
   if (debtRatio < 60) positives.push(`부채비율 약 ${debtRatio.toFixed(0)}%로 재무 건전성 양호`);
 
   if (revGY.kind === "pct" && revGY.pct < 0) negatives.push(`매출이 전년 대비 ${signed(revGY.pct)}% 감소(외형 축소)`);
-  if (opGY.kind === "적자전환") negatives.push(`영업이익이 전년 ${jo(opP)}조원 흑자에서 ${jo(op)}조원 적자로 전환`);
-  else if (opGY.kind === "적자확대") negatives.push(`영업적자가 ${jo(opP)}조원 → ${jo(op)}조원으로 확대`);
+  if (opGY.kind === "적자전환") negatives.push(`영업이익이 전년 ${won(opP)}원 흑자에서 ${won(op)}원 적자로 전환`);
+  else if (opGY.kind === "적자확대") negatives.push(`영업적자가 ${won(opP)}원 → ${won(op)}원으로 확대`);
   else if (opGY.kind === "pct" && opGY.pct < 0) negatives.push(`영업이익이 전년 대비 ${signed(opGY.pct)}% 감소(수익성 둔화)`);
   if (revGY.kind === "pct" && opGY.kind === "pct" && revGY.pct > 0 && opGY.pct < 0)
     negatives.push(`매출은 늘었으나 영업이익이 줄어 '외형만 성장' 우려`);
@@ -258,9 +260,9 @@ function buildPeriodicAnalysis(item, fin, qoq, div) {
   }
 
   // 태그 부여 근거 — 분기/반기는 인라인 QoQ, 사업보고서는 연간 YoY + 4분기 QoQ 별도
-  let evidence = `${term} 매출 ${jo(rev)}조(YoY ${gstr(rev, revP)}${isAnnual ? "" : qgInline("매출액")}), 영업이익 ${jo(op)}조(YoY ${gstr(op, opP)}${isAnnual ? "" : qgInline("영업이익")}), 영업이익률 ${opMargin.toFixed(1)}% 기준 판단.`;
+  let evidence = `${term} 매출 ${won(rev)}(YoY ${gstr(rev, revP)}${isAnnual ? "" : qgInline("매출액")}), 영업이익 ${won(op)}(YoY ${gstr(op, opP)}${isAnnual ? "" : qgInline("영업이익")}), 영업이익률 ${opMargin.toFixed(1)}% 기준 판단.`;
   if (isAnnual && qoq) {
-    evidence += ` 추가로 4분기 단독 영업이익 ${jo(q4("영업이익"))}조(전분기비 ${qOnly("영업이익")}) 반영.`;
+    evidence += ` 추가로 4분기 단독 영업이익 ${won(q4("영업이익"))}(전분기비 ${qOnly("영업이익")}) 반영.`;
   }
 
   // ── 추가 재무지표(수익성·안정성·현금흐름·배당) 계산 + 태그 ──────────────
