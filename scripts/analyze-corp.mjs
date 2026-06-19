@@ -693,9 +693,11 @@ const insights = core.map((it) => {
     const beatCount = present.filter((m) => m.beat).length;
 
     // 태깅은 '영업이익' 기준 (한국 시장 관행). 표·서술은 3개 모두 표시.
+    // 사업보고서=연간 컨센서스, 분기·반기=분기 컨센서스 → 태그에 (연간)/(분기) 구분
     const op = metrics["영업이익"];
     if (op) {
-      tags.push(op.beat ? "영업이익 컨센서스 상회" : "영업이익 컨센서스 하회");
+      const cSuffix = /사업보고서/.test(it.report_nm) ? "(연간)" : "(분기)";
+      tags.push((op.beat ? "영업이익 컨센서스 상회" : "영업이익 컨센서스 하회") + cSuffix);
     }
 
     // 서술(긍정/부정)에는 3개 지표 상회/하회 내역을 모두 표기
@@ -713,11 +715,11 @@ const insights = core.map((it) => {
   // 연간 턴어라운드(A)는 최신 사업보고서에만 부착 (분기 모멘텀을 연간 공시에 붙이지 않음)
   if (it.rcept_no === latestQuarterlyId) {
     const ttag = turnaroundTag(TURNAROUND.Q?.OPER?.category);
-    if (ttag && !tags.includes(ttag)) tags.push(ttag);
+    if (ttag) { const t = `${ttag}(분기)`; if (!tags.includes(t)) tags.push(t); }
   }
   if (it.rcept_no === latestAnnualId) {
     const ttag = turnaroundTag(TURNAROUND.A?.OPER?.category);
-    if (ttag && !tags.includes(ttag)) tags.push(ttag);
+    if (ttag) { const t = `${ttag}(연간)`; if (!tags.includes(t)) tags.push(t); }
   }
 
   return {
