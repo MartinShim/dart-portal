@@ -9,7 +9,7 @@ const ANALYZED = [
   { code: "000660", name: "SK하이닉스", market: "KOSPI", sector: "반도체", note: "211건 분석" },
   { code: "005380", name: "현대자동차", market: "KOSPI", sector: "자동차", note: "265건 분석" },
   { code: "042700", name: "한미반도체", market: "KOSPI", sector: "반도체 장비", note: "66건 분석" },
-  { code: "036570", name: "엔씨소프트", market: "KOSPI", sector: "게임", note: "60건 분석" },
+  { code: "036570", name: "NC", market: "KOSPI", sector: "게임", note: "60건 분석" },
   { code: "122870", name: "와이지엔터테인먼트", market: "KOSDAQ", sector: "엔터테인먼트", note: "69건 분석" },
   { code: "247540", name: "에코프로비엠", market: "KOSDAQ", sector: "2차전지 소재", note: "171건 분석" },
 ];
