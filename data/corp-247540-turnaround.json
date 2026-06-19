@@ -1,0 +1,24 @@
+{
+  "fetchedAt": "2026-06-19T12:31:30.294Z",
+  "source": "FnGuide 턴어라운드",
+  "stock": "247540",
+  "Q": {},
+  "A": {
+    "OPER": {
+      "category": "흑자전환",
+      "gsNm": "Annual",
+      "dataGb": "확정",
+      "cur": 143310000000,
+      "prev": -34108999999.999996,
+      "growth": null
+    },
+    "NET": {
+      "category": "흑자전환",
+      "gsNm": "Annual",
+      "dataGb": "확정",
+      "cur": 39371000000,
+      "prev": -96512000000,
+      "growth": null
+    }
+  }
+}

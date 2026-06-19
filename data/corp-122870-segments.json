@@ -1,0 +1,29 @@
+{
+  "fetchedAt": "2026-06-19T12:32:02.370Z",
+  "stock": "122870",
+  "source": "DART 정기공시 '사업부문별 요약 재무 현황' (단독분기 환산·QoQ)",
+  "singleSegment": false,
+  "periods": {
+    "2025Q3": {
+      "label": "2025 3분기",
+      "prevKey": "2025Q2",
+      "prevLabel": "2025 2분기",
+      "rows": [
+        {
+          "name": "엔터테인먼트 관련",
+          "revenue": 203984137956000000,
+          "op": 31596816711000000,
+          "prevRevenue": null,
+          "prevOp": null
+        },
+        {
+          "name": "금융부문",
+          "revenue": 0,
+          "op": 6340648766000000,
+          "prevRevenue": null,
+          "prevOp": null
+        }
+      ]
+    }
+  }
+}

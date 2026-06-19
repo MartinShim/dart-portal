@@ -1,0 +1,1000 @@
+{
+  "20260515001109": {
+    "period": {
+      "year": "2026",
+      "reprt_code": "11013",
+      "label": "1분기보고서",
+      "periodMonth": "03"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 5156847243516,
+        "thstrm_nm": "제 11 기1분기말",
+        "frmtrm": 4882022445703,
+        "frmtrm_nm": "제 10 기말"
+      },
+      "부채총계": {
+        "thstrm": 3071949325822,
+        "thstrm_nm": "제 11 기1분기말",
+        "frmtrm": 2866014511120,
+        "frmtrm_nm": "제 10 기말"
+      },
+      "자본총계": {
+        "thstrm": 2084897917694,
+        "thstrm_nm": "제 11 기1분기말",
+        "frmtrm": 2016007934583,
+        "frmtrm_nm": "제 10 기말"
+      },
+      "매출액": {
+        "thstrm": 605361464988,
+        "thstrm_nm": "제 11 기1분기",
+        "frmtrm": 629788701177,
+        "frmtrm_nm": "제 10 기1분기"
+      },
+      "영업이익": {
+        "thstrm": 20942374090,
+        "thstrm_nm": "제 11 기1분기",
+        "frmtrm": 2269955889,
+        "frmtrm_nm": "제 10 기1분기"
+      },
+      "당기순이익": {
+        "thstrm": 12156221655,
+        "thstrm_nm": "제 11 기1분기",
+        "frmtrm": -9968769341,
+        "frmtrm_nm": "제 10 기1분기"
+      }
+    },
+    "extra": {
+      "유동자산": 1486900367351,
+      "유동부채": 2102723775220,
+      "이자비용": 38105228658,
+      "영업활동현금흐름": -88859252418,
+      "유형자산취득": 98576621381
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": true,
+      "crossChecked": true
+    }
+  },
+  "20260318001622": {
+    "period": {
+      "year": "2025",
+      "reprt_code": "11011",
+      "label": "사업보고서",
+      "periodMonth": "12"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 4882022445703,
+        "thstrm_nm": "제 10 기",
+        "frmtrm": 4323660098124,
+        "frmtrm_nm": "제 9 기"
+      },
+      "부채총계": {
+        "thstrm": 2866014511120,
+        "thstrm_nm": "제 10 기",
+        "frmtrm": 2346640328950,
+        "frmtrm_nm": "제 9 기"
+      },
+      "자본총계": {
+        "thstrm": 2016007934583,
+        "thstrm_nm": "제 10 기",
+        "frmtrm": 1977019769174,
+        "frmtrm_nm": "제 9 기"
+      },
+      "매출액": {
+        "thstrm": 2531576384113,
+        "thstrm_nm": "제 10 기",
+        "frmtrm": 2766837750152,
+        "frmtrm_nm": "제 9 기"
+      },
+      "영업이익": {
+        "thstrm": 143309899725,
+        "thstrm_nm": "제 10 기",
+        "frmtrm": -34109364109,
+        "frmtrm_nm": "제 9 기"
+      },
+      "당기순이익": {
+        "thstrm": 91587534892,
+        "thstrm_nm": "제 10 기",
+        "frmtrm": -58508991346,
+        "frmtrm_nm": "제 9 기"
+      }
+    },
+    "extra": {
+      "유동자산": 1390244218752,
+      "유동부채": 1922081128259,
+      "이자비용": 147552358536,
+      "영업활동현금흐름": 214707183992,
+      "유형자산취득": 418130148124
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": true,
+      "crossChecked": true
+    }
+  },
+  "20251114000765": {
+    "period": {
+      "year": "2025",
+      "reprt_code": "11014",
+      "label": "3분기보고서",
+      "periodMonth": "09"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 4624471523400,
+        "thstrm_nm": "제 10 기3분기말",
+        "frmtrm": 4323660098124,
+        "frmtrm_nm": "제 9 기말"
+      },
+      "부채총계": {
+        "thstrm": 2661814349720,
+        "thstrm_nm": "제 10 기3분기말",
+        "frmtrm": 2346640328950,
+        "frmtrm_nm": "제 9 기말"
+      },
+      "자본총계": {
+        "thstrm": 1962657173680,
+        "thstrm_nm": "제 10 기3분기말",
+        "frmtrm": 1977019769174,
+        "frmtrm_nm": "제 9 기말"
+      },
+      "매출액": {
+        "thstrm": 625060142880,
+        "thstrm_nm": "제 10 기3분기",
+        "frmtrm": 521936343949,
+        "frmtrm_nm": "제 9 기3분기"
+      },
+      "영업이익": {
+        "thstrm": 50480514861,
+        "thstrm_nm": "제 10 기3분기",
+        "frmtrm": -41229364045,
+        "frmtrm_nm": "제 9 기3분기"
+      },
+      "당기순이익": {
+        "thstrm": 49070561957,
+        "thstrm_nm": "제 10 기3분기",
+        "frmtrm": -49543318352,
+        "frmtrm_nm": "제 9 기3분기"
+      }
+    },
+    "extra": {
+      "유동자산": 1359880456956,
+      "유동부채": 1931095480744,
+      "이자비용": 12686277378,
+      "영업활동현금흐름": -196674785597,
+      "유형자산취득": 264214863464
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": true,
+      "crossChecked": true
+    }
+  },
+  "20250814001299": {
+    "period": {
+      "year": "2025",
+      "reprt_code": "11012",
+      "label": "반기보고서",
+      "periodMonth": "06"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 4781814607945,
+        "thstrm_nm": "제 10 기반기말",
+        "frmtrm": 4323660098124,
+        "frmtrm_nm": "제 9 기말"
+      },
+      "부채총계": {
+        "thstrm": 2837248494489,
+        "thstrm_nm": "제 10 기반기말",
+        "frmtrm": 2346640328950,
+        "frmtrm_nm": "제 9 기말"
+      },
+      "자본총계": {
+        "thstrm": 1944566113456,
+        "thstrm_nm": "제 10 기반기말",
+        "frmtrm": 1977019769174,
+        "frmtrm_nm": "제 9 기말"
+      },
+      "매출액": {
+        "thstrm": 779716508199,
+        "thstrm_nm": "제 10 기반기",
+        "frmtrm": 809516920383,
+        "frmtrm_nm": "제 9 기반기"
+      },
+      "영업이익": {
+        "thstrm": 49000956082,
+        "thstrm_nm": "제 10 기반기",
+        "frmtrm": 3891624609,
+        "frmtrm_nm": "제 9 기반기"
+      },
+      "당기순이익": {
+        "thstrm": 34265184612,
+        "thstrm_nm": "제 10 기반기",
+        "frmtrm": 6945050188,
+        "frmtrm_nm": "제 9 기반기"
+      }
+    },
+    "extra": {
+      "유동자산": 1690911715707,
+      "유동부채": 1627107763131,
+      "이자비용": 67718311586,
+      "영업활동현금흐름": -260175761837,
+      "유형자산취득": 178502397750
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": true,
+      "crossChecked": true
+    }
+  },
+  "20250514000385": {
+    "period": {
+      "year": "2025",
+      "reprt_code": "11013",
+      "label": "1분기보고서",
+      "periodMonth": "03"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 4657488840913,
+        "thstrm_nm": "제 10 기1분기말",
+        "frmtrm": 4323660098124,
+        "frmtrm_nm": "제 9 기말"
+      },
+      "부채총계": {
+        "thstrm": 2696093761265,
+        "thstrm_nm": "제 10 기1분기말",
+        "frmtrm": 2346640328950,
+        "frmtrm_nm": "제 9 기말"
+      },
+      "자본총계": {
+        "thstrm": 1961395079648,
+        "thstrm_nm": "제 10 기1분기말",
+        "frmtrm": 1977019769174,
+        "frmtrm_nm": "제 9 기말"
+      },
+      "매출액": {
+        "thstrm": 629788701177,
+        "thstrm_nm": "제 10 기1분기",
+        "frmtrm": 970459189322,
+        "frmtrm_nm": "제 9 기1분기"
+      },
+      "영업이익": {
+        "thstrm": 2269955889,
+        "thstrm_nm": "제 10 기1분기",
+        "frmtrm": 6684156866,
+        "frmtrm_nm": "제 9 기1분기"
+      },
+      "당기순이익": {
+        "thstrm": -9968769341,
+        "thstrm_nm": "제 10 기1분기",
+        "frmtrm": -4946358500,
+        "frmtrm_nm": "제 9 기1분기"
+      }
+    },
+    "extra": {
+      "유동자산": 1610329593909,
+      "유동부채": 1408716888839,
+      "이자비용": 33514541733,
+      "영업활동현금흐름": -85264131069,
+      "유형자산취득": 152096964731
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": true,
+      "crossChecked": true
+    }
+  },
+  "20250325000761": {
+    "period": {
+      "year": "2024",
+      "reprt_code": "11011",
+      "label": "사업보고서",
+      "periodMonth": "12"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 4323660098124,
+        "thstrm_nm": "제 9 기",
+        "frmtrm": 4361774597751,
+        "frmtrm_nm": "제 8 기"
+      },
+      "부채총계": {
+        "thstrm": 2346640328950,
+        "thstrm_nm": "제 9 기",
+        "frmtrm": 2762382311340,
+        "frmtrm_nm": "제 8 기"
+      },
+      "자본총계": {
+        "thstrm": 1977019769174,
+        "thstrm_nm": "제 9 기",
+        "frmtrm": 1599392286411,
+        "frmtrm_nm": "제 8 기"
+      },
+      "매출액": {
+        "thstrm": 2766837750152,
+        "thstrm_nm": "제 9 기",
+        "frmtrm": 6900867843535,
+        "frmtrm_nm": "제 8 기"
+      },
+      "영업이익": {
+        "thstrm": -34109364109,
+        "thstrm_nm": "제 9 기",
+        "frmtrm": 156029935394,
+        "frmtrm_nm": "제 8 기"
+      },
+      "당기순이익": {
+        "thstrm": -58508991346,
+        "thstrm_nm": "제 9 기",
+        "frmtrm": 54685871623,
+        "frmtrm_nm": "제 8 기"
+      }
+    },
+    "extra": {
+      "유동자산": 1377994380074,
+      "유동부채": 1297207589056,
+      "이자비용": 175425579937,
+      "영업활동현금흐름": 670144487342,
+      "유형자산취득": 1023789607558
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": true,
+      "crossChecked": true
+    }
+  },
+  "20250317000937": {
+    "period": {
+      "year": "2024",
+      "reprt_code": "11011",
+      "label": "사업보고서",
+      "periodMonth": "12"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 4323660098124,
+        "thstrm_nm": "제 9 기",
+        "frmtrm": 4361774597751,
+        "frmtrm_nm": "제 8 기"
+      },
+      "부채총계": {
+        "thstrm": 2346640328950,
+        "thstrm_nm": "제 9 기",
+        "frmtrm": 2762382311340,
+        "frmtrm_nm": "제 8 기"
+      },
+      "자본총계": {
+        "thstrm": 1977019769174,
+        "thstrm_nm": "제 9 기",
+        "frmtrm": 1599392286411,
+        "frmtrm_nm": "제 8 기"
+      },
+      "매출액": {
+        "thstrm": 2766837750152,
+        "thstrm_nm": "제 9 기",
+        "frmtrm": 6900867843535,
+        "frmtrm_nm": "제 8 기"
+      },
+      "영업이익": {
+        "thstrm": -34109364109,
+        "thstrm_nm": "제 9 기",
+        "frmtrm": 156029935394,
+        "frmtrm_nm": "제 8 기"
+      },
+      "당기순이익": {
+        "thstrm": -58508991346,
+        "thstrm_nm": "제 9 기",
+        "frmtrm": 54685871623,
+        "frmtrm_nm": "제 8 기"
+      }
+    },
+    "extra": {
+      "유동자산": 1377994380074,
+      "유동부채": 1297207589056,
+      "이자비용": 175425579937,
+      "영업활동현금흐름": 670144487342,
+      "유형자산취득": 1023789607558
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": true,
+      "crossChecked": true
+    }
+  },
+  "20241114002816": {
+    "period": {
+      "year": "2024",
+      "reprt_code": "11014",
+      "label": "3분기보고서",
+      "periodMonth": "09"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 4152428081248,
+        "thstrm_nm": "제 9 기3분기말",
+        "frmtrm": 4361774597751,
+        "frmtrm_nm": "제 8 기말"
+      },
+      "부채총계": {
+        "thstrm": 2597459161939,
+        "thstrm_nm": "제 9 기3분기말",
+        "frmtrm": 2762382311340,
+        "frmtrm_nm": "제 8 기말"
+      },
+      "자본총계": {
+        "thstrm": 1554968919309,
+        "thstrm_nm": "제 9 기3분기말",
+        "frmtrm": 1599392286411,
+        "frmtrm_nm": "제 8 기말"
+      },
+      "매출액": {
+        "thstrm": 521936343949,
+        "thstrm_nm": "제 9 기3분기",
+        "frmtrm": 1803254041355,
+        "frmtrm_nm": "제 8 기3분기"
+      },
+      "영업이익": {
+        "thstrm": -41229364045,
+        "thstrm_nm": "제 9 기3분기",
+        "frmtrm": 45873974211,
+        "frmtrm_nm": "제 8 기3분기"
+      },
+      "당기순이익": {
+        "thstrm": -49543318352,
+        "thstrm_nm": "제 9 기3분기",
+        "frmtrm": 21187003362,
+        "frmtrm_nm": "제 8 기3분기"
+      }
+    },
+    "extra": {
+      "유동자산": 1487150565650,
+      "유동부채": 1558552897141,
+      "이자비용": 35899604806,
+      "영업활동현금흐름": 501968733194,
+      "유형자산취득": 819043608795
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": null,
+      "crossChecked": false
+    }
+  },
+  "20240814002004": {
+    "period": {
+      "year": "2024",
+      "reprt_code": "11012",
+      "label": "반기보고서",
+      "periodMonth": "06"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 4306928495486,
+        "thstrm_nm": "제 9 기반기말",
+        "frmtrm": 4361774597751,
+        "frmtrm_nm": "제 8 기말"
+      },
+      "부채총계": {
+        "thstrm": 2654511152119,
+        "thstrm_nm": "제 9 기반기말",
+        "frmtrm": 2762382311340,
+        "frmtrm_nm": "제 8 기말"
+      },
+      "자본총계": {
+        "thstrm": 1652417343367,
+        "thstrm_nm": "제 9 기반기말",
+        "frmtrm": 1599392286411,
+        "frmtrm_nm": "제 8 기말"
+      },
+      "매출액": {
+        "thstrm": 809516920383,
+        "thstrm_nm": "제 9 기반기",
+        "frmtrm": 1906226538828,
+        "frmtrm_nm": "제 8 기반기"
+      },
+      "영업이익": {
+        "thstrm": 3891624609,
+        "thstrm_nm": "제 9 기반기",
+        "frmtrm": 114700920024,
+        "frmtrm_nm": "제 8 기반기"
+      },
+      "당기순이익": {
+        "thstrm": 6945050188,
+        "thstrm_nm": "제 9 기반기",
+        "frmtrm": 82468242432,
+        "frmtrm_nm": "제 8 기반기"
+      }
+    },
+    "extra": {
+      "유동자산": 1732355977561,
+      "유동부채": 1883320352846,
+      "이자비용": 40263650198,
+      "영업활동현금흐름": 375333664860,
+      "유형자산취득": 649580342453
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": null,
+      "crossChecked": false
+    }
+  },
+  "20240514001631": {
+    "period": {
+      "year": "2024",
+      "reprt_code": "11013",
+      "label": "1분기보고서",
+      "periodMonth": "03"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 4279194640794,
+        "thstrm_nm": "제 9 기1분기말",
+        "frmtrm": 4361774597751,
+        "frmtrm_nm": "제 8 기말"
+      },
+      "부채총계": {
+        "thstrm": 2659880029322,
+        "thstrm_nm": "제 9 기1분기말",
+        "frmtrm": 2762382311340,
+        "frmtrm_nm": "제 8 기말"
+      },
+      "자본총계": {
+        "thstrm": 1619314611472,
+        "thstrm_nm": "제 9 기1분기말",
+        "frmtrm": 1599392286411,
+        "frmtrm_nm": "제 8 기말"
+      },
+      "매출액": {
+        "thstrm": 970459189322,
+        "thstrm_nm": "제 9 기1분기",
+        "frmtrm": 2010989897316,
+        "frmtrm_nm": "제 8 기1분기"
+      },
+      "영업이익": {
+        "thstrm": 6684156866,
+        "thstrm_nm": "제 9 기1분기",
+        "frmtrm": 107327003425,
+        "frmtrm_nm": "제 8 기1분기"
+      },
+      "당기순이익": {
+        "thstrm": -4946358500,
+        "thstrm_nm": "제 9 기1분기",
+        "frmtrm": 80392620551,
+        "frmtrm_nm": "제 8 기1분기"
+      }
+    },
+    "extra": {
+      "유동자산": 2079406550318,
+      "유동부채": 1877918808763,
+      "이자비용": 49956180081,
+      "영업활동현금흐름": 146344151272,
+      "유형자산취득": 331328137830
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": null,
+      "crossChecked": false
+    }
+  },
+  "20240417000540": {
+    "period": {
+      "year": "2023",
+      "reprt_code": "11011",
+      "label": "사업보고서",
+      "periodMonth": "12"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 4361774597751,
+        "thstrm_nm": "제 8 기",
+        "frmtrm": 3374166378975,
+        "frmtrm_nm": "제 7 기"
+      },
+      "부채총계": {
+        "thstrm": 2762382311340,
+        "thstrm_nm": "제 8 기",
+        "frmtrm": 1885951251552,
+        "frmtrm_nm": "제 7 기"
+      },
+      "자본총계": {
+        "thstrm": 1599392286411,
+        "thstrm_nm": "제 8 기",
+        "frmtrm": 1488215127423,
+        "frmtrm_nm": "제 7 기"
+      },
+      "매출액": {
+        "thstrm": 6900867843535,
+        "thstrm_nm": "제 8 기",
+        "frmtrm": 5357607238956,
+        "frmtrm_nm": "제 7 기"
+      },
+      "영업이익": {
+        "thstrm": 156029935394,
+        "thstrm_nm": "제 8 기",
+        "frmtrm": 380676718075,
+        "frmtrm_nm": "제 7 기"
+      },
+      "당기순이익": {
+        "thstrm": 54685871623,
+        "thstrm_nm": "제 8 기",
+        "frmtrm": 272653525172,
+        "frmtrm_nm": "제 7 기"
+      }
+    },
+    "extra": {
+      "유동자산": 2443491616196,
+      "유동부채": 2131306763902,
+      "이자비용": 240636543651,
+      "영업활동현금흐름": 20620682315,
+      "유형자산취득": 756168491423
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": true,
+      "crossChecked": true
+    }
+  },
+  "20240318000873": {
+    "period": {
+      "year": "2023",
+      "reprt_code": "11011",
+      "label": "사업보고서",
+      "periodMonth": "12"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 4361774597751,
+        "thstrm_nm": "제 8 기",
+        "frmtrm": 3374166378975,
+        "frmtrm_nm": "제 7 기"
+      },
+      "부채총계": {
+        "thstrm": 2762382311340,
+        "thstrm_nm": "제 8 기",
+        "frmtrm": 1885951251552,
+        "frmtrm_nm": "제 7 기"
+      },
+      "자본총계": {
+        "thstrm": 1599392286411,
+        "thstrm_nm": "제 8 기",
+        "frmtrm": 1488215127423,
+        "frmtrm_nm": "제 7 기"
+      },
+      "매출액": {
+        "thstrm": 6900867843535,
+        "thstrm_nm": "제 8 기",
+        "frmtrm": 5357607238956,
+        "frmtrm_nm": "제 7 기"
+      },
+      "영업이익": {
+        "thstrm": 156029935394,
+        "thstrm_nm": "제 8 기",
+        "frmtrm": 380676718075,
+        "frmtrm_nm": "제 7 기"
+      },
+      "당기순이익": {
+        "thstrm": 54685871623,
+        "thstrm_nm": "제 8 기",
+        "frmtrm": 272653525172,
+        "frmtrm_nm": "제 7 기"
+      }
+    },
+    "extra": {
+      "유동자산": 2443491616196,
+      "유동부채": 2131306763902,
+      "이자비용": 240636543651,
+      "영업활동현금흐름": 20620682315,
+      "유형자산취득": 756168491423
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": true,
+      "crossChecked": true
+    }
+  },
+  "20231114001615": {
+    "period": {
+      "year": "2023",
+      "reprt_code": "11014",
+      "label": "3분기보고서",
+      "periodMonth": "09"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 4805541727324,
+        "thstrm_nm": "제 8 기3분기말",
+        "frmtrm": 3374166378975,
+        "frmtrm_nm": "제 7 기말"
+      },
+      "부채총계": {
+        "thstrm": 3092709263535,
+        "thstrm_nm": "제 8 기3분기말",
+        "frmtrm": 1885951251552,
+        "frmtrm_nm": "제 7 기말"
+      },
+      "자본총계": {
+        "thstrm": 1712832463789,
+        "thstrm_nm": "제 8 기3분기말",
+        "frmtrm": 1488215127423,
+        "frmtrm_nm": "제 7 기말"
+      },
+      "매출액": {
+        "thstrm": 1803254041355,
+        "thstrm_nm": "제 8 기3분기",
+        "frmtrm": 1563207394715,
+        "frmtrm_nm": "제 7 기3분기"
+      },
+      "영업이익": {
+        "thstrm": 45873974211,
+        "thstrm_nm": "제 8 기3분기",
+        "frmtrm": 141462485421,
+        "frmtrm_nm": "제 7 기3분기"
+      },
+      "당기순이익": {
+        "thstrm": 21187003362,
+        "thstrm_nm": "제 8 기3분기",
+        "frmtrm": 109627566381,
+        "frmtrm_nm": "제 7 기3분기"
+      }
+    },
+    "extra": {
+      "유동자산": 3123466620537,
+      "유동부채": 2422327163485,
+      "이자비용": 61380039896,
+      "영업활동현금흐름": -489582219104,
+      "유형자산취득": -590933685910
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": null,
+      "crossChecked": false
+    }
+  },
+  "20230814002712": {
+    "period": {
+      "year": "2023",
+      "reprt_code": "11012",
+      "label": "반기보고서",
+      "periodMonth": "06"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 4268213820243,
+        "thstrm_nm": "제 8 기반기말",
+        "frmtrm": 3374166378975,
+        "frmtrm_nm": "제 7 기말"
+      },
+      "부채총계": {
+        "thstrm": 2598209304518,
+        "thstrm_nm": "제 8 기반기말",
+        "frmtrm": 1885951251552,
+        "frmtrm_nm": "제 7 기말"
+      },
+      "자본총계": {
+        "thstrm": 1670004515725,
+        "thstrm_nm": "제 8 기반기말",
+        "frmtrm": 1488215127423,
+        "frmtrm_nm": "제 7 기말"
+      },
+      "매출액": {
+        "thstrm": 1906226538828,
+        "thstrm_nm": "제 8 기반기",
+        "frmtrm": 1187144379130,
+        "frmtrm_nm": "제 7 기반기"
+      },
+      "영업이익": {
+        "thstrm": 114700920024,
+        "thstrm_nm": "제 8 기반기",
+        "frmtrm": 102892913719,
+        "frmtrm_nm": "제 7 기반기"
+      },
+      "당기순이익": {
+        "thstrm": 82468242432,
+        "thstrm_nm": "제 8 기반기",
+        "frmtrm": 77776647922,
+        "frmtrm_nm": "제 7 기반기"
+      }
+    },
+    "extra": {
+      "유동자산": 2746153537292,
+      "유동부채": 2187461064698,
+      "이자비용": 53521722195,
+      "영업활동현금흐름": -384266854538,
+      "유형자산취득": -355467034982
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": null,
+      "crossChecked": false
+    }
+  },
+  "20230515001464": {
+    "period": {
+      "year": "2023",
+      "reprt_code": "11013",
+      "label": "1분기보고서",
+      "periodMonth": "03"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 4141985196011,
+        "thstrm_nm": "제 8 기1분기말",
+        "frmtrm": 3374166378975,
+        "frmtrm_nm": "제 7 기말"
+      },
+      "부채총계": {
+        "thstrm": 2581553023711,
+        "thstrm_nm": "제 8 기1분기말",
+        "frmtrm": 1885951251552,
+        "frmtrm_nm": "제 7 기말"
+      },
+      "자본총계": {
+        "thstrm": 1560432172300,
+        "thstrm_nm": "제 8 기1분기말",
+        "frmtrm": 1488215127423,
+        "frmtrm_nm": "제 7 기말"
+      },
+      "매출액": {
+        "thstrm": 2010989897316,
+        "thstrm_nm": "제 8 기1분기",
+        "frmtrm": 662461915161,
+        "frmtrm_nm": "제 7 기1분기"
+      },
+      "영업이익": {
+        "thstrm": 107327003425,
+        "thstrm_nm": "제 8 기1분기",
+        "frmtrm": 41062294987,
+        "frmtrm_nm": "제 7 기1분기"
+      },
+      "당기순이익": {
+        "thstrm": 80392620551,
+        "thstrm_nm": "제 8 기1분기",
+        "frmtrm": 30411457961,
+        "frmtrm_nm": "제 7 기1분기"
+      }
+    },
+    "extra": {
+      "유동자산": 2915180233912,
+      "유동부채": 2264333240646,
+      "이자비용": 73048075955,
+      "영업활동현금흐름": -375692460613,
+      "유형자산취득": -122943875359
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": null,
+      "crossChecked": false
+    }
+  },
+  "20230321001436": {
+    "period": {
+      "year": "2022",
+      "reprt_code": "11011",
+      "label": "사업보고서",
+      "periodMonth": "12"
+    },
+    "fs_div": "CFS",
+    "accounts": {
+      "자산총계": {
+        "thstrm": 3374166378975,
+        "thstrm_nm": "제 7 기",
+        "frmtrm": 1425857751938,
+        "frmtrm_nm": "제 6 기"
+      },
+      "부채총계": {
+        "thstrm": 1885951251552,
+        "thstrm_nm": "제 7 기",
+        "frmtrm": 829712539065,
+        "frmtrm_nm": "제 6 기"
+      },
+      "자본총계": {
+        "thstrm": 1488215127423,
+        "thstrm_nm": "제 7 기",
+        "frmtrm": 596145212873,
+        "frmtrm_nm": "제 6 기"
+      },
+      "매출액": {
+        "thstrm": 5357607238956,
+        "thstrm_nm": "제 7 기",
+        "frmtrm": 1485628623826,
+        "frmtrm_nm": "제 6 기"
+      },
+      "영업이익": {
+        "thstrm": 380676718075,
+        "thstrm_nm": "제 7 기",
+        "frmtrm": 115031248500,
+        "frmtrm_nm": "제 6 기"
+      },
+      "당기순이익": {
+        "thstrm": 272653525172,
+        "thstrm_nm": "제 7 기",
+        "frmtrm": 97789788764,
+        "frmtrm_nm": "제 6 기"
+      }
+    },
+    "extra": {
+      "유동자산": 2274293401185,
+      "유동부채": 1547889953385,
+      "이자비용": 214077570318,
+      "영업활동현금흐름": -241250246729,
+      "유형자산취득": -455327648383
+    },
+    "verify": {
+      "verified": true,
+      "dartAgree": true,
+      "arithmeticOk": true,
+      "naverAgree": null,
+      "crossChecked": false
+    }
+  },
+  "__naverQuarter": {
+    "2025Q1": {
+      "rev": 629800000000,
+      "op": 2300000000
+    },
+    "2025Q2": {
+      "rev": 779700000000,
+      "op": 49000000000
+    },
+    "2025Q3": {
+      "rev": 625100000000,
+      "op": 50500000000
+    },
+    "2025Q4": {
+      "rev": 497000000000,
+      "op": 41600000000
+    },
+    "2026Q1": {
+      "rev": 605400000000,
+      "op": 20900000000
+    }
+  }
+}

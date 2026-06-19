@@ -1,0 +1,41 @@
+{
+  "fetchedAt": "2026-06-19T12:31:06.990Z",
+  "source": "FnGuide 턴어라운드",
+  "stock": "036570",
+  "Q": {
+    "OPER": {
+      "category": "30% 이상 성장",
+      "gsNm": "1Q",
+      "dataGb": "확정",
+      "cur": 113277000000,
+      "prev": 3247000000,
+      "growth": 3388.67
+    },
+    "NET": {
+      "category": "흑자전환",
+      "gsNm": "1Q",
+      "dataGb": "확정",
+      "cur": 148781000000,
+      "prev": -2377000000,
+      "growth": null
+    }
+  },
+  "A": {
+    "OPER": {
+      "category": "흑자전환",
+      "gsNm": "Annual",
+      "dataGb": "확정",
+      "cur": 16078000000,
+      "prev": -109215000000.00002,
+      "growth": null
+    },
+    "NET": {
+      "category": "30% 이상 성장",
+      "gsNm": "Annual",
+      "dataGb": "확정",
+      "cur": 346670000000,
+      "prev": 94215000000,
+      "growth": 267.96
+    }
+  }
+}
