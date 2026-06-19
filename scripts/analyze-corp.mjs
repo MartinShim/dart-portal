@@ -224,14 +224,13 @@ function buildPeriodicAnalysis(item, fin, qoq, div) {
   } else if (opCmpG.kind === "pct" && revCmpG.kind === "pct" && revCmpG.pct > 0 && opCmpG.pct < 0) {
     tags.push("외형만 성장 (내실 악화)");
   }
-  // 연간(YoY, 전년 대비) 영업이익 방향·전환 — 사업보고서에만
-  if (isAnnual) {
-    const annUp = gpos(op, opP);
-    if (annUp === true) tags.push("연간 실적 상승");
-    else if (annUp === false) tags.push("연간 실적 하락");
-    if (opGY.kind === "흑자전환") tags.push("영업이익 흑자전환(연간)");
-    else if (opGY.kind === "적자전환") tags.push("영업이익 적자전환(연간)");
-  }
+  // 연간(YoY, 전년 동기 대비) 영업이익 방향·전환 — 모든 정기공시
+  //  (분기보고서도 전년 동기 분기와 비교하면 YoY 신호가 나옴)
+  const annUp = gpos(op, opP);
+  if (annUp === true) tags.push("연간 실적 상승");
+  else if (annUp === false) tags.push("연간 실적 하락");
+  if (opGY.kind === "흑자전환") tags.push("영업이익 흑자전환(연간)");
+  else if (opGY.kind === "적자전환") tags.push("영업이익 적자전환(연간)");
   if (tags.length === 0) tags = ["정보 부족"];
 
   // 영향도 — 분기·반기는 분기 실적(QoQ) 방향, 사업보고서는 연간(YoY) 방향 (흑자전환=호재)
