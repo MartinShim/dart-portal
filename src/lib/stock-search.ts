@@ -65,8 +65,6 @@ export function scoreOf(s: Stock, raw: string): number | null {
     else if (ini.includes(q)) consider(5);
     else if (isSubsequence(q, ini)) consider(6);
   }
-  // 업종 키워드 매칭(예: "반도체" → 반도체 종목들). 이름보다 후순위.
-  if (s.sector && s.sector.toLowerCase().includes(q)) consider(7);
   if (best === null) return null;
   return best - (s.ready ? 0.5 : 0);
 }
