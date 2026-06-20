@@ -66,8 +66,8 @@ const goodTags = new Set<InsightTag>([
 function getTagStyle(tag: InsightTag): string {
   if (riskTags.has(tag)) return "bg-red-50 text-red-700 border-red-200 font-semibold";
   if (goodTags.has(tag)) return "bg-emerald-50 text-emerald-700 border-emerald-200";
-  if (tag === "정보 부족") return "bg-gray-100 text-gray-500 border-gray-200 italic";
-  return "bg-blue-50 text-blue-700 border-blue-200";
+  if (tag === "정보 부족") return "bg-gray-100 text-gray-400 border-gray-200 italic";
+  return "bg-gray-100 text-gray-600 border-gray-200"; // 중립·일반 → 회색
 }
 
 export function TagBadge({ tag }: { tag: InsightTag }) {

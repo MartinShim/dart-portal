@@ -152,12 +152,12 @@ export default function CategoriesPage() {
             빨강 — 위험·악재 (Red Flag, ⚠ 표시)
           </span>
           <span className="inline-flex items-center gap-1.5 text-xs text-gray-600">
-            <span className="w-3 h-3 rounded-sm bg-blue-50 border border-blue-200" />
-            파랑 — 중립·일반 (정보성)
+            <span className="w-3 h-3 rounded-sm bg-gray-100 border border-gray-300" />
+            회색 — 중립·일반 (정보성)
           </span>
           <span className="inline-flex items-center gap-1.5 text-xs text-gray-600">
             <span className="w-3 h-3 rounded-sm bg-gray-100 border border-gray-200" />
-            회색 — 정보 부족
+            연회색(이탤릭) — 정보 부족
           </span>
         </div>
 
