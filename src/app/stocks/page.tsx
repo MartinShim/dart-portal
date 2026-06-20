@@ -1,6 +1,8 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
+import type { DisclosureInsight } from "@/types/dart";
 import { Navbar } from "@/components/dashboard/navbar";
 
 // 분석 완료된 종목 (데이터 보유) — 2023.01.01 ~ 2026.06.12
@@ -14,17 +16,28 @@ const ANALYZED = [
   { code: "247540", name: "에코프로비엠", market: "KOSDAQ", sector: "2차전지 소재", note: "171건 분석" },
 ];
 
-// 분석 대기 (검색·요청 시 수집 예정)
-const PENDING = [
-  { code: "373220", name: "LG에너지솔루션" },
-  { code: "207940", name: "삼성바이오로직스" },
-  { code: "000270", name: "기아" },
-  { code: "035420", name: "NAVER" },
-  { code: "035720", name: "카카오" },
-  { code: "051910", name: "LG화학" },
-];
-
 export default function StocksPage() {
+  // 종목별 최신 핵심 공시 접수일 (tagged = 핵심 공시만)
+  const [latestByCode, setLatestByCode] = useState<Record<string, string>>({});
+
+  useEffect(() => {
+    fetch("/api/dart")
+      .then((r) => r.json())
+      .then((d) => {
+        const map: Record<string, string> = {};
+        for (const i of (d.insights ?? []) as DisclosureInsight[]) {
+          if (!map[i.stockCode] || i.receiptDate > map[i.stockCode]) map[i.stockCode] = i.receiptDate;
+        }
+        setLatestByCode(map);
+      })
+      .catch(() => {});
+  }, []);
+
+  const fmt = (s?: string) => (s ? s.replace(/(\d{4})(\d{2})(\d{2})/, "$1-$2-$3") : "—");
+
+  // 최신 핵심 공시 일자 내림차순(최신 상단). 날짜 미확보 종목은 뒤로.
+  const sorted = [...ANALYZED].sort((a, b) => (latestByCode[b.code] ?? "").localeCompare(latestByCode[a.code] ?? ""));
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Navbar active="stocks" />
@@ -35,44 +48,29 @@ export default function StocksPage() {
         </div>
 
         {/* 분석 완료 */}
-        <h3 className="text-sm font-semibold text-gray-700 mb-2">분석 완료</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-          {ANALYZED.map((s) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-6">
+          {sorted.map((s) => (
             <Link
               key={s.code}
               href={`/ticker/${s.code}`}
-              className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md hover:border-gray-300 transition-all"
+              className="group bg-white rounded-2xl border border-black/[0.04] p-5 shadow-[0_2px_6px_rgba(17,17,17,0.05),0_12px_26px_-14px_rgba(17,17,17,0.12)] hover:shadow-[0_6px_14px_rgba(17,17,17,0.07),0_24px_44px_-16px_rgba(17,17,17,0.22)] hover:-translate-y-1 hover:border-[var(--sam-blue)]/25 transition-all duration-200"
             >
               <div className="flex items-center justify-between">
-                <span className="font-bold text-gray-900">{s.name}</span>
-                <span className="text-[10px] font-semibold text-emerald-600 bg-emerald-50 border border-emerald-200 rounded px-1.5 py-0.5">
+                <span className="font-bold text-[var(--sam-ink)] group-hover:text-[var(--sam-blue)] transition-colors">{s.name}</span>
+                <span className="text-[10px] font-semibold text-emerald-600 bg-emerald-50 border border-emerald-200 rounded-full px-2 py-0.5">
                   분석완료
                 </span>
               </div>
-              <p className="text-xs text-gray-400 mt-0.5">
+              <p className="text-xs text-gray-400 mt-1 tabular-nums">
                 {s.code} · {s.market} · {s.sector}
               </p>
-              <p className="text-xs text-blue-600 mt-2">{s.note} →</p>
+              <p className="text-[11px] text-gray-500 mt-2 tabular-nums">
+                🕑 최신 핵심 공시 · <span className="font-semibold text-gray-700">{fmt(latestByCode[s.code])}</span>
+              </p>
+              <p className="text-xs text-[var(--sam-blue)] font-medium mt-2">{s.note} →</p>
             </Link>
           ))}
         </div>
-
-        {/* 분석 대기 */}
-        <h3 className="text-sm font-semibold text-gray-700 mb-2">분석 대기</h3>
-        <div className="flex flex-wrap gap-2">
-          {PENDING.map((s) => (
-            <span
-              key={s.code}
-              className="inline-flex items-center gap-1.5 bg-white border border-gray-200 rounded-lg px-3 py-1.5 text-sm text-gray-500"
-            >
-              {s.name}
-              <span className="text-xs text-gray-300">{s.code}</span>
-            </span>
-          ))}
-        </div>
-        <p className="text-xs text-gray-400 mt-3">
-          ※ 현재 7개 종목을 2023.01.01~2026.06.12 기간으로 분석했습니다. 다른 종목은 수집·분석 후 제공됩니다.
-        </p>
       </div>
     </div>
   );
