@@ -14,7 +14,7 @@ interface Props {
 const TINT: Record<string, string> = {
   호재: "#eef8f3", // 연한 그린 (중간 톤)
   악재: "#fdf8f9", // 아주 연한 레드
-  중립: "#eaecf2", // 배경과 살짝 구분되는 쿨 그레이
+  중립: "#edeef1", // 회색 (아주 살짝 더 진하게)
 };
 
 export function DisclosureCard({ insight, onClick }: Props) {
