@@ -10,12 +10,20 @@ interface Props {
   onClick: (insight: DisclosureInsight) => void;
 }
 
+// 영향도별 아주 연한 배경 틴트 (near-white, 더 옅게)
+const TINT: Record<string, string> = {
+  호재: "#eef8f3", // 연한 그린 (중간 톤)
+  악재: "#fdf8f9", // 아주 연한 레드
+  중립: "#eaecf2", // 배경과 살짝 구분되는 쿨 그레이
+};
+
 export function DisclosureCard({ insight, onClick }: Props) {
   const dateStr = insight.receiptDate.replace(/(\d{4})(\d{2})(\d{2})/, "$1-$2-$3");
 
   return (
     <Card
-      className="group cursor-pointer rounded-3xl border border-[var(--sam-line)] shadow-sm hover:shadow-lg hover:border-[var(--sam-blue)]/40 hover:-translate-y-0.5 transition-all duration-200"
+      className="group cursor-pointer rounded-3xl border border-black/[0.04] shadow-[0_2px_6px_rgba(17,17,17,0.05),0_12px_26px_-14px_rgba(17,17,17,0.12)] hover:shadow-[0_4px_10px_rgba(17,17,17,0.06),0_20px_36px_-16px_rgba(17,17,17,0.20)] hover:border-[var(--sam-blue)]/25 hover:-translate-y-0.5 transition-all duration-200"
+      style={{ backgroundColor: TINT[insight.impactLevel] ?? undefined }}
       onClick={() => onClick(insight)}
     >
       <CardContent className="p-6 space-y-3">

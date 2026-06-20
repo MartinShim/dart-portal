@@ -5,7 +5,7 @@ import type { ImpactLevel } from "@/types/dart";
 const config: Record<ImpactLevel, { dot: string; className: string }> = {
   호재: { dot: "bg-emerald-500", className: "bg-emerald-50 text-emerald-700" },
   악재: { dot: "bg-red-500", className: "bg-red-50 text-red-700" },
-  중립: { dot: "bg-amber-400", className: "bg-amber-50 text-amber-700" },
+  중립: { dot: "bg-gray-400", className: "bg-gray-100 text-gray-600" },
 };
 
 export function ImpactChip({ level }: { level: ImpactLevel }) {
