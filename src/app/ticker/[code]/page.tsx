@@ -82,7 +82,7 @@ export default function TickerPage({ params }: { params: Promise<{ code: string 
   const goodCount = dateScoped.filter((i) => i.impactLevel === "호재").length;
   const badCount = dateScoped.filter((i) => i.impactLevel === "악재").length;
   const neutralCount = dateScoped.filter((i) => i.impactLevel === "중립").length;
-  const nonCoreCount = Math.max(0, totalCount - dateScoped.length); // 핵심신호가 아닌 공시
+  const coreCount = dateScoped.length; // 핵심 공시(분석 카드) 수
 
   // 영향도 칩 필터까지 적용한 타임라인
   const filtered =
@@ -164,7 +164,7 @@ export default function TickerPage({ params }: { params: Promise<{ code: string 
 
         {/* 건수 통계 */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-          <CountCard label="전체 공시 / 비핵심" value={totalCount} secondary={nonCoreCount} tone="gray" />
+          <CountCard label="전체 공시 / 핵심" value={totalCount} secondary={coreCount} tone="gray" />
           <CountCard label="핵심신호 긍정" value={goodCount} tone="emerald" emoji="🟢" />
           <CountCard label="핵심신호 부정" value={badCount} tone="red" emoji="🔴" />
           <CountCard label="핵심신호 중립" value={neutralCount} tone="amber" emoji="🟡" />
