@@ -118,16 +118,70 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+/* ── Samsung One UI 디자인 토큰 ── */
+:root {
+  --sam-blue: #0a5cd6;       /* Samsung Digital Blue (Primary) */
+  --sam-blue-strong: #0846a8;
+  --sam-blue-soft: #eaf2fd;
+  --sam-ink: #111111;        /* Charcoal Black */
+  --sam-sub: #5b606b;        /* 보조 텍스트 */
+  --sam-bg: #f5f5f7;         /* Off-white 배경 */
+  --sam-line: #e6e7eb;       /* 경계선 */
+  --sam-metallic: linear-gradient(135deg, #e7ecf4 0%, #f8fafc 42%, #dde3ee 100%);
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
+    background: var(--sam-bg);
+    color: var(--sam-ink);
     font-family: "Pretendard Variable", Pretendard, -apple-system,
       BlinkMacSystemFont, system-ui, "Apple SD Gothic Neo", "Malgun Gothic",
       "Segoe UI", sans-serif;
     -webkit-font-smoothing: antialiased;
-    letter-spacing: -0.01em;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: -0.015em;
+    font-variant-numeric: tabular-nums;
+  }
+  h1, h2, h3 {
+    color: var(--sam-ink);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+  }
+  ::selection { background: rgba(10, 92, 214, 0.18); }
+}
+
+@layer utilities {
+  .sam-metallic { background: var(--sam-metallic); }
+  .sam-card {
+    background: #ffffff;
+    border: 1px solid var(--sam-line);
+    box-shadow: 0 1px 2px rgba(17, 17, 17, 0.04), 0 8px 24px rgba(17, 17, 17, 0.05);
   }
 }
+
+/* ── 전역 톤 통일 (Samsung One UI) ── */
+.min-h-screen.bg-gray-50 { background: var(--sam-bg) !important; }
+
+/* Squircle — One UI 부드러운 곡률 */
+.rounded-md { border-radius: 12px; }
+.rounded-lg { border-radius: 16px; }
+.rounded-xl { border-radius: 20px; }
+.rounded-2xl { border-radius: 24px; }
+
+/* Primary = Samsung Digital Blue (기존 blue 계열 일괄 치환) */
+.bg-blue-600 { background-color: var(--sam-blue) !important; }
+.hover\:bg-blue-700:hover { background-color: var(--sam-blue-strong) !important; }
+.text-blue-600 { color: var(--sam-blue) !important; }
+.text-blue-700 { color: var(--sam-blue-strong) !important; }
+.border-blue-600 { border-color: var(--sam-blue) !important; }
+.border-blue-200 { border-color: #bcd5f7 !important; }
+.bg-blue-50 { background-color: var(--sam-blue-soft) !important; }
+
+/* 경계선·여백 톤 */
+.border-gray-200 { border-color: var(--sam-line); }
+.border-gray-100 { border-color: #eef0f3; }
+.text-gray-900 { color: var(--sam-ink); }

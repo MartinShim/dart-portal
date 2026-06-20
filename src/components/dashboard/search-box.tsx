@@ -53,7 +53,7 @@ export function SearchBox({ className = "" }: { className?: string }) {
 
   return (
     <div ref={boxRef} className={`relative ${className}`}>
-      <div className="flex items-center gap-2 bg-white border border-gray-300 rounded-lg px-3 py-2 focus-within:border-gray-500 focus-within:ring-2 focus-within:ring-gray-100 transition-colors">
+      <div className="flex items-center gap-2 bg-white border border-gray-300 rounded-[10px] px-3 py-2 focus-within:border-gray-500 focus-within:ring-2 focus-within:ring-gray-100 transition-colors">
         <button onMouseDown={(e) => { e.preventDefault(); runSearch(); }} className="shrink-0" aria-label="검색">
           <svg className="w-4 h-4 text-gray-400 hover:text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z" />
@@ -74,7 +74,7 @@ export function SearchBox({ className = "" }: { className?: string }) {
       </div>
 
       {open && matches.length > 0 && (
-        <ul className="absolute z-30 mt-1 w-full bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden">
+        <ul className="absolute z-30 mt-1 w-full bg-white border border-gray-200 rounded-[10px] shadow-lg overflow-hidden">
           {matches.map((s, i) => (
             <li key={s.code}>
               <button

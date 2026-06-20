@@ -119,7 +119,7 @@ export default function Home() {
 
           {/* 조회 기간 */}
           {!loading && insights.length > 0 && (
-            <div className="bg-white border border-gray-200 rounded-lg px-4 py-3 mb-4 flex flex-wrap items-center gap-3">
+            <div className="bg-white border border-gray-200 rounded-[10px] px-4 py-3 mb-4 flex flex-wrap items-center gap-3">
               <span className="text-xs font-semibold text-gray-500">📅 조회 기간</span>
               <input
                 type="date"
@@ -127,7 +127,7 @@ export default function Home() {
                 min={toInput(minYmd)}
                 max={to || toInput(maxYmd)}
                 onChange={(e) => setFrom(e.target.value)}
-                className="text-sm border border-gray-300 rounded-md px-2 py-1 outline-none focus:border-gray-500"
+                className="text-sm border border-gray-300 rounded-[10px] px-2 py-1 outline-none focus:border-gray-500"
               />
               <span className="text-gray-400 text-sm">~</span>
               <input
@@ -136,7 +136,7 @@ export default function Home() {
                 min={from || toInput(minYmd)}
                 max={toInput(maxYmd)}
                 onChange={(e) => setTo(e.target.value)}
-                className="text-sm border border-gray-300 rounded-md px-2 py-1 outline-none focus:border-gray-500"
+                className="text-sm border border-gray-300 rounded-[10px] px-2 py-1 outline-none focus:border-gray-500"
               />
               {(from || to) && (
                 <button

@@ -2,17 +2,18 @@
 
 import type { ImpactLevel } from "@/types/dart";
 
-const config: Record<ImpactLevel, { emoji: string; className: string }> = {
-  호재: { emoji: "🟢", className: "bg-emerald-100 text-emerald-800 border-emerald-300" },
-  악재: { emoji: "🔴", className: "bg-red-100 text-red-800 border-red-300 animate-pulse" },
-  중립: { emoji: "🟡", className: "bg-amber-100 text-amber-800 border-amber-300" },
+const config: Record<ImpactLevel, { dot: string; className: string }> = {
+  호재: { dot: "bg-emerald-500", className: "bg-emerald-50 text-emerald-700" },
+  악재: { dot: "bg-red-500", className: "bg-red-50 text-red-700" },
+  중립: { dot: "bg-amber-400", className: "bg-amber-50 text-amber-700" },
 };
 
 export function ImpactChip({ level }: { level: ImpactLevel }) {
-  const { emoji, className } = config[level];
+  const { dot, className } = config[level];
   return (
-    <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold border whitespace-nowrap shrink-0 ${className}`}>
-      {emoji} {level}
+    <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold whitespace-nowrap shrink-0 ${className}`}>
+      <span className={`w-1.5 h-1.5 rounded-full ${dot}`} />
+      {level}
     </span>
   );
 }

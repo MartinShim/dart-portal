@@ -156,7 +156,7 @@ export function FilterSidebar({
       <div className="space-y-2">
         <button
           onClick={onGoodOnlyToggle}
-          className={`w-full flex items-center justify-center gap-2 py-2 px-3 rounded-lg text-sm font-semibold border transition-colors ${
+          className={`w-full flex items-center justify-center gap-2 py-2 px-3 rounded-[10px] text-sm font-semibold border transition-colors ${
             goodOnly
               ? "bg-emerald-600 text-white border-emerald-600"
               : "bg-white text-emerald-700 border-emerald-300 hover:bg-emerald-50"
@@ -166,7 +166,7 @@ export function FilterSidebar({
         </button>
         <button
           onClick={onRiskOnlyToggle}
-          className={`w-full flex items-center justify-center gap-2 py-2 px-3 rounded-lg text-sm font-semibold border transition-colors ${
+          className={`w-full flex items-center justify-center gap-2 py-2 px-3 rounded-[10px] text-sm font-semibold border transition-colors ${
             riskOnly
               ? "bg-red-600 text-white border-red-600"
               : "bg-white text-red-600 border-red-300 hover:bg-red-50"

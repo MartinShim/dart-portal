@@ -133,7 +133,7 @@ export default function TickerPage({ params }: { params: Promise<{ code: string 
         )}
 
         {/* 조회 기간 */}
-        <div className="bg-white border border-gray-200 rounded-lg px-4 py-3 flex flex-wrap items-center gap-3">
+        <div className="bg-white border border-gray-200 rounded-[10px] px-4 py-3 flex flex-wrap items-center gap-3">
           <span className="text-xs font-semibold text-gray-500">📅 조회 기간</span>
           <input
             type="date"
@@ -141,7 +141,7 @@ export default function TickerPage({ params }: { params: Promise<{ code: string 
             min={toInput(data.range.bgn_de)}
             max={to || toInput(data.range.end_de)}
             onChange={(e) => setFrom(e.target.value)}
-            className="text-sm border border-gray-300 rounded-md px-2 py-1 outline-none focus:border-gray-500"
+            className="text-sm border border-gray-300 rounded-[10px] px-2 py-1 outline-none focus:border-gray-500"
           />
           <span className="text-gray-400 text-sm">~</span>
           <input
@@ -150,7 +150,7 @@ export default function TickerPage({ params }: { params: Promise<{ code: string 
             min={from || toInput(data.range.bgn_de)}
             max={toInput(data.range.end_de)}
             onChange={(e) => setTo(e.target.value)}
-            className="text-sm border border-gray-300 rounded-md px-2 py-1 outline-none focus:border-gray-500"
+            className="text-sm border border-gray-300 rounded-[10px] px-2 py-1 outline-none focus:border-gray-500"
           />
           {(from || to) && (
             <button
@@ -176,10 +176,10 @@ export default function TickerPage({ params }: { params: Promise<{ code: string 
             <button
               key={f.key}
               onClick={() => setFilter(f.key)}
-              className={`text-xs px-3 py-1.5 rounded-full border transition-colors ${
+              className={`text-xs px-4 py-2 rounded-full border transition-colors ${
                 filter === f.key
-                  ? "bg-gray-900 text-white border-gray-900"
-                  : "bg-white text-gray-600 border-gray-300 hover:bg-gray-100"
+                  ? "bg-[var(--sam-blue)] text-white border-transparent"
+                  : "bg-white text-gray-600 border-gray-300 hover:bg-gray-50"
               }`}
             >
               {f.label}

@@ -11,12 +11,12 @@ const NAV = [
 
 export function Navbar({ active }: { active?: (typeof NAV)[number]["key"] }) {
   return (
-    <header className="bg-white border-b border-gray-200 sticky top-0 z-20">
-      <div className="max-w-screen-2xl mx-auto px-6 h-14 flex items-center gap-8 relative">
+    <header className="bg-white/85 backdrop-blur-xl border-b border-[var(--sam-line)] sticky top-0 z-20">
+      <div className="max-w-screen-2xl mx-auto px-6 h-16 flex items-center gap-8 relative">
         {/* 브랜드 */}
         <Link href="/" className="shrink-0">
-          <span className="text-lg font-bold text-gray-900 tracking-tight">
-            DART 공시 <span className="text-blue-600">Portal</span>
+          <span className="text-lg font-bold tracking-tight text-[var(--sam-ink)]">
+            DART 공시 <span className="text-[var(--sam-blue)]">Portal</span>
           </span>
         </Link>
 
@@ -26,17 +26,17 @@ export function Navbar({ active }: { active?: (typeof NAV)[number]["key"] }) {
         </div>
 
         {/* 네비게이션 (검색창 왼쪽) */}
-        <nav className="flex items-center gap-1">
+        <nav className="flex items-center gap-1.5">
           {NAV.map((item) => {
             const isActive = active === item.key;
             return (
               <Link
                 key={item.key}
                 href={item.href}
-                className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+                className={`px-4 py-2 rounded-[10px] text-sm font-semibold transition-colors ${
                   isActive
-                    ? "bg-gray-900 text-white"
-                    : "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+                    ? "bg-[var(--sam-blue)] text-white"
+                    : "text-[var(--sam-sub)] hover:text-[var(--sam-ink)] hover:bg-[var(--sam-bg)]"
                 }`}
               >
                 {item.label}
